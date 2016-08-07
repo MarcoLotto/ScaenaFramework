@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B661ACB3-1C66-4600-A7B4-F7DAF7971994}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>WindowConnector</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ReferencePath)</ReferencePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LibraryPath)</LibraryPath>
+    <SourcePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)glm-0.9.3.2;$(ProyectDir)glutConnector\include;$(ProyectDir)freeglut/include;$(ProyectDir)CommonInclude;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;FREEGLUT_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)TemplateProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)TemplateProject.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>fbxsdk-2013.3-mtd.lib;wininet.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\4.8.3\lib;C:\Program Files\Autodesk\FBX\FBX SDK\2013.3\lib\vs2010\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBMCT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>freeglut/include;glew/include;cwc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;FREEGLUT_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)TemplateProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonInclude\SensorsData.h" />
+    <ClInclude Include="CommonInclude\TouchEvent.h" />
+    <ClInclude Include="CommonInclude\TouchPoint.h" />
+    <ClInclude Include="CommonInclude\WindowConnector.h" />
+    <ClInclude Include="freeglut\include\GL\freeglut.h" />
+    <ClInclude Include="freeglut\include\GL\freeglut_ext.h" />
+    <ClInclude Include="freeglut\include\GL\freeglut_std.h" />
+    <ClInclude Include="freeglut\include\GL\glut.h" />
+    <ClInclude Include="freeglut\source\freeglut_internal.h" />
+    <ClInclude Include="freeglut\source\freeglut_teapot_data.h" />
+    <ClInclude Include="glutConnector\include\ConnectorImplementation.h" />
+    <ClInclude Include="glutConnector\include\glApplication.h" />
+    <ClInclude Include="glutConnector\include\glWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="freeglut\source\freeglut_callbacks.c" />
+    <ClCompile Include="freeglut\source\freeglut_cursor.c" />
+    <ClCompile Include="freeglut\source\freeglut_display.c" />
+    <ClCompile Include="freeglut\source\freeglut_ext.c" />
+    <ClCompile Include="freeglut\source\freeglut_font.c" />
+    <ClCompile Include="freeglut\source\freeglut_font_data.c" />
+    <ClCompile Include="freeglut\source\freeglut_gamemode.c" />
+    <ClCompile Include="freeglut\source\freeglut_geometry.c" />
+    <ClCompile Include="freeglut\source\freeglut_glutfont_definitions.c" />
+    <ClCompile Include="freeglut\source\freeglut_init.c" />
+    <ClCompile Include="freeglut\source\freeglut_joystick.c" />
+    <ClCompile Include="freeglut\source\freeglut_main.c" />
+    <ClCompile Include="freeglut\source\freeglut_menu.c" />
+    <ClCompile Include="freeglut\source\freeglut_misc.c" />
+    <ClCompile Include="freeglut\source\freeglut_overlay.c" />
+    <ClCompile Include="freeglut\source\freeglut_state.c" />
+    <ClCompile Include="freeglut\source\freeglut_stroke_mono_roman.c" />
+    <ClCompile Include="freeglut\source\freeglut_stroke_roman.c" />
+    <ClCompile Include="freeglut\source\freeglut_structure.c" />
+    <ClCompile Include="freeglut\source\freeglut_teapot.c" />
+    <ClCompile Include="freeglut\source\freeglut_videoresize.c" />
+    <ClCompile Include="freeglut\source\freeglut_window.c" />
+    <ClCompile Include="glutConnector\source\ConnectorImplementation.cpp" />
+    <ClCompile Include="glutConnector\source\glApplication.cpp" />
+    <ClCompile Include="glutConnector\source\glWindow.cpp" />
+    <ClCompile Include="glutConnector\source\WindowConnector.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

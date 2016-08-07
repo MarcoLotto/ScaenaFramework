@@ -1,0 +1,994 @@
+
+<Object id="muebleSuperior" class="Object" meshPath="Modelos/muebleSuperior.smf">
+	<Mesh name="mueble">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.3</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blancoMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-0.021108</X>
+
+				<Y>-4.85935e-008</Y>
+
+				<Z>1.11169</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="placa2">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.3</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/naranjaMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-1.72075</X>
+
+				<Y>0.00279048</Y>
+
+				<Z>1.11605</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0246836</X>
+
+				<Y>0.0246836</Y>
+
+				<Z>0.0158958</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="placa3">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.3</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/naranjaMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-0.529457</X>
+
+				<Y>0.00279048</Y>
+
+				<Z>1.11605</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0246836</X>
+
+				<Y>0.0246836</Y>
+
+				<Z>0.0158958</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="placa4">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.3</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/naranjaMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>0.663232</X>
+
+				<Y>0.00279048</Y>
+
+				<Z>1.11605</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0246836</X>
+
+				<Y>0.0246836</Y>
+
+				<Z>0.0158958</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="placa5">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.3</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/naranjaMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>1.67042</X>
+
+				<Y>8.20105e-009</Y>
+
+				<Z>0.928429</Z>
+			</Translation>
+
+			<Rotation>
+				<X>89.9984</X>
+
+				<Y>90</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0246836</X>
+
+				<Y>0.0246836</Y>
+
+				<Z>0.0158958</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="placa6">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.3</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/naranjaMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>1.67042</X>
+
+				<Y>6.01469e-008</Y>
+
+				<Z>-0.259955</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>90</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0246836</X>
+
+				<Y>0.0246836</Y>
+
+				<Z>0.0158958</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="placa1">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.3</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/naranjaMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-2.913</X>
+
+				<Y>0.00279048</Y>
+
+				<Z>1.11605</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0246836</X>
+
+				<Y>0.0246836</Y>
+
+				<Z>0.0158958</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="fondo">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.5</Diffuse>
+
+			<Specular>0.2</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/negroMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-0.0211079</X>
+
+				<Y>-0.00310604</Y>
+
+				<Z>1.11169</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="luz1">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.2</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blancoMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-2.89089</X>
+
+				<Y>0.236965</Y>
+
+				<Z>0.630005</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0480574</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="foco1">
+		<Material>
+			<Ambient>1</Ambient>
+
+			<Diffuse>0.8</Diffuse>
+
+			<Specular>0.8</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/amarilloClaro.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-2.89193</X>
+
+				<Y>0.234474</Y>
+
+				<Z>0.653969</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0216327</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="foco2">
+		<Material>
+			<Ambient>1</Ambient>
+
+			<Diffuse>0.8</Diffuse>
+
+			<Specular>0.8</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/amarilloClaro.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-1.70783</X>
+
+				<Y>0.234474</Y>
+
+				<Z>0.653969</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0216327</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="luz2">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.2</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blancoMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-1.70679</X>
+
+				<Y>0.236965</Y>
+
+				<Z>0.630005</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0480574</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="foco3">
+		<Material>
+			<Ambient>1</Ambient>
+
+			<Diffuse>0.8</Diffuse>
+
+			<Specular>0.8</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/amarilloClaro.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-0.511847</X>
+
+				<Y>0.234474</Y>
+
+				<Z>0.653969</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0216327</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="luz3">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.2</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blancoMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-0.510803</X>
+
+				<Y>0.236965</Y>
+
+				<Z>0.630005</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0480574</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="foco4">
+		<Material>
+			<Ambient>1</Ambient>
+
+			<Diffuse>0.8</Diffuse>
+
+			<Specular>0.8</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/amarilloClaro.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>0.66258</X>
+
+				<Y>0.234474</Y>
+
+				<Z>0.653969</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0216327</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="luz4">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.2</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blancoMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>0.663625</X>
+
+				<Y>0.236965</Y>
+
+				<Z>0.630005</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0216327</X>
+
+				<Y>0.0216327</Y>
+
+				<Z>0.0480574</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+</Object>

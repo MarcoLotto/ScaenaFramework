@@ -1,0 +1,250 @@
+
+<Object id="mesaTv" class="Object" meshPath="Modelos/mesaTv.smf">
+	<Mesh name="Box008">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.7</Diffuse>
+
+			<Specular>0.5</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blancoMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>-1.33716</X>
+
+				<Y>-0.387064</Y>
+
+				<Z>-0.719137</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+
+		<Mesh name="Cylinder011">
+			<Material>
+				<Ambient>0.5</Ambient>
+
+				<Diffuse>0.6</Diffuse>
+
+				<Specular>0.3</Specular>
+
+				<Bright>0</Bright>
+			</Material>
+
+			<Texture>
+				<UVTranslation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVTranslation>
+
+				<UVScale>
+					<X>1</X>
+
+					<Y>1</Y>
+				</UVScale>
+
+				<UVRotation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVRotation>
+
+				<DiffuseMap>
+					<Map>./Textures/Difusas/negroMate.png</Map>
+				</DiffuseMap>
+			</Texture>
+
+			<Transformations>
+				<Translation>
+					<X>91.2055</X>
+
+					<Y>11.0595</Y>
+
+					<Z>-3.6159</Z>
+				</Translation>
+
+				<Rotation>
+					<X>-90</X>
+
+					<Y>-20.592</Y>
+
+					<Z>0</Z>
+				</Rotation>
+
+				<Scale>
+					<X>1.08708</X>
+
+					<Y>1.08708</Y>
+
+					<Z>1.08707</Z>
+				</Scale>
+			</Transformations>
+		</Mesh>
+
+		<Mesh name="Box010">
+			<Material>
+				<Ambient>0.5</Ambient>
+
+				<Diffuse>0.6</Diffuse>
+
+				<Specular>0.3</Specular>
+
+				<Bright>0</Bright>
+			</Material>
+
+			<Texture>
+				<UVTranslation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVTranslation>
+
+				<UVScale>
+					<X>1</X>
+
+					<Y>1</Y>
+				</UVScale>
+
+				<UVRotation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVRotation>
+
+				<DiffuseMap>
+					<Map>./Textures/Difusas/negroMate.png</Map>
+				</DiffuseMap>
+			</Texture>
+
+			<Transformations>
+				<Translation>
+					<X>39.8664</X>
+
+					<Y>11.7743</Y>
+
+					<Z>-0.818786</Z>
+				</Translation>
+
+				<Rotation>
+					<X>7.7408e-006</X>
+
+					<Y>3.78511e-022</Y>
+
+					<Z>1.43209e-021</Z>
+				</Rotation>
+
+				<Scale>
+					<X>0.890135</X>
+
+					<Y>1</Y>
+
+					<Z>1</Z>
+				</Scale>
+			</Transformations>
+		</Mesh>
+
+		<Mesh name="Box009">
+			<Material>
+				<Ambient>0.5</Ambient>
+
+				<Diffuse>0.6</Diffuse>
+
+				<Specular>0.3</Specular>
+
+				<Bright>0</Bright>
+			</Material>
+
+			<Texture>
+				<UVTranslation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVTranslation>
+
+				<UVScale>
+					<X>1</X>
+
+					<Y>1</Y>
+				</UVScale>
+
+				<UVRotation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVRotation>
+
+				<DiffuseMap>
+					<Map>./Textures/Difusas/negroMate.png</Map>
+				</DiffuseMap>
+			</Texture>
+
+			<Transformations>
+				<Translation>
+					<X>-0.649719</X>
+
+					<Y>11.7743</Y>
+
+					<Z>-0.818786</Z>
+				</Translation>
+
+				<Rotation>
+					<X>0</X>
+
+					<Y>0</Y>
+
+					<Z>0</Z>
+				</Rotation>
+
+				<Scale>
+					<X>1</X>
+
+					<Y>1</Y>
+
+					<Z>1</Z>
+				</Scale>
+			</Transformations>
+		</Mesh>
+	</Mesh>
+</Object>

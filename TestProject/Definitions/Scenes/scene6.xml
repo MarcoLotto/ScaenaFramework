@@ -1,0 +1,272 @@
+
+<Scene name="">
+	<Object path="Definitions/Objects/sofa.xml">
+		<Transformations>
+			<Translation>
+				<X>2.1</X>
+
+				<Y>3.1</Y>
+
+				<Z>0.23</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>336.5</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.9</X>
+
+				<Y>0.9</Y>
+
+				<Z>0.9</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Object path="Definitions/Objects/habitacionVacia.xml">
+		<Transformations>
+			<Translation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>1.5</X>
+
+				<Y>1.5</Y>
+
+				<Z>1.5</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Object path="Definitions/Objects/ventana.xml">
+		<Transformations>
+			<Translation>
+				<X>7.6</X>
+
+				<Y>1.69</Y>
+
+				<Z>4.5</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>270</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.87</X>
+
+				<Y>1</Y>
+
+				<Z>0.9</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Object path="Definitions/Objects/mesaTv.xml">
+		<Transformations>
+			<Translation>
+				<X>-0.2</X>
+
+				<Y>-3.6</Y>
+
+				<Z>1.1</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>180</Z>
+			</Rotation>
+
+			<Scale>
+				<X>1.1</X>
+
+				<Y>1</Y>
+
+				<Z>1</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Object path="Definitions/Objects/muebleSuperior.xml">
+		<Transformations>
+			<Translation>
+				<X>-0.9</X>
+
+				<Y>-3.5</Y>
+
+				<Z>2.2</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>180</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.9</X>
+
+				<Y>1.2</Y>
+
+				<Z>0.9</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Object path="Definitions/Objects/tv.xml">
+		<Transformations>
+			<Translation>
+				<X>0.2</X>
+
+				<Y>-3.55</Y>
+
+				<Z>1.65</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>180</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.6</X>
+
+				<Y>0.6</Y>
+
+				<Z>0.6</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Object path="Definitions/Objects/mesitaDeCafe.xml">
+		<Transformations>
+			<Translation>
+				<X>0</X>
+
+				<Y>1</Y>
+
+				<Z>0.3</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.7</X>
+
+				<Y>0.7</Y>
+
+				<Z>0.7</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Object path="Definitions/Objects/sofa.xml">
+		<Transformations>
+			<Translation>
+				<X>-2.4</X>
+
+				<Y>3.1</Y>
+
+				<Z>0.23</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>20</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.9</X>
+
+				<Y>0.9</Y>
+
+				<Z>0.9</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+
+	<Light type="Spot">
+		<Position>
+			<X>0.6</X>
+
+			<Y>-2.4</Y>
+
+			<Z>3</Z>
+		</Position>
+
+		<Direction>
+			<X>0</X>
+
+			<Y>-0.3</Y>
+
+			<Z>-0.953939</Z>
+		</Direction>
+
+		<Intensity>
+			<X>0.2</X>
+
+			<Y>0.21</Y>
+
+			<Z>0.2</Z>
+		</Intensity>
+
+		<Factor>7</Factor>
+	</Light>
+
+	<Light type="PointDiffuse">
+		<Position>
+			<X>0.3</X>
+
+			<Y>2.5</Y>
+
+			<Z>2</Z>
+		</Position>
+
+		<Intensity>
+			<X>0.6</X>
+
+			<Y>0.6</Y>
+
+			<Z>0.6</Z>
+		</Intensity>
+	</Light>
+</Scene>

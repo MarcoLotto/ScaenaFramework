@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B0AA7AC-D20A-47E9-B7D8-82AFD63BDD92}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Graphics</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ReferencePath)</ReferencePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LibraryPath)</LibraryPath>
+    <SourcePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)ExternalLibs;$(ProyectDir)include;$(ProyectDir)zlib;$(ProyectDir)libpng;$(SolutionDir)glm-0.9.3.2;$(ProyectDir)test\include;$(SolutionDir)Graphics\WindowConnectors\CommonInclude;$(SolutionDir)Graphics\glew\include;$(SolutionDir)Graphics\glew\include\GLES;$(SolutionDir)Graphics\WindowConnectors\glutConnector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;OPENGL4;FREEGLUT_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)TemplateProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)TemplateProject.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>fbxsdk-2013.3-mtd.lib;wininet.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\4.8.3\lib;C:\Program Files\Autodesk\FBX\FBX SDK\2013.3\lib\vs2010\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBMCT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>freeglut/include;glew/include;cwc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;FREEGLUT_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)TemplateProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="glew\include\GLES\GLES2\gl2.h" />
+    <ClInclude Include="glew\include\GLES\GLES2\gl2ext.h" />
+    <ClInclude Include="glew\include\GLES\GLES2\gl2platform.h" />
+    <ClInclude Include="glew\include\GLES\GLES3\gl2ext.h" />
+    <ClInclude Include="glew\include\GLES\GLES3\gl3.h" />
+    <ClInclude Include="glew\include\GLES\GLES3\gl3platform.h" />
+    <ClInclude Include="glew\include\GLES\KHR\khrplatform.h" />
+    <ClInclude Include="glew\include\GL\glew.h" />
+    <ClInclude Include="glew\include\GL\glxew.h" />
+    <ClInclude Include="glew\include\GL\wglew.h" />
+    <ClInclude Include="include\AnimationLoadException.h" />
+    <ClInclude Include="include\ApiNotBindException.h" />
+    <ClInclude Include="include\ApiTexture.h" />
+    <ClInclude Include="include\ApiVariableTypeDoesNotExistException.h" />
+    <ClInclude Include="include\BackBufferWriterStage.h" />
+    <ClInclude Include="include\BasicForceMeshDeformationTFShader.h" />
+    <ClInclude Include="include\BloomShader.h" />
+    <ClInclude Include="include\BloomShader_330.h" />
+    <ClInclude Include="include\BloomStage.h" />
+    <ClInclude Include="include\BlurShader.h" />
+    <ClInclude Include="include\BlurShader_330.h" />
+    <ClInclude Include="include\BlurStage.h" />
+    <ClInclude Include="include\BlurStageTemplate.h" />
+    <ClInclude Include="include\BoundingBox.h" />
+    <ClInclude Include="include\Callbackable.h" />
+    <ClInclude Include="include\Camara.h" />
+    <ClInclude Include="include\CamaraPrimeraPersona.h" />
+    <ClInclude Include="include\CamaraTerceraPersona.h" />
+    <ClInclude Include="include\ChargeableResource.h" />
+    <ClInclude Include="include\ChargeableTextureMap.h" />
+    <ClInclude Include="include\Cilindro.h" />
+    <ClInclude Include="include\Cubo.h" />
+    <ClInclude Include="include\DataBuffer.h" />
+    <ClInclude Include="include\DataConformationException.h" />
+    <ClInclude Include="include\DeferredGeometryStage.h" />
+    <ClInclude Include="include\DepthOfFieldShader.h" />
+    <ClInclude Include="include\DepthOfFieldStage.h" />
+    <ClInclude Include="include\DepthTexture.h" />
+    <ClInclude Include="include\DiffuseMap.h" />
+    <ClInclude Include="include\DifuseDeferredShader.h" />
+    <ClInclude Include="include\DifuseForwardShader.h" />
+    <ClInclude Include="include\DifuseShader.h" />
+    <ClInclude Include="include\DifuseShaderImplementation.h" />
+    <ClInclude Include="include\DirectionalMovingObject.h" />
+    <ClInclude Include="include\DisplacementMap.h" />
+    <ClInclude Include="include\DrawableBoundingBox.h" />
+    <ClInclude Include="include\DrawPacket.h" />
+    <ClInclude Include="include\Esfera.h" />
+    <ClInclude Include="include\EventHandlerNotAttachedException.h" />
+    <ClInclude Include="include\Exception.h" />
+    <ClInclude Include="include\FileProcessingException.h" />
+    <ClInclude Include="include\GLSLProgramGLES3Implementation.h" />
+    <ClInclude Include="include\GLSLProgramGLImplementation.h" />
+    <ClInclude Include="include\GLSLProgramInterface.h" />
+    <ClInclude Include="include\GLSLUniform.h" />
+    <ClInclude Include="include\ImageColorChangerShader.h" />
+    <ClInclude Include="include\ImageComposer.h" />
+    <ClInclude Include="include\ImagePrinterStage.h" />
+    <ClInclude Include="include\InitializationException.h" />
+    <ClInclude Include="include\InterpolationFunction.h" />
+    <ClInclude Include="include\InterruptionPoint.h" />
+    <ClInclude Include="include\JsonUtils.h" />
+    <ClInclude Include="include\LightUniform.h" />
+    <ClInclude Include="include\LightUniformsContainer.h" />
+    <ClInclude Include="include\LinearConstantInterpolationFunction.h" />
+    <ClInclude Include="include\QuadraticConstantInterpolationFunction.h" />
+    <ClInclude Include="include\LineR2.h" />
+    <ClInclude Include="include\LineR3.h" />
+    <ClInclude Include="include\MemoryTextureManager.h" />
+    <ClInclude Include="include\MeshDrawerShaderImplProxy.h" />
+    <ClInclude Include="include\MeshLoadException.h" />
+    <ClInclude Include="include\MeshSkeleton.h" />
+    <ClInclude Include="include\MeshSkeletonJoint.h" />
+    <ClInclude Include="include\NullPointerException.h" />
+    <ClInclude Include="include\OpenglES2ConstantCatalog.h" />
+    <ClInclude Include="include\OpenglES2Device.h" />
+    <ClInclude Include="include\OpenglES3ConstantCatalog.h" />
+    <ClInclude Include="include\OpenglES3Device.h" />
+    <ClInclude Include="include\ScaenaAnimationFileWriter.h" />
+    <ClInclude Include="include\ScaenaAnimationLoader.h" />
+    <ClInclude Include="include\ScaenaModelLoader.h" />
+    <ClInclude Include="include\FeatureNotAvaibleException.h" />
+    <ClInclude Include="include\FileTexture.h" />
+    <ClInclude Include="include\ForwardGeometryStage.h" />
+    <ClInclude Include="include\FrameBuffer.h" />
+    <ClInclude Include="include\FrameBufferManager.h" />
+    <ClInclude Include="include\FrameBufferRequest.h" />
+    <ClInclude Include="include\FrameBufferWriteLockViolationException.h" />
+    <ClInclude Include="include\GpuTimeProfiler.h" />
+    <ClInclude Include="include\GraphicIndexArrayContainer.h" />
+    <ClInclude Include="include\IndexBufferObject.h" />
+    <ClInclude Include="include\InputDoesNotExistInRenderPipeline.h" />
+    <ClInclude Include="include\GeometryStage.h" />
+    <ClInclude Include="include\GraphicArrayContainer.h" />
+    <ClInclude Include="include\GraphicDevice.h" />
+    <ClInclude Include="include\GraphicDeviceConstantCatalog.h" />
+    <ClInclude Include="include\GraphicInitializationException.h" />
+    <ClInclude Include="include\InvalidSubroutineNameException.h" />
+    <ClInclude Include="include\InvalidUniformNameException.h" />
+    <ClInclude Include="include\InvalidVBOBufferPassedToTransformFeedbackException.h" />
+    <ClInclude Include="include\LightBuilder.h" />
+    <ClInclude Include="include\LightDoesNotExistException.h" />
+    <ClInclude Include="include\LineManager.h" />
+    <ClInclude Include="include\LineShader.h" />
+    <ClInclude Include="include\Log.h" />
+    <ClInclude Include="include\Logger.h" />
+    <ClInclude Include="include\LoggerNotInitializedException.h" />
+    <ClInclude Include="include\MemoryTexture.h" />
+    <ClInclude Include="include\MergeTwoImagesShader.h" />
+    <ClInclude Include="include\MeshBuffers.h" />
+    <ClInclude Include="include\MeshDrawerShader.h" />
+    <ClInclude Include="include\MeshKeyframeAnimationTF.h" />
+    <ClInclude Include="include\MeshTransformFeedbackShader.h" />
+    <ClInclude Include="include\NormalMapDeferredShader.h" />
+    <ClInclude Include="include\NormalMapForwardShader.h" />
+    <ClInclude Include="include\NormalMapShaderImplementation.h" />
+    <ClInclude Include="include\ObjectLight.h" />
+    <ClInclude Include="include\ObjectTransformation.h" />
+    <ClInclude Include="include\ParallaxDeferredShader.h" />
+    <ClInclude Include="include\ParallaxForwardShader.h" />
+    <ClInclude Include="include\ParallaxShaderImplementation.h" />
+    <ClInclude Include="include\Plane.h" />
+    <ClInclude Include="include\PngTextureLoader.h" />
+    <ClInclude Include="include\PropertyCannotBeAcessedException.h" />
+    <ClInclude Include="include\ScaenaModelLoaderHelper.h" />
+    <ClInclude Include="include\SceneCache.h" />
+    <ClInclude Include="include\ShadowData.h" />
+    <ClInclude Include="include\MeshSkeletonInterpolator.h" />
+    <ClInclude Include="include\SkinnedAnimation.h" />
+    <ClInclude Include="include\SkinnedAnimationKeyFrame.h" />
+    <ClInclude Include="include\SkinnedAnimationRepository.h" />
+    <ClInclude Include="include\SkinnedDifuseDeferredShader.h" />
+    <ClInclude Include="include\SkinnedDifuseForwardShader.h" />
+    <ClInclude Include="include\SkinnedDifuseShader.h" />
+    <ClInclude Include="include\SkinnedDrawerHelper.h" />
+    <ClInclude Include="include\SkinnedMesh.h" />
+    <ClInclude Include="include\SkinnedNormalMapDeferredShader.h" />
+    <ClInclude Include="include\SkinnedNormalMapForwardShader.h" />
+    <ClInclude Include="include\SkinnedNormalMapShader.h" />
+    <ClInclude Include="include\SkinnedParallaxDeferredShader.h" />
+    <ClInclude Include="include\SkinnedParallaxForwardShader.h" />
+    <ClInclude Include="include\SkinnedParallaxShader.h" />
+    <ClInclude Include="include\StringUtils.h" />
+    <ClInclude Include="include\SystemPerformanceAnalyzer.h" />
+    <ClInclude Include="include\TextureDataTransfer.h" />
+    <ClInclude Include="include\TimeParameterInterpolator.h" />
+    <ClInclude Include="include\PhongLightingShader.h" />
+    <ClInclude Include="include\PhongLightingWithSSAOShader.h" />
+    <ClInclude Include="include\RandomTextureGeneratorShader.h" />
+    <ClInclude Include="include\SSAORenderStage.h" />
+    <ClInclude Include="include\SSAOShader.h" />
+    <ClInclude Include="include\TransformableMesh.h" />
+    <ClInclude Include="include\Transformation.h" />
+    <ClInclude Include="include\NormalMap.h" />
+    <ClInclude Include="include\OpenglConstantCatalog.h" />
+    <ClInclude Include="include\OpenglDevice.h" />
+    <ClInclude Include="include\OutputResource.h" />
+    <ClInclude Include="include\PhongLightingStage.h" />
+    <ClInclude Include="include\RenderPipeline.h" />
+    <ClInclude Include="include\RenderPipelineWithGeometryAndBackWrite.h" />
+    <ClInclude Include="include\RenderStage.h" />
+    <ClInclude Include="include\RenderStageNotAssignedInPipeline.h" />
+    <ClInclude Include="include\SceneWriter.h" />
+    <ClInclude Include="include\ShadowBlurStage.h" />
+    <ClInclude Include="include\TestForm1.h" />
+    <ClInclude Include="include\TextureFilter.h" />
+    <ClInclude Include="include\TextureFilterRequest.h" />
+    <ClInclude Include="include\TextureLoader.h" />
+    <ClInclude Include="include\TextureLoadException.h" />
+    <ClInclude Include="include\TextureRequest.h" />
+    <ClInclude Include="include\ToScreenFrameBuffer.h" />
+    <ClInclude Include="include\TransformFeedbackObject.h" />
+    <ClInclude Include="include\TransformFeedbackShader.h" />
+    <ClInclude Include="include\Ui3dDrawable.h" />
+    <ClInclude Include="include\UIButton.h" />
+    <ClInclude Include="include\UICheckBox.h" />
+    <ClInclude Include="include\UIDynamicImage.h" />
+    <ClInclude Include="include\UIFactory.h" />
+    <ClInclude Include="include\UIForm.h" />
+    <ClInclude Include="include\GenericUtils.h" />
+    <ClInclude Include="include\GLSLProgram.h" />
+    <ClInclude Include="include\SceneLight.h" />
+    <ClInclude Include="include\Marcador.h" />
+    <ClInclude Include="include\MemoryManager.h" />
+    <ClInclude Include="include\Mesh.h" />
+    <ClInclude Include="include\MeshFactory.h" />
+    <ClInclude Include="include\MeshMaterial.h" />
+    <ClInclude Include="include\NormalMapShader.h" />
+    <ClInclude Include="include\Object.h" />
+    <ClInclude Include="include\ObjectFactory.h" />
+    <ClInclude Include="include\ObjectLoader.h" />
+    <ClInclude Include="include\ObjectManager.h" />
+    <ClInclude Include="include\ParallaxShader.h" />
+    <ClInclude Include="include\RectangleMeshFactory.h" />
+    <ClInclude Include="include\Scene.h" />
+    <ClInclude Include="include\SceneLoader.h" />
+    <ClInclude Include="include\ShaderManager.h" />
+    <ClInclude Include="include\LightingManager.h" />
+    <ClInclude Include="include\ShadowManager.h" />
+    <ClInclude Include="include\ShadowShader.h" />
+    <ClInclude Include="include\Texture.h" />
+    <ClInclude Include="include\TextureManager.h" />
+    <ClInclude Include="include\TimeManager.h" />
+    <ClInclude Include="include\Toroide.h" />
+    <ClInclude Include="include\UIController.h" />
+    <ClInclude Include="include\UIDynamicTextureState.h" />
+    <ClInclude Include="include\UIElement.h" />
+    <ClInclude Include="include\UIEventHandler.h" />
+    <ClInclude Include="include\UIGraphicList.h" />
+    <ClInclude Include="include\UIGraphicListItem.h" />
+    <ClInclude Include="include\UILabel.h" />
+    <ClInclude Include="include\UIList.h" />
+    <ClInclude Include="include\UINumericInput.h" />
+    <ClInclude Include="include\UIPartialTextureState.h" />
+    <ClInclude Include="include\UIScrollBar.h" />
+    <ClInclude Include="include\UIShader.h" />
+    <ClInclude Include="include\UIState.h" />
+    <ClInclude Include="include\UIStateHolder.h" />
+    <ClInclude Include="include\UIStaticImage.h" />
+    <ClInclude Include="include\UITextBox.h" />
+    <ClInclude Include="include\UIVirtualKeyboard.h" />
+    <ClInclude Include="include\UnstopableTimeManager.h" />
+    <ClInclude Include="include\UserInterfaceStage.h" />
+    <ClInclude Include="include\UVTransformations.h" />
+    <ClInclude Include="include\VarianceShadowMapStage.h" />
+    <ClInclude Include="include\VertexArrayObject.h" />
+    <ClInclude Include="include\VertexBufferObject.h" />
+    <ClInclude Include="include\VideoConfiguration.h" />
+    <ClInclude Include="include\ViewFrustum.h" />
+    <ClInclude Include="include\XmlNodeAttribute.h" />
+    <ClInclude Include="include\XmlParser.h" />
+    <ClInclude Include="include\XmlTree.h" />
+    <ClInclude Include="include\XmlTreeNode.h" />
+    <ClInclude Include="include\XmlUtils.h" />
+    <ClInclude Include="libpng\png.h" />
+    <ClInclude Include="libpng\pngconf.h" />
+    <ClInclude Include="libpng\pngdebug.h" />
+    <ClInclude Include="libpng\pnginfo.h" />
+    <ClInclude Include="libpng\pnglibconf.h" />
+    <ClInclude Include="libpng\pngpriv.h" />
+    <ClInclude Include="libpng\pngstruct.h" />
+    <ClInclude Include="src\GLSLProgramGLES2Implementation.h" />
+    <ClInclude Include="zlib\crc32.h" />
+    <ClInclude Include="zlib\deflate.h" />
+    <ClInclude Include="zlib\gzguts.h" />
+    <ClInclude Include="zlib\inffast.h" />
+    <ClInclude Include="zlib\inffixed.h" />
+    <ClInclude Include="zlib\inflate.h" />
+    <ClInclude Include="zlib\inftrees.h" />
+    <ClInclude Include="zlib\trees.h" />
+    <ClInclude Include="zlib\unistd.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zlib.h" />
+    <ClInclude Include="zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glew\source\glew.c" />
+    <ClCompile Include="libpng\png.c" />
+    <ClCompile Include="libpng\pngerror.c" />
+    <ClCompile Include="libpng\pngget.c" />
+    <ClCompile Include="libpng\pngmem.c" />
+    <ClCompile Include="libpng\pngpread.c" />
+    <ClCompile Include="libpng\pngread.c" />
+    <ClCompile Include="libpng\pngrio.c" />
+    <ClCompile Include="libpng\pngrtran.c" />
+    <ClCompile Include="libpng\pngrutil.c" />
+    <ClCompile Include="libpng\pngset.c" />
+    <ClCompile Include="libpng\pngtest.c" />
+    <ClCompile Include="libpng\pngtrans.c" />
+    <ClCompile Include="libpng\pngwio.c" />
+    <ClCompile Include="libpng\pngwrite.c" />
+    <ClCompile Include="libpng\pngwtran.c" />
+    <ClCompile Include="libpng\pngwutil.c" />
+    <ClCompile Include="src\ApiTexture.cpp" />
+    <ClCompile Include="src\BasicForceMeshDeformationTFShader.cpp" />
+    <ClCompile Include="src\BloomShader.cpp" />
+    <ClCompile Include="src\BloomShader_330.cpp" />
+    <ClCompile Include="src\BloomStage.cpp" />
+    <ClCompile Include="src\BlurShader.cpp" />
+    <ClCompile Include="src\BlurShader_330.cpp" />
+    <ClCompile Include="src\BlurStage.cpp" />
+    <ClCompile Include="src\BlurStageTemplate.cpp" />
+    <ClCompile Include="src\BoundingBox.cpp" />
+    <ClCompile Include="src\Camara.cpp" />
+    <ClCompile Include="src\CamaraPrimeraPersona.cpp" />
+    <ClCompile Include="src\CamaraTerceraPersona.cpp" />
+    <ClCompile Include="src\ChargeableTextureMap.cpp" />
+    <ClCompile Include="src\Cilindro.cpp" />
+    <ClCompile Include="src\Cubo.cpp" />
+    <ClCompile Include="src\DeferredGeometryStage.cpp" />
+    <ClCompile Include="src\DepthOfFieldShader.cpp" />
+    <ClCompile Include="src\DepthOfFieldStage.cpp" />
+    <ClCompile Include="src\DepthTexture.cpp" />
+    <ClCompile Include="src\DiffuseMap.cpp" />
+    <ClCompile Include="src\DifuseDeferredShader.cpp" />
+    <ClCompile Include="src\DifuseForwardShader.cpp" />
+    <ClCompile Include="src\DifuseShader.cpp" />
+    <ClCompile Include="src\DifuseShaderImplementation.cpp" />
+    <ClCompile Include="src\DirectionalMovingObject.cpp" />
+    <ClCompile Include="src\DisplacementMap.cpp" />
+    <ClCompile Include="src\DrawPacket.cpp" />
+    <ClCompile Include="src\Esfera.cpp" />
+    <ClCompile Include="src\GLSLProgramGLES2Implementation.cpp" />
+    <ClCompile Include="src\GLSLProgramGLES3Implementation.cpp" />
+    <ClCompile Include="src\GLSLProgramGLImplementation.cpp" />
+    <ClCompile Include="src\GLSLUniform.cpp" />
+    <ClCompile Include="src\ImageColorChangerShader.cpp" />
+    <ClCompile Include="src\ImageComposer.cpp" />
+    <ClCompile Include="src\ImagePrinterStage.cpp" />
+    <ClCompile Include="src\InterruptionPoint.cpp" />
+    <ClCompile Include="src\JsonUtils.cpp" />
+    <ClCompile Include="src\LightUniform.cpp" />
+    <ClCompile Include="src\LightUniformsContainer.cpp" />
+    <ClCompile Include="src\LinearConstantInterpolationFunction.cpp" />
+    <ClCompile Include="src\QuadraticConstantInterpolationFunction.cpp" />
+    <ClCompile Include="src\LineR2.cpp" />
+    <ClCompile Include="src\LineR3.cpp" />
+    <ClCompile Include="src\MemoryTexture.cpp" />
+    <ClCompile Include="src\MemoryTextureManager.cpp" />
+    <ClCompile Include="src\MeshDrawerShaderImplProxy.cpp" />
+    <ClCompile Include="src\MeshSkeleton.cpp" />
+    <ClCompile Include="src\MeshSkeletonJoint.cpp" />
+    <ClCompile Include="src\OpenglES2ConstantCatalog.cpp" />
+    <ClCompile Include="src\OpenglES2Device.cpp" />
+    <ClCompile Include="src\OpenglES3ConstantCatalog.cpp" />
+    <ClCompile Include="src\OpenglES3Device.cpp" />
+    <ClCompile Include="src\ScaenaAnimationFileWriter.cpp" />
+    <ClCompile Include="src\ScaenaAnimationLoader.cpp" />
+    <ClCompile Include="src\ScaenaModelLoader.cpp" />
+    <ClCompile Include="src\FileTexture.cpp" />
+    <ClCompile Include="src\ForwardGeometryStage.cpp" />
+    <ClCompile Include="src\FrameBuffer.cpp" />
+    <ClCompile Include="src\FrameBufferManager.cpp" />
+    <ClCompile Include="src\FrameBufferRequest.cpp" />
+    <ClCompile Include="src\GenericUtils.cpp" />
+    <ClCompile Include="src\GLSLProgram.cpp" />
+    <ClCompile Include="src\GpuTimeProfiler.cpp" />
+    <ClCompile Include="src\GraphicDevice.cpp" />
+    <ClCompile Include="src\IndexBufferObject.cpp" />
+    <ClCompile Include="src\LightBuilder.cpp" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\MergeTwoImagesShader.cpp" />
+    <ClCompile Include="src\MeshBuffers.cpp" />
+    <ClCompile Include="src\MeshDrawerShader.cpp" />
+    <ClCompile Include="src\MeshKeyframeAnimationTF.cpp" />
+    <ClCompile Include="src\NormalMapDeferredShader.cpp" />
+    <ClCompile Include="src\NormalMapForwardShader.cpp" />
+    <ClCompile Include="src\NormalMapShaderImplementation.cpp" />
+    <ClCompile Include="src\ObjectLight.cpp" />
+    <ClCompile Include="src\ObjectTransformation.cpp" />
+    <ClCompile Include="src\ParallaxDeferredShader.cpp" />
+    <ClCompile Include="src\ParallaxForwardShader.cpp" />
+    <ClCompile Include="src\ParallaxShaderImplementation.cpp" />
+    <ClCompile Include="src\Plane.cpp" />
+    <ClCompile Include="src\PngTextureLoader.cpp" />
+    <ClCompile Include="src\ScaenaModelLoaderHelper.cpp" />
+    <ClCompile Include="src\SceneCache.cpp" />
+    <ClCompile Include="src\SceneLight.cpp" />
+    <ClCompile Include="src\MeshSkeletonInterpolator.cpp" />
+    <ClCompile Include="src\SkinnedAnimation.cpp" />
+    <ClCompile Include="src\SkinnedAnimationKeyFrame.cpp" />
+    <ClCompile Include="src\SkinnedAnimationRepository.cpp" />
+    <ClCompile Include="src\SkinnedDifuseDeferredShader.cpp" />
+    <ClCompile Include="src\SkinnedDifuseForwardShader.cpp" />
+    <ClCompile Include="src\SkinnedDifuseShader.cpp" />
+    <ClCompile Include="src\SkinnedDrawerHelper.cpp" />
+    <ClCompile Include="src\SkinnedMesh.cpp" />
+    <ClCompile Include="src\SkinnedNormalMapDeferredShader.cpp" />
+    <ClCompile Include="src\SkinnedNormalMapForwardShader.cpp" />
+    <ClCompile Include="src\SkinnedNormalMapShader.cpp" />
+    <ClCompile Include="src\SkinnedParallaxDeferredShader.cpp" />
+    <ClCompile Include="src\SkinnedParallaxForwardShader.cpp" />
+    <ClCompile Include="src\SkinnedParallaxShader.cpp" />
+    <ClCompile Include="src\StringUtils.cpp" />
+    <ClCompile Include="src\SystemPerformanceAnalyzer.cpp" />
+    <ClCompile Include="src\TimeParameterInterpolator.cpp" />
+    <ClCompile Include="src\TransformFeedbackShader.cpp" />
+    <ClCompile Include="src\PhongLightingShader.cpp" />
+    <ClCompile Include="src\PhongLightingWithSSAOShader.cpp" />
+    <ClCompile Include="src\RandomTextureGeneratorShader.cpp" />
+    <ClCompile Include="src\SSAORenderStage.cpp" />
+    <ClCompile Include="src\SSAOShader.cpp" />
+    <ClCompile Include="src\TransformableMesh.cpp" />
+    <ClCompile Include="src\Transformation.cpp" />
+    <ClCompile Include="src\NormalMap.cpp" />
+    <ClCompile Include="src\OpenglConstantCatalog.cpp" />
+    <ClCompile Include="src\OpenglDevice.cpp" />
+    <ClCompile Include="src\LineManager.cpp" />
+    <ClCompile Include="src\LineShader.cpp" />
+    <ClCompile Include="src\Marcador.cpp" />
+    <ClCompile Include="src\MemoryManager.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\MeshFactory.cpp" />
+    <ClCompile Include="src\MeshMaterial.cpp" />
+    <ClCompile Include="src\NormalMapShader.cpp" />
+    <ClCompile Include="src\Object.cpp" />
+    <ClCompile Include="src\ObjectFactory.cpp" />
+    <ClCompile Include="src\ObjectLoader.cpp" />
+    <ClCompile Include="src\ObjectManager.cpp" />
+    <ClCompile Include="src\ParallaxShader.cpp" />
+    <ClCompile Include="src\PhongLightingStage.cpp" />
+    <ClCompile Include="src\RectangleMeshFactory.cpp" />
+    <ClCompile Include="src\RenderPipeline.cpp" />
+    <ClCompile Include="src\RenderPipelineWithGeometryAndBackWrite.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\SceneLoader.cpp" />
+    <ClCompile Include="src\SceneWriter.cpp" />
+    <ClCompile Include="src\ShaderManager.cpp" />
+    <ClCompile Include="src\LightingManager.cpp" />
+    <ClCompile Include="src\ShadowBlurStage.cpp" />
+    <ClCompile Include="src\ShadowManager.cpp" />
+    <ClCompile Include="src\ShadowShader.cpp" />
+    <ClCompile Include="src\TestForm1.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\TextureFilterRequest.cpp" />
+    <ClCompile Include="src\TextureLoader.cpp" />
+    <ClCompile Include="src\TextureManager.cpp" />
+    <ClCompile Include="src\TextureRequest.cpp" />
+    <ClCompile Include="src\TimeManager.cpp" />
+    <ClCompile Include="src\Toroide.cpp" />
+    <ClCompile Include="src\ToScreenFrameBuffer.cpp" />
+    <ClCompile Include="src\TransformFeedbackObject.cpp" />
+    <ClCompile Include="src\Ui3dDrawable.cpp" />
+    <ClCompile Include="src\UIButton.cpp" />
+    <ClCompile Include="src\UICheckBox.cpp" />
+    <ClCompile Include="src\UIController.cpp" />
+    <ClCompile Include="src\UIDynamicImage.cpp" />
+    <ClCompile Include="src\UIDynamicTextureState.cpp" />
+    <ClCompile Include="src\UIElement.cpp" />
+    <ClCompile Include="src\UIFactory.cpp" />
+    <ClCompile Include="src\UIForm.cpp" />
+    <ClCompile Include="src\UIGraphicList.cpp" />
+    <ClCompile Include="src\UIGraphicListItem.cpp" />
+    <ClCompile Include="src\UILabel.cpp" />
+    <ClCompile Include="src\UIList.cpp" />
+    <ClCompile Include="src\UINumericInput.cpp" />
+    <ClCompile Include="src\UIPartialTextureState.cpp" />
+    <ClCompile Include="src\UIScrollBar.cpp" />
+    <ClCompile Include="src\UIShader.cpp" />
+    <ClCompile Include="src\UIState.cpp" />
+    <ClCompile Include="src\UIStateHolder.cpp" />
+    <ClCompile Include="src\UIStaticImage.cpp" />
+    <ClCompile Include="src\UITextBox.cpp" />
+    <ClCompile Include="src\UIVirtualKeyboard.cpp" />
+    <ClCompile Include="src\UnstopableTimeManager.cpp" />
+    <ClCompile Include="src\UserInterfaceStage.cpp" />
+    <ClCompile Include="src\UVTransformations.cpp" />
+    <ClCompile Include="src\VarianceShadowMapStage.cpp" />
+    <ClCompile Include="src\VertexArrayObject.cpp" />
+    <ClCompile Include="src\VertexBufferObject.cpp" />
+    <ClCompile Include="src\VideoConfiguration.cpp" />
+    <ClCompile Include="src\ViewFrustum.cpp" />
+    <ClCompile Include="src\XmlNodeAttribute.cpp" />
+    <ClCompile Include="src\XmlParser.cpp" />
+    <ClCompile Include="src\XmlTree.cpp" />
+    <ClCompile Include="src\XmlTreeNode.cpp" />
+    <ClCompile Include="src\XmlUtils.cpp" />
+    <ClCompile Include="zlib\adler32.c" />
+    <ClCompile Include="zlib\compress.c" />
+    <ClCompile Include="zlib\crc32.c" />
+    <ClCompile Include="zlib\deflate.c" />
+    <ClCompile Include="zlib\gzclose.c" />
+    <ClCompile Include="zlib\gzlib.c" />
+    <ClCompile Include="zlib\gzread.c" />
+    <ClCompile Include="zlib\gzwrite.c" />
+    <ClCompile Include="zlib\infback.c" />
+    <ClCompile Include="zlib\inffast.c" />
+    <ClCompile Include="zlib\inflate.c" />
+    <ClCompile Include="zlib\inftrees.c" />
+    <ClCompile Include="zlib\trees.c" />
+    <ClCompile Include="zlib\uncompr.c" />
+    <ClCompile Include="zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zlib\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
