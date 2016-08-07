@@ -1,3 +1,5 @@
+precision mediump float;
+precision mediump int;
 
 varying mediump vec3 position;
 varying mediump vec2 TexCoord;

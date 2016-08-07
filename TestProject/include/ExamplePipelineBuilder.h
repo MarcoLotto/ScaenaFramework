@@ -6,7 +6,7 @@
 #include "DeferredGeometryStage.h"
 #include "DepthOfFieldStage.h"
 
-static class ExamplePipelineBuilder {
+class ExamplePipelineBuilder {
 
 private:
 	static ForwardGeometryStage* getGeometryForwardStage(UIController* uiController, Scene* scene, RenderPipelineWithGeometryAndBackWrite* pipeline);

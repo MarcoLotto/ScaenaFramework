@@ -96,6 +96,8 @@ RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration4(UIContro
 
 	// Creamos un stage de depth of field
 	DepthOfFieldStage* depthOfFieldStage = getDepthofFieldStage(geometryStage, lightingStage, size, nearDepthActive);
+	depthOfFieldStage->setDepthAtBlurStart(7.0f);
+	depthOfFieldStage->setBlurFalloff(1.0f);
 	
 	// Cargamos las etapas al pipeline (geometria e iluminacion ocurren en diferentes etapas)
 	renderPipelineImp->addGeometryStage(geometryStage);

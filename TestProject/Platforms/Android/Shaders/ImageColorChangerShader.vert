@@ -1,3 +1,5 @@
+precision mediump float;
+precision mediump int;
 
 attribute highp vec3 VertexPosition; 
 attribute highp vec2 TextureCoords;
@@ -9,5 +11,5 @@ uniform highp mat4 PVMmatrix;
 void main()
 {	
 	TexCoord = TextureCoords;
-	gl_Position = PVMmatrix * vec4(VertexPosition, 1.0f);	
+	gl_Position = PVMmatrix * vec4(VertexPosition, 1.0);	
 }

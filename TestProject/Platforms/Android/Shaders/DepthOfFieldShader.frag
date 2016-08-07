@@ -1,4 +1,7 @@
-#version 420
+#version 300 es
+
+precision mediump float;
+precision mediump int;
 
 in vec2 textureCoords;
 
@@ -29,7 +32,7 @@ uniform vec2 imageSize;
 
 // A partir de la textura de depth se recontruye la posicion del fragmento en el subespacio de view-model
 float getFragmentLinearDepth(){ 
-    float depth = texture( depthTexture, textureCoords ).x * 2.0f - 1.0f;
+    float depth = texture( depthTexture, textureCoords ).x * 2.0 - 1.0;
     return sceneProj[3][2] / (depth + sceneProj[2][2]);
 }
 
@@ -38,8 +41,8 @@ float getDepthAttenuation(){
 	float linearDepth = getFragmentLinearDepth();
 	float distanceBetweenDepths = abs(linearDepth - depthAtBlurStart) * blurFalloff;
 	float frontDepthAttenuation = float(blurToFront) * (distanceBetweenDepths * float(linearDepth > depthAtBlurStart));
-	float backDepthAttenuation = float(1.0f - blurToFront) * (distanceBetweenDepths * float(linearDepth < depthAtBlurStart));
-	return min(frontDepthAttenuation + backDepthAttenuation, 1.0f);
+	float backDepthAttenuation = float(1.0 - blurToFront) * (distanceBetweenDepths * float(linearDepth < depthAtBlurStart));
+	return min(frontDepthAttenuation + backDepthAttenuation, 1.0);
 }	
 
 subroutine(blurPassType)
@@ -47,8 +50,8 @@ vec4 pass1(){
 	// La atenuacion en el blur para este depth
 	float depthAttenuation = getDepthAttenuation();
 		
-	float dx = 1.0f / imageSize.x;
-	vec4 finalFrag = texture(textureToBlur, textureCoords) * (weight[0] * depthAttenuation + (1.0f - depthAttenuation));
+	float dx = 1.0 / imageSize.x;
+	vec4 finalFrag = texture(textureToBlur, textureCoords) * (weight[0] * depthAttenuation + (1.0 - depthAttenuation));
 		
 	finalFrag += texture(textureToBlur, vec2(textureCoords.x + positionIncrement[1] * dx, textureCoords.y)) * weight[1] * depthAttenuation;
 	finalFrag += texture(textureToBlur, vec2(textureCoords.x - positionIncrement[1] * dx, textureCoords.y)) * weight[1] * depthAttenuation;
@@ -64,8 +67,8 @@ vec4 pass2(){
 	// La atenuacion en el blur para este depth
 	float depthAttenuation = getDepthAttenuation();
 		
-	float dy = 1.0f / imageSize.y;
-	vec4 finalFrag = texture(textureToBlur, textureCoords) * (weight[0] * depthAttenuation + (1.0f - depthAttenuation));
+	float dy = 1.0 / imageSize.y;
+	vec4 finalFrag = texture(textureToBlur, textureCoords) * (weight[0] * depthAttenuation + (1.0 - depthAttenuation));
 
 	finalFrag += texture(textureToBlur, vec2(textureCoords.x, textureCoords.y + positionIncrement[1] * dy)) * weight[1] * depthAttenuation;
 	finalFrag += texture(textureToBlur, vec2(textureCoords.x, textureCoords.y - positionIncrement[1] * dy)) * weight[1] * depthAttenuation;

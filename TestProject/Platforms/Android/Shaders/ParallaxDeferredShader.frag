@@ -1,5 +1,8 @@
 #version 300 es
 
+precision mediump float;
+precision mediump int;
+
 in mediump vec3 posicion;
 in mediump vec3 normal;
 in mediump vec2 TexCoord;
@@ -17,9 +20,9 @@ uniform float normalFactor;
 uniform float displacementFactor;
 uniform float atenuationFactor;
 
-out vec3 NormalData;
-out vec3 ColorData;
-out vec3 MaterialData;
+layout(location = 0) out vec3 NormalData;
+layout(location = 1) out vec3 ColorData;
+layout(location = 2) out vec3 MaterialData;
 
  struct Material{
 	float Ka;

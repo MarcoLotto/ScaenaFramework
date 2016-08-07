@@ -1,5 +1,8 @@
 #version 300 es
 
+precision mediump float;
+precision mediump int;
+
 in highp vec3 VertexPosition; 
 in highp vec3 VertexNormal; 
 in highp vec2 VertexTexCoord; 

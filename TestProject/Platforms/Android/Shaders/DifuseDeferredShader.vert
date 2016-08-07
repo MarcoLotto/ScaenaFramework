@@ -15,6 +15,6 @@ void main()
 	normal = normalize(normalMatrix * VertexNormal); 
 	TexCoord = VertexTexCoord;
 
-	gl_Position = PVMmatrix * vec4(VertexPosition, 1.0f);
+	gl_Position = PVMmatrix * vec4(VertexPosition, 1.0);
 }
 	

@@ -1,13 +1,16 @@
 #version 300 es
 
+precision mediump float;
+precision mediump int;
+
 in mediump vec3 normal;
 in mediump vec2 TexCoord;
 in mediump mat3 toObjectLocal;
 in mediump mat3 normMatrix;
 
-out vec3 NormalData;
-out vec3 ColorData;
-out vec3 MaterialData;
+layout(location = 0) out vec3 NormalData;
+layout(location = 1) out vec3 ColorData;
+layout(location = 2) out vec3 MaterialData;
 
 uniform sampler2D diffuseMap; 
 uniform sampler2D normalMap; 

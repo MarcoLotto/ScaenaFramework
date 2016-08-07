@@ -1,3 +1,6 @@
+precision mediump float;
+precision mediump int;
+
 varying highp vec2 TexCoord;
 
 uniform sampler2D image;

@@ -1,4 +1,7 @@
-#version 420
+#version 300 es
+
+precision mediump float;
+precision mediump int;
 
 in vec2 TexCoord;
 out vec4 textureData;
@@ -10,13 +13,13 @@ uniform float valueVectorBlue[100];
 uniform vec2 size;
 
 unsigned int getIndexByTextureCoord(){
-	float xIndex = floor(TexCoord.x / (1.0f / size.x));
-	float yIndex = floor(TexCoord.y / (1.0f / size.y));
+	float xIndex = floor(TexCoord.x / (1.0 / size.x));
+	float yIndex = floor(TexCoord.y / (1.0 / size.y));
 	return unsigned int(size.x * yIndex + xIndex);
 }
 
 void main()
 {	
 	unsigned int i = getIndexByTextureCoord();
-	textureData = vec4(valueVectorRed[i], valueVectorGreen[i], valueVectorBlue[i] , 1.0f );
+	textureData = vec4(valueVectorRed[i], valueVectorGreen[i], valueVectorBlue[i] , 1.0 );
 }

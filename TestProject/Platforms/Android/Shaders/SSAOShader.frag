@@ -1,4 +1,7 @@
-#version 420
+#version 300 es
+
+precision mediump float;
+precision mediump int;
 
 in vec2 TexCoord;
 out vec4 OcclusionData;
@@ -25,9 +28,9 @@ uniform mat4 sceneProj;
 
 // Dada una coordenada de textura de un punto, devuelve su posicion respecto a la camara
 vec3 getPositionFromPoint(vec2 coordToFetch){
-    float depth = texture( DepthTex, coordToFetch ).x * 2.0f - 1.0f;
+    float depth = texture( DepthTex, coordToFetch ).x * 2.0 - 1.0;
     float viewDepth = -sceneProj[3][2] / (depth + sceneProj[2][2]);
-	vec2 nDc = (2.0f * coordToFetch - vec2(1.0f)) * viewDepth;
+	vec2 nDc = (2.0 * coordToFetch - vec2(1.0)) * viewDepth;
     vec3 viewPosition = vec3(nDc.x / -sceneProj[0][0], nDc.y / -sceneProj[1][1], viewDepth);
 	return -viewPosition;
 }
@@ -35,7 +38,7 @@ vec3 getPositionFromPoint(vec2 coordToFetch){
 // Dada una coordenada de textura de un punto, devuelve la matriz de transformacion orientada a la normal del punto
 mat3 getToObjectLocalMatrixFromPoint(vec2 coordToFetch, vec3 randomVector){
 	randomVector = normalize(randomVector);
-	vec3 normal = -normalize(vec3(texture( NormalTex, coordToFetch)) * 2.0f - 1.0f);
+	vec3 normal = -normalize(vec3(texture( NormalTex, coordToFetch)) * 2.0 - 1.0);
 	vec3 tangent = normalize(randomVector - normal * dot(randomVector, normal));
 	vec3 bitangent = cross(normal, tangent);
 	return mat3(tangent, bitangent, normal);
@@ -43,9 +46,9 @@ mat3 getToObjectLocalMatrixFromPoint(vec2 coordToFetch, vec3 randomVector){
 
 // Lee la textura de valores random y consigue el valor random del fragmento
 vec3 getRandomVector(){
-	vec2 tamPixel = vec2(1.0f / imageSize.x, 1.0f / imageSize.y);
+	vec2 tamPixel = vec2(1.0 / imageSize.x, 1.0 / imageSize.y);
 	vec2 finalTexCoord = vec2(TexCoord.x / (randomTextureSize.x * tamPixel.x), TexCoord.y / (randomTextureSize.y * tamPixel.y));
-	return 2.0f*texture( randomTexture, finalTexCoord ).xyz - 1.0f;
+	return 2.0*texture( randomTexture, finalTexCoord ).xyz - 1.0;
 }
 
 // Aplica las tranformaciones de la normal al kernel, para que este se oriente respecto a la misma
@@ -70,8 +73,8 @@ void main()
 	mat3 toObjectLocalMatrix = getToObjectLocalMatrixFromPoint(TexCoord, randomVector);
 	
 	vec3 evaluatedPointPosition = getPositionFromPoint(TexCoord);
-	float occlusionFactor = 1.0f;
-	float occlusionDecrement = (1.0f / (1.0f*samplesCount)); 
+	float occlusionFactor = 1.0;
+	float occlusionDecrement = (1.0 / (1.0*samplesCount)); 
 	for(int i = 0; i < 3*samplesCount; i += 3){
 		// Roto el kernel segun la normal y el vector de random, y lo proyecto en la pantalla para conseguir las coordenadas en donde hacer fetch
 		vec3 orientedKernel = transformSampleKernel(evaluatedPointPosition, vec3(sampleKernel[i], sampleKernel[i+1], sampleKernel[i+2]), toObjectLocalMatrix);
@@ -81,10 +84,10 @@ void main()
 		float sampleDepth = getPositionFromPoint(sampleCoords).z;
 			
 		// Si la profundidad es mayor a la del sample, entonces el punto esta occluded (salvo que sea mucha la diferencia)	
-		float hasAO = (sampleDepth < orientedKernel.z ? 1.0f : 0.0f);
-		float aoRadiusAffects = (abs(orientedKernel.z - sampleDepth) < 20.0f ? 1.0 : 0.0);		
-		occlusionFactor -= occlusionDecrement * (hasAO * aoRadiusAffects + (1.0f-aoRadiusAffects) * hasAO * 0.5f);			
+		float hasAO = (sampleDepth < orientedKernel.z ? 1.0 : 0.0);
+		float aoRadiusAffects = (abs(orientedKernel.z - sampleDepth) < 20.0 ? 1.0 : 0.0);		
+		occlusionFactor -= occlusionDecrement * (hasAO * aoRadiusAffects + (1.0-aoRadiusAffects) * hasAO * 0.5);			
 	}
-	float finalSaturate = 2.0f*occlusionFactor + 2.0f*occlusionFactor*occlusionFactor - 2.0f*occlusionFactor*occlusionFactor*occlusionFactor;
-	OcclusionData = vec4(0.0f, clamp(finalSaturate, 0.0, 1.0), 0.0f , 1.0f );
+	float finalSaturate = 2.0*occlusionFactor + 2.0*occlusionFactor*occlusionFactor - 2.0*occlusionFactor*occlusionFactor*occlusionFactor;
+	OcclusionData = vec4(0.0, clamp(finalSaturate, 0.0, 1.0), 0.0 , 1.0 );
 }

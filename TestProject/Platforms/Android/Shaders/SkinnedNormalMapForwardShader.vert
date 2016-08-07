@@ -1,3 +1,5 @@
+precision mediump float;
+precision mediump int;
 
 attribute highp vec3 VertexPosition; 
 attribute highp vec3 VertexNormal; 

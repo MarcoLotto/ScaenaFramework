@@ -11,6 +11,6 @@ uniform mat4 proyMatrix;
 void main()
 {
 	TexCoord = VertexDefaultTexCoord;
-	gl_Position = proyMatrix * modelMatrix * vec4(VertexPosition, 1.0f);
+	gl_Position = proyMatrix * modelMatrix * vec4(VertexPosition, 1.0);
 }
 	
