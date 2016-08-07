@@ -27,3 +27,13 @@
 *.exe
 *.out
 *.app
+
+# Folders
+Graphics/Debug/
+Graphics/WindowConnectors/Debug/
+TestProject/Debug/
+TestProject/build/
+
+# Project files
+*.sdf
+*.opensdf
