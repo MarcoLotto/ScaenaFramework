@@ -3,8 +3,8 @@ CPP_COMPILER = g++
 C_COMPILER = gcc
 
 # Include paths...
-Debug_Include_Path=-I"CommonInclude" -I"freeglut/include" -I"glutConnector/include"
-Release_Include_Path=-I"CommonInclude" -I"freeglut/include" -I"glutConnector/include"
+Debug_Include_Path=-I"CommonInclude" -I"freeglut/include" -I"glutConnector/include" -I"../../glm-0.9.3.2"
+Release_Include_Path=-I"CommonInclude" -I"freeglut/include" -I"glutConnector/include" -I"../../glm-0.9.3.2"
 
 # Preprocessor definitions...
 Debug_Preprocessor_Definitions=-D GCC_BUILD -D _DEBUG -D _CONSOLE -D FREEGLUT_STATIC

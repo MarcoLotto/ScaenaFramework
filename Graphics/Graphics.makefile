@@ -3,8 +3,8 @@ CPP_COMPILER = g++
 C_COMPILER = gcc
 
 # Include paths...
-Debug_Include_Path=-I"../glm-0.9.3.2" -I"include" -I"WindowConnectors/freeglut/include" -I"glew/include" -I"WindowConnectors/CommonInclude" -I"WindowConnectors/glutConnector/include" -I"./libpng" -I"./zlib"
-Release_Include_Path=-I"../glm-0.9.3.2" -I"include" -I"WindowConnectors/freeglut/include" -I"glew/include" -I"WindowConnectors/CommonInclude" -I"WindowConnectors/glutConnector/include" -I"./libpng" -I"./zlib"
+Debug_Include_Path=-I"../glm-0.9.3.2" -I"include" -I"WindowConnectors/freeglut/include" -I"glew/include" -I"WindowConnectors/CommonInclude" -I"WindowConnectors/glutConnector/include" -I"./libpng" -I"./zlib" -I"glew/include/GLES" -I"../ExternalLibs"
+Release_Include_Path=-I"../glm-0.9.3.2" -I"include" -I"WindowConnectors/freeglut/include" -I"glew/include" -I"WindowConnectors/CommonInclude" -I"WindowConnectors/glutConnector/include" -I"./libpng" -I"./zlib" -I"glew/include/GLES" -I"../ExternalLibs"
 
 # Preprocessor definitions...
 Debug_Preprocessor_Definitions=-D GCC_BUILD -D _DEBUG -D _CONSOLE -D FREEGLUT_STATIC -D GLEW_STATIC -D OPENGL4

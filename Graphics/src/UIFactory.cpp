@@ -4,6 +4,7 @@
 * License: MIT - 2016
 **********************************/
 
+#include <string.h>
 #include "UIFactory.h"
 #include "UiButton.h"
 #include "UiLabel.h"

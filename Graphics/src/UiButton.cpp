@@ -4,6 +4,7 @@
 * License: MIT - 2016
 **********************************/
 
+#include <string.h>
 #include "UiButton.h"
 
 #define DEFAULT_FONT "./Textures/UI/font2.png"

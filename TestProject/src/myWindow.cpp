@@ -11,7 +11,6 @@
 #include "SceneLoader.h"
 #include "VideoConfiguration.h"
 #include "MainMenuForm.h"
-#include "TestForm1.h"
 
 #include "GraphicDevice.h"
 #include "MemoryManager.h"

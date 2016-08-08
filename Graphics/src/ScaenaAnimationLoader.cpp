@@ -4,6 +4,7 @@
 * License: MIT - 2016
 **********************************/
 
+#include <string.h>
 #include "ScaenaAnimationLoader.h"
 #include "XmlUtils.h"
 #include "AnimationLoadException.h"
