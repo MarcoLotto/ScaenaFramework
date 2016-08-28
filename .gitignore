@@ -33,9 +33,10 @@ Graphics/Debug/
 Graphics/Release/
 Graphics/WindowConnectors/Debug/
 Graphics/WindowConnectors/Release/
-TestProject/Debug/
-TestProject/Release/
-TestProject/build/
+ExampleProject/Debug/
+ExampleProject/Release/
+ExampleProject/build/
+22OnField/
 
 # Project files
 *.sdf

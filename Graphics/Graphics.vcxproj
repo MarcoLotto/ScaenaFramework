@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)ExternalLibs;$(ProyectDir)include;$(ProyectDir)zlib;$(ProyectDir)libpng;$(SolutionDir)glm-0.9.3.2;$(ProyectDir)test\include;$(SolutionDir)Graphics\WindowConnectors\CommonInclude;$(SolutionDir)Graphics\glew\include;$(SolutionDir)Graphics\glew\include\GLES;$(SolutionDir)Graphics\WindowConnectors\glutConnector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProyectDir)..\ExternalLibs;$(ProyectDir)include;$(ProyectDir)zlib;$(ProyectDir)libpng;$(ProyectDir)..\glm-0.9.3.2;$(ProyectDir)test\include;$(ProyectDir)..\Graphics\WindowConnectors\CommonInclude;$(ProyectDir)..\Graphics\glew\include;$(ProyectDir)..\Graphics\glew\include\GLES;$(ProyectDir)..\Graphics\WindowConnectors\glutConnector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;OPENGL4;FREEGLUT_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -258,7 +258,6 @@
     <ClInclude Include="include\RenderStageNotAssignedInPipeline.h" />
     <ClInclude Include="include\SceneWriter.h" />
     <ClInclude Include="include\ShadowBlurStage.h" />
-    <ClInclude Include="include\TestForm1.h" />
     <ClInclude Include="include\TextureFilter.h" />
     <ClInclude Include="include\TextureFilterRequest.h" />
     <ClInclude Include="include\TextureLoader.h" />
@@ -506,7 +505,6 @@
     <ClCompile Include="src\ShadowBlurStage.cpp" />
     <ClCompile Include="src\ShadowManager.cpp" />
     <ClCompile Include="src\ShadowShader.cpp" />
-    <ClCompile Include="src\TestForm1.cpp" />
     <ClCompile Include="src\Texture.cpp" />
     <ClCompile Include="src\TextureFilterRequest.cpp" />
     <ClCompile Include="src\TextureLoader.cpp" />

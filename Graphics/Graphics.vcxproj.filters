@@ -40,9 +40,6 @@
     <Filter Include="include\User Interface">
       <UniqueIdentifier>{cc2ef210-84ac-43dc-b049-a4f505d7f1eb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\User Interface\FormsForTest">
-      <UniqueIdentifier>{6bd71730-8f5a-428a-adeb-3cf9b2108a23}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\User Interface\Components">
       <UniqueIdentifier>{e749ff8b-6ced-45d4-9d58-f7ac761db12f}</UniqueIdentifier>
     </Filter>
@@ -78,9 +75,6 @@
     </Filter>
     <Filter Include="src\User Interface">
       <UniqueIdentifier>{0a653171-6aac-4819-a0c9-954d19df535d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\User Interface\FormsForTest">
-      <UniqueIdentifier>{5a70b90f-79e3-411d-9e40-02f316df9956}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\User Interface\Components">
       <UniqueIdentifier>{6967dbe4-2c40-41fd-890b-9a12d1558bab}</UniqueIdentifier>
@@ -311,9 +305,6 @@
     </ClInclude>
     <ClInclude Include="include\UIForm.h">
       <Filter>include\User Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="include\TestForm1.h">
-      <Filter>include\User Interface\FormsForTest</Filter>
     </ClInclude>
     <ClInclude Include="include\UIFactory.h">
       <Filter>include\User Interface</Filter>
@@ -1069,9 +1060,6 @@
     </ClCompile>
     <ClCompile Include="src\UIStateHolder.cpp">
       <Filter>src\User Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TestForm1.cpp">
-      <Filter>src\User Interface\FormsForTest</Filter>
     </ClCompile>
     <ClCompile Include="src\UIFactory.cpp">
       <Filter>src\User Interface</Filter>
