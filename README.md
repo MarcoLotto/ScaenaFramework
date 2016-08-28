@@ -20,7 +20,7 @@ make
 This will build all the modules (WindowConnector, Graphics and the example, testProject). It will not build ModelTransformer cause it is not allways necesary and you need de fbx library in order to do so.
 
 ## Building on Windows
-You must have Visual Studio 2012 or superior installed in order to build the project. Then you simply open the ScaenaFramework.sln file in project root folder and build it from Visual Studio. 
+You must have Visual Studio 2012 or superior installed in order to build the project. Then in order to compile the Graphics library, you simply open the Graphics.sln located in the Graphics folder and build it from Visual Studio. If you want to build an entire project as ExampleProject, go to the ExampleProject folder, open ExampleProject.sln and build it. The same applies to the ModelConverter module.  
 
 ## Building on Android
 You must have the Android SDK and NDK in your machine (More on this later). Then go to YOUR project folder (ex. TestProject) where the file android-build.makefile resides and execute:
