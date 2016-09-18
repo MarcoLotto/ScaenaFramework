@@ -15,10 +15,10 @@
     <ClCompile Include="src\myWindow.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\MainMenuForm.cpp">
+    <ClCompile Include="src\ExamplePipelineBuilder.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\ExamplePipelineBuilder.cpp">
+    <ClCompile Include="src\PipelineSelectorForm.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,10 +26,10 @@
     <ClInclude Include="include\myWindow.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\MainMenuForm.h">
+    <ClInclude Include="include\ExamplePipelineBuilder.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\ExamplePipelineBuilder.h">
+    <ClInclude Include="include\PipelineSelectorForm.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

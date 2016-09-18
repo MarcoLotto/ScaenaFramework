@@ -84,12 +84,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\MainMenuForm.cpp" />
+    <ClCompile Include="src\PipelineSelectorForm.cpp" />
     <ClCompile Include="src\myWindow.cpp" />
     <ClCompile Include="src\ExamplePipelineBuilder.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\MainMenuForm.h" />
+    <ClInclude Include="include\PipelineSelectorForm.h" />
     <ClInclude Include="include\myWindow.h" />
     <ClInclude Include="include\ExamplePipelineBuilder.h" />
   </ItemGroup>

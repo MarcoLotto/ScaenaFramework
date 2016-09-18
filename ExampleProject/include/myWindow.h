@@ -32,6 +32,8 @@ public:
 	virtual void OnMouseMove(int x, int y);
 	virtual void OnLeftMouseDrag(int x, int y);
 	virtual void OnKeyDown(int nKey, char cAscii);
-	
 	virtual void OnKeyUp(int nKey, char cAscii);
+
+	// Métodos auxiliares
+	void checkPipelineSelected();
 };

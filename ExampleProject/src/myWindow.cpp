@@ -10,7 +10,7 @@
 #include "MeshFactory.h"
 #include "SceneLoader.h"
 #include "VideoConfiguration.h"
-#include "MainMenuForm.h"
+#include "PipelineSelectorForm.h"
 
 #include "GraphicDevice.h"
 #include "MemoryManager.h"
@@ -37,6 +37,8 @@ Scene* scene;
 vec2 actualMouseCoords;
 CamaraPrimeraPersona camara;
 RenderPipeline* renderPipeline;
+PipelineSelectorForm* pipelineSelectorForm;
+PipelineSelectionIndex selectedPipelineIndex;
 
 myWindow::myWindow()
 {	
@@ -94,8 +96,7 @@ void keyboardAction(){
 
 vec2 coordMouse = vec2(0.0f);
 void mouseMove(int x, int y){	
-	//Esto es una negrada para poder saber de afuera la posicion del mouse. Refactor ya!
-	actualMouseCoords = vec2(x, y);
+	actualMouseCoords = vec2(x, y);  // REVIEW
 
 	static vec2 angulo = vec2(0.0f);
 	float sensibilidad = 0.6f;
@@ -118,12 +119,9 @@ void mouseMove(int x, int y){
 //									UPDATES DE LA ESCENA
 //********************************************************************************************
 void myWindow::OnUpdate(){	
-	//**************************************************************+
-	//GraphicDevice::getInstance()->bindMouseFunction(mouseMove);
+	// REVIEW: Esto no seria necesario en este ejemplo
 	keyboardAction();	
-	//NEGRADA al por mayor. Es para poder definir las coordenadas del mouse. Me da asco. Sacar esto.
-	this->uiController->setMouseActualCoords(actualMouseCoords);
-	//**************************************************************+
+	this->uiController->setMouseActualCoords(actualMouseCoords);  
 	
 	//Actualizo la escena
 	if(scene != NULL)
@@ -138,15 +136,15 @@ void myWindow::OnUpdate(){
 	// REVIEW: Hacemos girar a la camara
 	camara.setRotationYaw(TimeManager::getOSTimeInMilliseconds() / 100.0f);  // BORRAR
 	camara.setRotationPitch(-90 + 10.0f * glm::cos(TimeManager::getOSTimeInMilliseconds() / 4000.0f));  // BORRAR
+
+	// Vamos a checkear el estado del form selector de pipeline para cambiar el pipeline
+	this->checkPipelineSelected();
 }
 
 void configurarCamaraTerceraPersonaParaTest(){
-	//camara.setDistanceToPoint(-6.0f);
-	//camara.setLookAtPoint(vec3(0.0f, -6.0f, -5.5f));
 	camara.setRotationPitch(-90.0f);
 	camara.setRotationYaw(180.0f);
 	camara.setEyePosition(vec3(0.0f, 0.0f, 1.0f));
-	//camara.setMaxRotationAngles(vec3(-90.0f, 0.0f, 180.0f), vec3(35.0f, 0.0f, 60.0f));
 }
 
 //********************************************************************************************
@@ -200,56 +198,33 @@ void setRenderPipelineConfiguration5(UIController* uiController){
 void setRenderPipelineConfiguration6(UIController* uiController){
 	scene->setCurrentCamera(&camara);
 	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfiguration6(uiController, scene);
+	selectedPipelineIndex = pipelineSelectorForm->getSelectedPipeline();
 }
 
-void configureTransformableMesh(Scene* scene, string objectId, string meshName, vec3 staticPointPosition){
-	int objectIndex = scene->getObjectManager()->getPositionByObjectId(objectId);
-	if(objectIndex != -1){
-		Mesh* rootMesh = scene->getObjectManager()->getObjectByPosition(objectIndex)->getMesh();
-		Mesh* meshCortina1 = rootMesh->findSubMesh(meshName);
-		if(meshCortina1 != NULL){
-			// Transformo la cortina en un transformable mesh
-			TransformableMesh* transformableMesh = new TransformableMesh();
-			meshCortina1->clone(transformableMesh);
-			transformableMesh->init();
-
-			//Creo y asigno el transformation shader
-			BasicForceMeshDeformationTFShader* transformationShader = new BasicForceMeshDeformationTFShader();
-			transformationShader->setForceDirection(vec3(-0.5f, 0.0f, 1.0f));
-			transformationShader->setForceIntensity(8.0f);
-			transformationShader->setStaticPoint(staticPointPosition);
-			transformationShader->setStaticStrength(30.0f);
-			transformationShader->setAnimationTime(5000);
-			transformableMesh->setTransformShaderOnlyToThisMesh(transformationShader);
-
-			// Lo reemplazo por la cortina original
-			rootMesh->swapSubMesh(meshName, transformableMesh);
-			int hola = 1;
+// Esto podria implementarse mas optimo y prolijo con un callback, pero para mantener la simplicidad del ejemplo lo hacemos asi
+void myWindow::checkPipelineSelected(){
+	if(selectedPipelineIndex != pipelineSelectorForm->getSelectedPipeline()){
+		switch(pipelineSelectorForm->getSelectedPipeline()){
+			case PipelineSelectionIndex::p1:
+				setRenderPipelineConfiguration1(this->uiController);
+			break;
+			case PipelineSelectionIndex::p2:
+				setRenderPipelineConfiguration2(this->uiController);
+			break;
+			case PipelineSelectionIndex::p3:
+				setRenderPipelineConfiguration3(this->uiController);
+			break;
+			case PipelineSelectionIndex::p4:
+				setRenderPipelineConfiguration4(this->uiController, false);
+			break;
+			case PipelineSelectionIndex::p5:
+				setRenderPipelineConfiguration4(this->uiController, true);
+			break;
+			case PipelineSelectionIndex::p6:
+				setRenderPipelineConfiguration6(this->uiController);
+			break;
 		}
-	}
-}
-
-void configureKeyFrameAnimatedMesh(Scene* scene, string objectId, string meshName, string meshFilename){
-	int objectIndex = scene->getObjectManager()->getPositionByObjectId(objectId);
-	if(objectIndex != -1){
-		Mesh* rootMesh = scene->getObjectManager()->getObjectByPosition(objectIndex)->getMesh();
-		Mesh* meshCortina1 = rootMesh->findSubMesh(meshName);
-		if(meshCortina1 != NULL){
-			// Transformo la cortina en un transformable mesh
-			TransformableMesh* transformableMesh = new TransformableMesh();
-			meshCortina1->clone(transformableMesh);
-			transformableMesh->init();
-
-			//Creo y asigno el transformation shader  //TODO: Estoy usando el mismo mesh solo para probar!
-			Mesh* destinyMesh = MeshFactory::getInstance()->createMeshFromFile(meshFilename);
-			destinyMesh->init();
-			MeshKeyframeAnimationTF* transformationShader = new MeshKeyframeAnimationTF(destinyMesh->findSubMesh(meshName)->getMeshBuffers());			
-			transformationShader->setAnimationTime(1000);
-			transformableMesh->setTransformShaderOnlyToThisMesh(transformationShader);
-
-			// Lo reemplazo por la cortina original
-			rootMesh->swapSubMesh(meshName, transformableMesh);			
-		}
+		selectedPipelineIndex = pipelineSelectorForm->getSelectedPipeline();
 	}
 }
 
@@ -257,28 +232,15 @@ void generatePipeline(int width, int height, UIController* uiController){
 	static bool testOneTime = true;
 	if(testOneTime){
 		testOneTime = false;
-		//El menu
-		UIForm* menuForm = new MainMenuForm(uiController);
-		uiController->addForm(menuForm);
+		//El menu de seleccion de pipeline
+		pipelineSelectorForm = new PipelineSelectorForm(uiController);
+		uiController->addForm(pipelineSelectorForm);
 
 		// La escena
 		scene = SceneLoader::loadFromXmlFile("Definitions/Scenes/scene6.xml");
-		/*
-		// Seteo un mesh deformable para probar (la cortina)
-		if(scene != NULL){
-			configureTransformableMesh(scene, "ventana", "Cortina1", vec3(-60.0f, 110.0f, 0.0f));
-			configureTransformableMesh(scene, "ventana", "Cortina2", vec3(-60.0f, 110.0f, 0.0f));
-		}
-
-		// Seteo un mesh animado con keyframe para probar (el dragon)
-		if(scene != NULL){
-			configureKeyFrameAnimatedMesh(scene, "dragon", "Big_Dragon", "./Modelos/dragonPose2.smf");	
-			configureKeyFrameAnimatedMesh(scene, "dragon", "Head", "./Modelos/dragonPose2.smf");	
-		}
-		*/
 	}
-	// Configuro el render pipeline
-	setRenderPipelineConfiguration1(uiController);
+	// Configuro el render pipeline inicial
+	setRenderPipelineConfiguration6(uiController);
 }	
 
 
@@ -324,6 +286,10 @@ void myWindow::OnMouseUp(int button, int x, int y)
 {	
 	//Envio la tecla al this->getUIController(), el deberia encargarse de todo
 	this->uiController->manageClickRelease(vec2(x, y), button);
+
+	// REVIEW: Por ahora al soltar el click traemos al menu de seleccion de pipeline
+	pipelineSelectorForm->setVisible(true);
+	setRenderPipelineConfiguration6(this->uiController);
 }
 
 void myWindow::OnMouseWheel(int nWheelNumber, int nDirection, int x, int y)
@@ -358,29 +324,6 @@ void myWindow::OnKeyDown(int nKey, char cAscii)
 				break;
 		case 'x': abajo = true;
 				break;
-		//***********************************
-		case '1': 
-			setRenderPipelineConfiguration1(this->uiController);  // Forward shader
-			break;
-		case '2': 
-			setRenderPipelineConfiguration2(this->uiController); // Forward shader + bloom
-			break;
-		case '3': 
-			setRenderPipelineConfiguration3(this->uiController);  // Deferred shader
-			break;
-		case '4': 
-			setRenderPipelineConfiguration4(this->uiController, false); // Deferred + far depth of field
-			break;
-		case '5': 
-			setRenderPipelineConfiguration4(this->uiController, true); // Deferred + near depth of field
-			break;
-		case '6': 
-			setRenderPipelineConfiguration5(this->uiController); // Deferred + SSAO con blur
-			break;
-		case '7': 
-			setRenderPipelineConfiguration6(this->uiController); // Forward + Blur + Menu
-			break;
-		//************************************
 		case 'q': 
 				SetFullscreen(true);
 				break;

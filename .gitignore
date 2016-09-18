@@ -41,3 +41,4 @@ ExampleProject/build/
 # Project files
 *.sdf
 *.opensdf
+errorLog.txt
