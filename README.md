@@ -37,7 +37,7 @@ Also, you must have the Android SDK and NDK in your machine. This can be downloa
 * ***SDK (Android Studio is not required, just SDK):*** https://developer.android.com/studio/index.html
 * ***NDK:*** https://developer.android.com/ndk/downloads/index.html
 
-Once downloaded, go to the SDK folder and locate the ***SDK Manager***. Execute it and make sure to get the lastest versions.
+Once downloaded, go to the SDK folder and locate the ***SDK Manager***. Execute it and install the ***Android 4.0.3 (API 15)*** package (all the package).
 
 Then go to YOUR project folder (ex. ExampleProject) where the file android-build.makefile resides and execute:
 ```
