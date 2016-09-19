@@ -6,7 +6,7 @@
 #include "BlurStage.h"
 #include "UserInterfaceStage.h"
 
-RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration1(UIController* uiController, Scene* scene){
+RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfigForward(UIController* uiController, Scene* scene){
 	// Configuro el render pipeline
 	RenderPipelineWithGeometryAndBackWrite* renderPipelineImp = new RenderPipelineWithGeometryAndBackWrite();
 
@@ -30,7 +30,7 @@ ForwardGeometryStage* ExamplePipelineBuilder::getGeometryForwardStage(UIControll
 	return geometryStage;
 }
 
-RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration2(UIController* uiController, Scene* scene){
+RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfigForwardAndBloom(UIController* uiController, Scene* scene){
 	// Configuro el render pipeline
 	RenderPipelineWithGeometryAndBackWrite* renderPipelineImp = new RenderPipelineWithGeometryAndBackWrite();
 
@@ -51,7 +51,7 @@ RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration2(UIContro
 	return renderPipelineImp;
 }
 
-RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration3(UIController* uiController, Scene* scene){
+RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfigDeferred(UIController* uiController, Scene* scene){
 	// Configuro el render pipeline
 	RenderPipelineWithGeometryAndBackWrite* renderPipelineImp = new RenderPipelineWithGeometryAndBackWrite();
 
@@ -82,7 +82,7 @@ DeferredGeometryStage* ExamplePipelineBuilder::getGeometryDeferredStage(UIContro
 }
 
 
-RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration4(UIController* uiController, Scene* scene, bool nearDepthActive){
+RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfigDeferredAndDepthOfField(UIController* uiController, Scene* scene, bool nearDepthActive){
 	// Configuro el render pipeline
 	RenderPipelineWithGeometryAndBackWrite* renderPipelineImp = new RenderPipelineWithGeometryAndBackWrite();
 
@@ -109,7 +109,7 @@ RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration4(UIContro
 	return renderPipelineImp;
 }
 
-RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration5(UIController* uiController, Scene* scene){
+RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfigDeferredAndSSAO(UIController* uiController, Scene* scene){
 	// Configuro el render pipeline
 	RenderPipelineWithGeometryAndBackWrite* renderPipelineImp = new RenderPipelineWithGeometryAndBackWrite();
 
@@ -147,7 +147,7 @@ DepthOfFieldStage* ExamplePipelineBuilder::getDepthofFieldStage(DeferredGeometry
 	return depthOfFieldStage;
 }
 
-RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration6(UIController* uiController, Scene* scene){
+RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfigForwardAndBlur(UIController* uiController, Scene* scene){
 	// Configuro el render pipeline
 	RenderPipelineWithGeometryAndBackWrite* renderPipelineImp = new RenderPipelineWithGeometryAndBackWrite();
 
@@ -157,18 +157,33 @@ RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfiguration6(UIContro
 	// Instaciamos una etapa de blur para aplicar sobre la imagen de geometria final
 	vec2 size = uiController->getScreenSize();
 	BlurStage* blurStage = new BlurStage(geometryStage, size.x, size.y, 8.0f);
-	
-	// Instanciamos una etapa de renderizado de UI para mostrar arriba de todo la interfaz de usuario
-	UserInterfaceStage* userInterfaceStage = new UserInterfaceStage(blurStage, size.x, size.y);
-	userInterfaceStage->setUiController(uiController);
 
 	// Asignamos los stages al pipeline
 	renderPipelineImp->addGeometryStage(geometryStage);
 	renderPipelineImp->addAfterGeometry(blurStage);
-	renderPipelineImp->addAfterGeometry(userInterfaceStage);
 
 	// Terminado el pipeline, lo mando a cargar
 	renderPipelineImp->updatePipelineScheme();  
 	return renderPipelineImp;
 }
 
+RenderPipeline* ExamplePipelineBuilder::getRenderPipelineConfigForwardAndUI(UIController* uiController, Scene* scene){
+	// Configuro el render pipeline
+	RenderPipelineWithGeometryAndBackWrite* renderPipelineImp = new RenderPipelineWithGeometryAndBackWrite();
+
+	// Inicializamos una etapa de geometria forward
+	ForwardGeometryStage* geometryStage = getGeometryForwardStage(uiController, scene, renderPipelineImp);
+	
+	// Instanciamos una etapa de renderizado de UI para mostrar arriba de todo la interfaz de usuario
+	vec2 size = uiController->getScreenSize();
+	UserInterfaceStage* userInterfaceStage = new UserInterfaceStage(geometryStage, size.x, size.y);
+	userInterfaceStage->setUiController(uiController);
+
+	// Asignamos los stages al pipeline
+	renderPipelineImp->addGeometryStage(geometryStage);
+	renderPipelineImp->addAfterGeometry(userInterfaceStage);
+
+	// Terminado el pipeline, lo mando a cargar
+	renderPipelineImp->updatePipelineScheme();  
+	return renderPipelineImp;
+}

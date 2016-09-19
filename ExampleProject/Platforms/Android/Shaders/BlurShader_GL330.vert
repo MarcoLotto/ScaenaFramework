@@ -1,15 +1,14 @@
-#version 300 es
 
-in vec3 VertexPosition; 
-in vec2 TextureCoords;
+attribute highp vec3 VertexPosition; 
+attribute highp vec2 TextureCoords;
 
-out vec2 textureCoords;
+varying highp vec2 textureCoords;
 
-uniform mat4 PVMmatrix;
+uniform highp mat4 PVMmatrix;
 
 void main()
 {	
 	textureCoords = TextureCoords;
-	gl_Position = PVMmatrix * vec4(VertexPosition, 1.0f);	
+	gl_Position = PVMmatrix * vec4(VertexPosition, 1.0);	
 }
 	

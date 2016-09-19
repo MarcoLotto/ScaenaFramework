@@ -14,11 +14,12 @@ private:
 	static DepthOfFieldStage* getDepthofFieldStage(DeferredGeometryStage* geometryStage, BackBufferWriterStage* lastStage, vec2 size, bool nearDepthActive);
 
 public:
-	static RenderPipeline* getRenderPipelineConfiguration1(UIController* uiController, Scene* scene);
-	static RenderPipeline* getRenderPipelineConfiguration2(UIController* uiController, Scene* scene);
-	static RenderPipeline* getRenderPipelineConfiguration3(UIController* uiController, Scene* scene);
-	static RenderPipeline* getRenderPipelineConfiguration4(UIController* uiController, Scene* scene, bool nearDepthActive);
-	static RenderPipeline* getRenderPipelineConfiguration5(UIController* uiController, Scene* scene);
-	static RenderPipeline* getRenderPipelineConfiguration6(UIController* uiController, Scene* scene);
+	static RenderPipeline* getRenderPipelineConfigForward(UIController* uiController, Scene* scene);
+	static RenderPipeline* getRenderPipelineConfigForwardAndBloom(UIController* uiController, Scene* scene);
+	static RenderPipeline* getRenderPipelineConfigDeferred(UIController* uiController, Scene* scene);
+	static RenderPipeline* getRenderPipelineConfigDeferredAndDepthOfField(UIController* uiController, Scene* scene, bool nearDepthActive);
+	static RenderPipeline* getRenderPipelineConfigDeferredAndSSAO(UIController* uiController, Scene* scene);
+	static RenderPipeline* getRenderPipelineConfigForwardAndBlur(UIController* uiController, Scene* scene);
+	static RenderPipeline* getRenderPipelineConfigForwardAndUI(UIController* uiController, Scene* scene);
 
 };

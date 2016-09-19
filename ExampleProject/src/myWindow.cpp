@@ -172,32 +172,32 @@ void  myWindow::init()
 
 void setRenderPipelineConfiguration1(UIController* uiController){
 	scene->setCurrentCamera(&camara);
-	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfiguration1(uiController, scene);
+	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfigForward(uiController, scene);
 }
 
 void setRenderPipelineConfiguration2(UIController* uiController){
 	scene->setCurrentCamera(&camara);
-	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfiguration2(uiController, scene);
+	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfigForwardAndBloom(uiController, scene);
 }
 
 void setRenderPipelineConfiguration3(UIController* uiController){
 	scene->setCurrentCamera(&camara);
-	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfiguration3(uiController, scene);
+	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfigDeferred(uiController, scene);
 }
 
 void setRenderPipelineConfiguration4(UIController* uiController, bool nearDepthOfField){
 	scene->setCurrentCamera(&camara);
-	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfiguration4(uiController, scene, nearDepthOfField);
+	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfigDeferredAndDepthOfField(uiController, scene, nearDepthOfField);
 }
 
 void setRenderPipelineConfiguration5(UIController* uiController){
 	scene->setCurrentCamera(&camara);
-	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfiguration5(uiController, scene);
+	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfigForwardAndBlur(uiController, scene);
 }
 
 void setRenderPipelineConfiguration6(UIController* uiController){
 	scene->setCurrentCamera(&camara);
-	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfiguration6(uiController, scene);
+	renderPipeline = ExamplePipelineBuilder::getRenderPipelineConfigForwardAndUI(uiController, scene);
 	selectedPipelineIndex = pipelineSelectorForm->getSelectedPipeline();
 }
 
@@ -221,7 +221,7 @@ void myWindow::checkPipelineSelected(){
 				setRenderPipelineConfiguration4(this->uiController, true);
 			break;
 			case PipelineSelectionIndex::p6:
-				setRenderPipelineConfiguration6(this->uiController);
+				setRenderPipelineConfiguration5(this->uiController);
 			break;
 		}
 		selectedPipelineIndex = pipelineSelectorForm->getSelectedPipeline();

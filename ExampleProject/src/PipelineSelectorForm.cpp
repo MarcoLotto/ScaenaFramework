@@ -6,7 +6,7 @@
 #define BUTTON_WIDTH 0.6f
 #define BUTTON_HEIGHT 0.1f
 #define BUTTON_X_POSITION 0.02f
-#define BUTTON_TEXTURE "./Textures/UI/Button1.png"
+#define BUTTON_TEXTURE "Textures/UI/button1.png"
 #define BUTTON_FONT "Textures/UI/font2.png"
 #define FONT_POS_X 0.05f
 #define FONT_POS_Y 0.02f
@@ -31,7 +31,7 @@ void PipelineSelectorForm::initiateElements(){
 	this->button3 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.22f), 0.0f, buttonSize, "Deferred shader", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
 	this->button4 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.32f), 0.0f, buttonSize, "Deferred + far depth of field", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
 	this->button5 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.42f), 0.0f, buttonSize, "Deferred + near depth of field", FONT_SIZE, fontPosition,BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
-	this->button6 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.52f), 0.0f, buttonSize, "Forward + Blur + UI", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
+	this->button6 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.52f), 0.0f, buttonSize, "Forward + Blur", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
 }
 
 void PipelineSelectorForm::bindElementsToStates(){
@@ -131,7 +131,7 @@ void PipelineSelectorForm::processButton5Event(){
 }
 
 void PipelineSelectorForm::processButton6Event(){
-	// Pipeline 6 (Deferred + Blur + UI)
+	// Pipeline 6 (Forward + Blur)
 	this->setVisible(false);
 	this->selectedPipeline = PipelineSelectionIndex::p6;
 }
