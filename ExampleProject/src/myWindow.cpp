@@ -34,7 +34,6 @@ bool arriba=false, abajo=false, izq=false, der=false;
 bool adelante=false, atras=false;
 
 Scene* scene;
-vec2 actualMouseCoords;
 CamaraPrimeraPersona camara;
 RenderPipeline* renderPipeline;
 PipelineSelectorForm* pipelineSelectorForm;
@@ -95,11 +94,9 @@ void keyboardAction(){
 }
 
 vec2 coordMouse = vec2(0.0f);
-void mouseMove(int x, int y){	
-	actualMouseCoords = vec2(x, y);  // REVIEW
-
+void mouseMove(int x, int y, vec2 screenSize){	
 	static vec2 angulo = vec2(0.0f);
-	float sensibilidad = 0.6f;
+	float sensibilidad = 360 / screenSize.x;
 
 	float diff = (x - coordMouse.x)* sensibilidad;
 	if(GenericUtils::modulo(diff) >= 0.0f){		
@@ -120,8 +117,7 @@ void mouseMove(int x, int y){
 //********************************************************************************************
 void myWindow::OnUpdate(){	
 	// REVIEW: Esto no seria necesario en este ejemplo
-	keyboardAction();	
-	this->uiController->setMouseActualCoords(actualMouseCoords);  
+	keyboardAction();	 
 	
 	//Actualizo la escena
 	if(scene != NULL)
@@ -134,8 +130,8 @@ void myWindow::OnUpdate(){
 	this->uiController->update();
 
 	// REVIEW: Hacemos girar a la camara
-	camara.setRotationYaw(TimeManager::getOSTimeInMilliseconds() / 100.0f);  // BORRAR
-	camara.setRotationPitch(-90 + 10.0f * glm::cos(TimeManager::getOSTimeInMilliseconds() / 4000.0f));  // BORRAR
+	//camara.setRotationYaw(TimeManager::getOSTimeInMilliseconds() / 100.0f);  // BORRAR
+	//camara.setRotationPitch(-90 + 10.0f * glm::cos(TimeManager::getOSTimeInMilliseconds() / 4000.0f));  // BORRAR
 
 	// Vamos a checkear el estado del form selector de pipeline para cambiar el pipeline
 	this->checkPipelineSelected();
@@ -271,15 +267,18 @@ void myWindow::OnMouseDown(int button, int x, int y)
 	coordMouse.y = y;
 
 	// Llamo a la funcion que se encarga de informar que se movio el mouse a la camara
-	mouseMove(x, y);
+	this->OnMouseMove(x, y);
 }
 
 void myWindow::OnMouseMove(int x, int y){	
-	mouseMove(x, y);
+	mouseMove(x, y, this->uiController->getScreenSize());
 }
 
 void myWindow::OnLeftMouseDrag(int x, int y){	
 	this->uiController->setMouseActualCoords(vec2(x, y));
+
+	// Llamo a la funcion que se encarga de informar que se movio el mouse a la camara
+	this->OnMouseMove(x, y);
 }
 
 void myWindow::OnMouseUp(int button, int x, int y)
