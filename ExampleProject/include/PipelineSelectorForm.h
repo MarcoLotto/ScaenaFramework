@@ -20,6 +20,7 @@ private:
 	void bindElementsToStates();
 
 	void onScreenChange();
+	vec2 getFormSize();
 
 	//Estados
 	UIState* showedState;

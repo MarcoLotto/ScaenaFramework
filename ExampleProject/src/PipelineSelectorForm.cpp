@@ -1,5 +1,6 @@
 #include "PipelineSelectorForm.h"
 #include "Logger.h"
+#include "VideoConfiguration.h"
 
 #define HIDE_TRANSITION_END_CALLBACK_ID 0
 #define FONT_SIZE 0.14f
@@ -19,19 +20,19 @@ PipelineSelectorForm::PipelineSelectorForm(UIController* uiController) : UIForm(
 
 //Incializacion de los estados del elemento 
 void PipelineSelectorForm::initiateStates(){			
-	this->showedState = UIFactory::createState(vec2(0.02f, 0.15f), 0.0f, vec2(0.65f, 0.65f), 1.0f, "Textures/UI/FormBackground2.png");
-	this->hidedState = UIFactory::createState(vec2(-0.5f, 0.15f), 0.0f, vec2(0.65f, 0.65f), 0.0f, "Textures/UI/FormBackground2.png");
+	this->showedState = UIFactory::createState(vec2(0.02f, 0.15f), 0.0f, this->getFormSize(), 1.0f, "Textures/UI/FormBackground2.png");
+	this->hidedState = UIFactory::createState(vec2(-0.5f, 0.15f), 0.0f, this->getFormSize(), 0.0f, "Textures/UI/FormBackground2.png");
 }
 //Inicializacion de los subelementos
 void PipelineSelectorForm::initiateElements(){	
 	vec2 buttonSize = vec2(BUTTON_WIDTH, BUTTON_HEIGHT);
 	vec2 fontPosition = vec2(FONT_POS_X, FONT_POS_Y);
 	this->button1 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.02f), 0.0f, buttonSize, "Forward shader", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
-	this->button2 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.12f), 0.0f, buttonSize, "Forward shader + bloom", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
-	this->button3 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.22f), 0.0f, buttonSize, "Deferred shader", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
-	this->button4 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.32f), 0.0f, buttonSize, "Deferred + far depth of field", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
-	this->button5 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.42f), 0.0f, buttonSize, "Deferred + near depth of field", FONT_SIZE, fontPosition,BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
-	this->button6 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.52f), 0.0f, buttonSize, "Forward + Blur", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
+	this->button2 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.12f), 0.0f, buttonSize, "Forward shader + Bloom", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
+	this->button3 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.22f), 0.0f, buttonSize, "Forward + Blur", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
+	this->button4 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.32f), 0.0f, buttonSize, "Deferred shader", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
+	this->button5 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.42f), 0.0f, buttonSize, "Deferred + Far depth of field", FONT_SIZE, fontPosition,BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
+	this->button6 = UIFactory::createButton(vec2(BUTTON_X_POSITION, 0.52f), 0.0f, buttonSize, "Deferred + Near depth of field", FONT_SIZE, fontPosition, BUTTON_TEXTURE, BUTTON_FONT, this->uiController);
 }
 
 void PipelineSelectorForm::bindElementsToStates(){
@@ -41,16 +42,19 @@ void PipelineSelectorForm::bindElementsToStates(){
 	this->showedState->addElement(this->button2);
 	this->showedState->addElement(this->button3);
 	this->showedState->addElement(this->button4);
-	this->showedState->addElement(this->button5);
-	this->showedState->addElement(this->button6);
-
+	
 	this->hidedState->addElement(this->button1);
 	this->hidedState->addElement(this->button2);
 	this->hidedState->addElement(this->button3);
 	this->hidedState->addElement(this->button4);
-	this->hidedState->addElement(this->button5);
-	this->hidedState->addElement(this->button6);
-		
+	
+	// Solo mostramos las opciones de Depth of field si tenemos la version correcta de OpenGL
+	if(VideoConfiguration::getInstance()->isGlsl400Avaible()){
+		this->showedState->addElement(this->button5);
+		this->showedState->addElement(this->button6);
+		this->hidedState->addElement(this->button5);
+		this->hidedState->addElement(this->button6);
+	}		
 	//Inicializo el estado inicial
 	this->internalState->makeStateTransition(this->hidedState);	
 }
@@ -113,25 +117,25 @@ void PipelineSelectorForm::processButton2Event(){
 }
 
 void PipelineSelectorForm::processButton3Event(){
-	// Pipeline 3 (Deferred shader)
+	// Pipeline 6 (Forward + Blur)
 	this->setVisible(false);
 	this->selectedPipeline = PipelineSelectionIndex::p3;
 }
 
 void PipelineSelectorForm::processButton4Event(){
-	// Pipeline 4 (Deferred + far depth of field)
+	// Pipeline 3 (Deferred shader)
 	this->setVisible(false);
 	this->selectedPipeline = PipelineSelectionIndex::p4;
 }
 
 void PipelineSelectorForm::processButton5Event(){
-	// Pipeline 5 (Deferred + near depth of field)
+	// Pipeline 4 (Deferred + far depth of field)
 	this->setVisible(false);
 	this->selectedPipeline = PipelineSelectionIndex::p5;
 }
 
 void PipelineSelectorForm::processButton6Event(){
-	// Pipeline 6 (Forward + Blur)
+	// Pipeline 5 (Deferred + near depth of field)
 	this->setVisible(false);
 	this->selectedPipeline = PipelineSelectionIndex::p6;
 }
@@ -157,4 +161,12 @@ void PipelineSelectorForm::onCallback(int callbackId){
 		this->onScreenChange();	
 		break;
 	}
+}
+
+// Esto es para que se agrande o no el form si hay mas opciones
+vec2 PipelineSelectorForm::getFormSize(){
+	if(VideoConfiguration::getInstance()->isGlsl400Avaible()){
+		return vec2(0.65f, 0.65f);
+	}
+	return vec2(0.65f, 0.45f);
 }

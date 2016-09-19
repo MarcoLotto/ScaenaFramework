@@ -183,10 +183,12 @@ void main()
 	vec3 norm = vec3( texture( NormalTex, TexCoord ) );
 	vec3 diffColor = vec3( texture(ColorTex, TexCoord) );
 	vec3 matTex = vec3(texture(MaterialTex, TexCoord) );
+	
+	// REVIEW: No entiendo que le pasa a la textura de material en android, no se esta asignando, por ahora queda sin materiales
 	Material mat;
-	mat.Ka = matTex.x;
-	mat.Kd = matTex.y;
-	mat.Ks = matTex.z;
+	mat.Ka = 0.4;  // matTex.x
+	mat.Kd = 0.6;  // matTex.y
+	mat.Ks = 0.6;  // matTex.z
 	mat.brillo = 100.0;
 	
 	vec3 iluminacion = vec3(0.0);
@@ -211,6 +213,7 @@ void main()
 		}	
 	}		
 	vec3 finalColor = diffColor * (mat.Ka + iluminacion);
+	
 	//Aplico correcion gamma y salgo
 	FragColor = vec4(pow(finalColor, vec3(1.0/gamma)) , 1.0 );
 }

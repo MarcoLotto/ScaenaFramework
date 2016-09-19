@@ -212,16 +212,16 @@ void myWindow::checkPipelineSelected(){
 				setRenderPipelineConfiguration2(this->uiController);
 			break;
 			case PipelineSelectionIndex::p3:
-				setRenderPipelineConfiguration3(this->uiController);
+				setRenderPipelineConfiguration5(this->uiController);
 			break;
 			case PipelineSelectionIndex::p4:
-				setRenderPipelineConfiguration4(this->uiController, false);
+				setRenderPipelineConfiguration3(this->uiController);
 			break;
 			case PipelineSelectionIndex::p5:
-				setRenderPipelineConfiguration4(this->uiController, true);
+				setRenderPipelineConfiguration4(this->uiController, false);
 			break;
 			case PipelineSelectionIndex::p6:
-				setRenderPipelineConfiguration5(this->uiController);
+				setRenderPipelineConfiguration4(this->uiController, true);
 			break;
 		}
 		selectedPipelineIndex = pipelineSelectorForm->getSelectedPipeline();
