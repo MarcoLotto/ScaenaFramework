@@ -13,6 +13,7 @@
 #include "TeamBuilderDataForm.h"
 #include "VirtualKeyboardForm.h"
 #include "TextInfoPopupForm.h"
+#include "BackgroundForm.h"
 
 FormsManager* FormsManager::instance = NULL;
 
@@ -37,6 +38,7 @@ FormsManager::FormsManager(){
 // Acá se declaran todas las forms que se utilizarán dentro del menu
 void FormsManager::initializeMenuForms(){	
 	//Etapa de instanciacion***************	
+	this->backgroundForm = new BackgroundForm(this->uiController); 
 	this->menuStatusBarForm = new MenuStatusBarForm(this->uiController);
 	this->textInfoPopupForm = new TextInfoPopupForm(this->uiController);
 	this->socksTeamBuilderForm = new TeamBuilderForm(this->uiController, SOCKS_BUILDER_CONFIG_FILENAME, NULL);
@@ -46,6 +48,7 @@ void FormsManager::initializeMenuForms(){
 	this->virtualKeyboardForm = new VirtualKeyboardForm(this->uiController);	
 
 	//Etapa de inicializacion***************	
+	this->initAndAddFormToUIController(this->backgroundForm, vec2(0.0f), 0.0f, vec2(1.0f), true);
 	this->initAndAddFormToUIController(this->shirtsTeamBuilderForm, vec2(0.0f), 0.0f, vec2(1.0f), false);
 	this->initAndAddFormToUIController(this->pantsTeamBuilderForm, vec2(0.0f), 0.0f, vec2(1.0f), false);
 	this->initAndAddFormToUIController(this->socksTeamBuilderForm, vec2(0.0f), 0.0f, vec2(1.0f), false);

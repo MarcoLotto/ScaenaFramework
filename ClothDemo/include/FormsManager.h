@@ -12,6 +12,7 @@ class FormsManager{
 
 public:
 	//**********Declaracion de forms***************
+	UIForm* backgroundForm;
 	UIForm* menuStatusBarForm;
 	UIForm* virtualKeyboardForm;
 	UIForm* textInfoPopupForm;

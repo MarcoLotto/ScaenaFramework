@@ -39,6 +39,9 @@
     <ClCompile Include="src\PipelineBuilder.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\BackgroundForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\myWindow.h">
@@ -72,6 +75,9 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\PipelineBuilder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BackgroundForm.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

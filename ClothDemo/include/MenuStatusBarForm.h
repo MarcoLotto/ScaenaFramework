@@ -11,8 +11,6 @@
 #include <vector>
 using namespace std;
 
-class GameLifeManager;
-
 class MenuStatusBarForm : public UIForm{
 
 protected:

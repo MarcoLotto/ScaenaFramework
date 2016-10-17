@@ -84,6 +84,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\BackgroundForm.cpp" />
     <ClCompile Include="src\CustomizableTexture.cpp" />
     <ClCompile Include="src\FormsManager.cpp" />
     <ClCompile Include="src\MenuStatusBarForm.cpp" />
@@ -95,6 +96,7 @@
     <ClCompile Include="src\VirtualKeyboardForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\BackgroundForm.h" />
     <ClInclude Include="include\CustomizableTexture.h" />
     <ClInclude Include="include\FormsManager.h" />
     <ClInclude Include="include\MenuStatusBarForm.h" />
