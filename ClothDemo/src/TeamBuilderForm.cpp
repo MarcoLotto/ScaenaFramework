@@ -50,18 +50,18 @@ void TeamBuilderForm::initiateStates(){
 //Inicializacion de los subelementos
 void TeamBuilderForm::initiateElements(){
 	this->titleLabel = UIFactory::createLabel("", vec2(0.05f, 0.05f), 0.2f, "Textures/UI/font2.png", this->uiController);
-	this->continueButton = UIFactory::createButton(vec2(0.695, 0.69f), 0.0f, vec2(0.2f, 0.1f), "Continuar", 0.13f, vec2(0.032f, 0.026f), "./Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
+	this->continueButton = UIFactory::createButton(vec2(0.695, 0.69f), 0.0f, vec2(0.2f, 0.1f), "Continuar", 0.13f, vec2(0.032f, 0.026f), "Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
 	
-	this->rotateRightButton = UIFactory::createButton(vec2(0.32f, 0.62f), 0.0f, vec2(0.08f, 0.1f), "", 0.0f, vec2(0.0f, 0.0f), "./Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
-	this->rotateLeftButton = UIFactory::createButton(vec2(0.41f, 0.62f), 0.0f, vec2(0.08f, 0.1f), "", 0.0f, vec2(0.0f, 0.0f), "./Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
+	this->rotateRightButton = UIFactory::createButton(vec2(0.32f, 0.62f), 0.0f, vec2(0.08f, 0.1f), "", 0.0f, vec2(0.0f, 0.0f), "Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
+	this->rotateLeftButton = UIFactory::createButton(vec2(0.41f, 0.62f), 0.0f, vec2(0.08f, 0.1f), "", 0.0f, vec2(0.0f, 0.0f), "Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
 	
-	this->itemTemplatesGraphicList = UIFactory::createGraphicList(vec2(0.01f, 0.01f), 0.0f, vec2(0.13f, 0.78f), 4, "./Textures/UI/Button1.png", "./Textures/UI/Button1.png",
-		"./Textures/UI/transparent.png", vec2(0.017f, 0.005f), vec2(0.09f, 0.11f), this->uiController);
+	this->itemTemplatesGraphicList = UIFactory::createGraphicList(vec2(0.01f, 0.01f), 0.0f, vec2(0.13f, 0.78f), 4, "Textures/UI/Button1.png", "Textures/UI/Button1.png",
+		"Textures/UI/transparent.png", vec2(0.017f, 0.005f), vec2(0.09f, 0.11f), this->uiController);
 
 	float colorListHorizontalPosition = 0.82f;
 	for(unsigned int i=0; i < COLOR_GRAPHIC_LISTS_COUNT; i++){
-		this->colorGraphicLists.push_back(UIFactory::createGraphicList(vec2(colorListHorizontalPosition, 0.01f), 0.0f, vec2(0.07f, 0.66f), 6, "./Textures/UI/Button1.png", 
-			"./Textures/UI/Button1.png", "./Textures/UI/transparent.png", vec2(0.01f, 0.01f), vec2(0.05f, 0.06f), this->uiController));
+		this->colorGraphicLists.push_back(UIFactory::createGraphicList(vec2(colorListHorizontalPosition, 0.01f), 0.0f, vec2(0.07f, 0.66f), 6, "Textures/UI/Button1.png", 
+			"Textures/UI/Button1.png", "Textures/UI/transparent.png", vec2(0.01f, 0.01f), vec2(0.05f, 0.06f), this->uiController));
 		colorListHorizontalPosition -= 0.075f;
 	}
 
@@ -287,13 +287,18 @@ void TeamBuilderForm::onCallback(int callbackId){
 }
 
 void TeamBuilderForm::onTeamObjectDataChange(){
+	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE enter"));
 	if(this->templates.empty()) return;
 	if(this->colors.empty()) return;
+
+	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE 1"));
 
 	// Desabilitamos las listas de colores para habilitar solo las que el template requiere
 	for(unsigned int i=0; i < this->colorGraphicLists.size(); i++){
 		this->colorGraphicLists[i]->getExternalState()->getActualState()->setTransparency(0.0f);	
 	}
+
+	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE 2"));
 
 	// Conseguimos la informacion del template activo
 	int templateIndex = this->itemTemplatesGraphicList->getSelectedItemPosition();
@@ -321,6 +326,7 @@ void TeamBuilderForm::onTeamObjectDataChange(){
 		this->objectToDraw->getMesh()->getChilds()->at(0)->getDiffuseMap()->setMap(colorTexture);			
 	}
 	delete customTexture;	
+	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE exit"));
 }
 
 void TeamBuilderForm::readBuilderConfigFile(){

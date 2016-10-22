@@ -35,6 +35,7 @@ android_deploy:
 	rsync -rupE ./Modelos ./build/assets
 	rsync -rupE ./Textures ./build/assets
 	rsync -rupE ./Platforms/Android/Shaders ./build/assets	
+	rsync -rupE ./ProgramData ./build/assets
 	
 	# Copio los archivos especificos de la plataforma
 	mkdir -p ./build/jni

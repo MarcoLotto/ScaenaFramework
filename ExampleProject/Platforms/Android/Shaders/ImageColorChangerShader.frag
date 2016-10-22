@@ -5,8 +5,9 @@ varying highp vec2 TexCoord;
 
 uniform sampler2D image;
 uniform highp int colorsCount;
-uniform highp vec3 inputColors[10];
-uniform highp vec3 outputColors[10];
+uniform highp float colorTolerance;
+uniform highp vec3 inputColors[15];
+uniform highp vec3 outputColors[15];
 
 void main()
 {	
@@ -14,7 +15,14 @@ void main()
 	highp vec3 imageDataRGB = vec3(imageDataRGBA);	
 
 	// Si el pixel actual esta en la lista de input, lo cambio por el de la lista de output. Sino queda igual.
+	gl_FragColor = imageDataRGBA;
 	for(int i=0; i < colorsCount; i++){
-		gl_FragColor = vec4(float(imageDataRGB != inputColors[i]) * imageDataRGB + float(imageDataRGB == inputColors[i]) * outputColors[i], imageDataRGBA.w);
-	}		
+		vec3 minColor = imageDataRGB - vec3(colorTolerance);
+		vec3 maxColor = imageDataRGB + vec3(colorTolerance);
+		if( (inputColors[i].x > minColor.x && inputColors[i].x < maxColor.x) && 
+			(inputColors[i].y > minColor.y && inputColors[i].y < maxColor.y) && 
+			(inputColors[i].z > minColor.z && inputColors[i].z < maxColor.z)){
+			gl_FragColor = vec4(outputColors[i], imageDataRGBA.w);
+		}		
+	}			
 }

@@ -27,7 +27,7 @@ void VirtualKeyboardForm::initiateStates(){
 }
 //Inicializacion de los subelementos
 void VirtualKeyboardForm::initiateElements(){	
-	this->keyboard = UIFactory::createVirtualKeyboard(vec2(0.0f, 0.02f), 0.0f, vec2(0.3f, 0.3f), "./Textures/UI/Button2.png", "./Textures/UI/Button1.png", this->uiController);
+	this->keyboard = UIFactory::createVirtualKeyboard(vec2(0.0f, 0.02f), 0.0f, vec2(0.3f, 0.3f), "Textures/UI/Button2.png", "Textures/UI/Button1.png", this->uiController);
 }
 
 void VirtualKeyboardForm::bindElementsToStates(){

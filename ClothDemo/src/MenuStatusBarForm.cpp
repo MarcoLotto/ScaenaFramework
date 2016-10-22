@@ -22,7 +22,7 @@ void MenuStatusBarForm::initiateStates(){
 //Inicializacion de los subelementos
 void MenuStatusBarForm::initiateElements(){
 	this->upperBar = UIFactory::createStaticImage(vec2(0.08f, 0.0f), 0.0f, vec2(1.0f, 0.1f), 1.0f, "Textures/UI/UpperBar1.png", this->uiController);	
-	this->button1 = UIFactory::createButton(vec2(0.05f, 0.0f), 0.0f, vec2(0.1f, 0.1f), "<", 0.25f, vec2(0.025f, 0.008f), "./Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
+	this->button1 = UIFactory::createButton(vec2(0.05f, 0.0f), 0.0f, vec2(0.1f, 0.1f), "<", 0.25f, vec2(0.025f, 0.008f), "Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
 }
 
 void MenuStatusBarForm::updateBarDisplayData(){

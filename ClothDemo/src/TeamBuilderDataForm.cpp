@@ -26,9 +26,9 @@ void TeamBuilderDataForm::initiateStates(){
 }
 //Inicializacion de los subelementos
 void TeamBuilderDataForm::initiateElements(){	
-	this->input = UIFactory::createTextBox(vec2(0.01f, 0.05f), 0.0f, vec2(0.48f, 0.25f), "Nombre", 0.14f, 30, 30, "./Textures/UI/textbox1.png", this->uiController);
-	this->continueButton = UIFactory::createButton(vec2(0.15, 0.45f), 0.0f, vec2(0.2f, 0.1f), "Crear!", 0.13f, vec2(0.055f, 0.024f), "./Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
-	this->uiCheckbox = UIFactory::createCheckBox(vec2(0.01f, 0.3f), 0.0f, vec2(0.04f, 0.05f), "./Textures/UI/checkbox1.png", this->uiController);
+	this->input = UIFactory::createTextBox(vec2(0.01f, 0.05f), 0.0f, vec2(0.48f, 0.25f), "Nombre", 0.14f, 30, 30, "Textures/UI/textbox1.png", this->uiController);
+	this->continueButton = UIFactory::createButton(vec2(0.15, 0.45f), 0.0f, vec2(0.2f, 0.1f), "Crear!", 0.13f, vec2(0.055f, 0.024f), "Textures/UI/Button1.png", "Textures/UI/font2.png", this->uiController);
+	this->uiCheckbox = UIFactory::createCheckBox(vec2(0.01f, 0.3f), 0.0f, vec2(0.04f, 0.05f), "Textures/UI/checkbox1.png", this->uiController);
 	this->uiCheckbox->setChecked(true);
 	this->checkboxLabel = UIFactory::createLabel("Checkbox text", vec2(0.051f, 0.31f), 0.12f, "Textures/UI/font2.png", this->uiController); 
 }
@@ -99,10 +99,8 @@ bool TeamBuilderDataForm::runFieldValidations(){
 }
 
 void TeamBuilderDataForm::processContinueButtonEvent(){
-	// Primero forzamos a cerrar el teclado
-	WindowConnector::closeKeyboard();
-	
-	// TODO: Estaria mejor que apareciera un pop-up con confirmacion
+	// Hacemos vibrar el dispositivo si esta disponible
+	//WindowConnector::vibrate(500);
 
 	// Nos guardamos la data de este form
 	this->dataTransfer.teamName = this->input->getText();
