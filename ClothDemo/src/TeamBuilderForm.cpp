@@ -287,18 +287,13 @@ void TeamBuilderForm::onCallback(int callbackId){
 }
 
 void TeamBuilderForm::onTeamObjectDataChange(){
-	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE enter"));
 	if(this->templates.empty()) return;
 	if(this->colors.empty()) return;
-
-	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE 1"));
 
 	// Desabilitamos las listas de colores para habilitar solo las que el template requiere
 	for(unsigned int i=0; i < this->colorGraphicLists.size(); i++){
 		this->colorGraphicLists[i]->getExternalState()->getActualState()->setTransparency(0.0f);	
 	}
-
-	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE 2"));
 
 	// Conseguimos la informacion del template activo
 	int templateIndex = this->itemTemplatesGraphicList->getSelectedItemPosition();
@@ -326,7 +321,6 @@ void TeamBuilderForm::onTeamObjectDataChange(){
 		this->objectToDraw->getMesh()->getChilds()->at(0)->getDiffuseMap()->setMap(colorTexture);			
 	}
 	delete customTexture;	
-	Logger::getInstance()->logDebug(new Log("ON_TEAM_OBJECT_DATA_CHANGE exit"));
 }
 
 void TeamBuilderForm::readBuilderConfigFile(){
