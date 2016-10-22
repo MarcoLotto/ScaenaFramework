@@ -147,10 +147,10 @@ void myWindow::OnKeyDown(int nKey, char cAscii)
 
 		case 27: this->Close();
 				break;	
-		case 'q': 
+		case '1': 
 				SetFullscreen(true);
 				break;
-		case 'e': 
+		case '2': 
 				SetFullscreen(false);
 			break;	
 		default: ;
@@ -164,9 +164,9 @@ void myWindow::OnKeyUp(int nKey, char cAscii)
 
 		switch(cAscii){
 
-		case 'q': 
+		case '1': 
 				break;
-		case 'e': 
+		case '2': 
 				break;	
 		default: ;
 

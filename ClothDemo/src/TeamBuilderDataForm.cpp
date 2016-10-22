@@ -113,6 +113,11 @@ void TeamBuilderDataForm::processContinueButtonEvent(){
 		((TextInfoPopupForm*) FormsManager::getInstance()->textInfoPopupForm)->setInfoText("La indumentaria ha sido creada");
 		((TextInfoPopupForm*) FormsManager::getInstance()->textInfoPopupForm)->setInfoTitle("Exito!!");		
 		FormsManager::getInstance()->textInfoPopupForm->setVisible(true);
+
+		// Volvemos a la pantalla inicial y borramos el stack de pantallas
+		((MenuStatusBarForm*) FormsManager::getInstance()->menuStatusBarForm)->clearStackRegister();
+		FormsManager::getInstance()->shirtsTeamBuilderForm->setVisible(true);
+		this->setVisible(false);
 	}
 }
 
