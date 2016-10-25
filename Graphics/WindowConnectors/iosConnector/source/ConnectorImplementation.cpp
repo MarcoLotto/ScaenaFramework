@@ -1,8 +1,8 @@
 /**********************************
-* SCAENA FRAMEWORK
-* Author: Marco Andrés Lotto
-* License: MIT - 2016
-**********************************/
+ * SCAENA FRAMEWORK
+ * Author: Marco AndrÈs Lotto
+ * License: MIT - 2016
+ **********************************/
 
 #include "ConnectorImplementation.h"
 #include <iostream>

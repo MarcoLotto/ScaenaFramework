@@ -1,10 +1,8 @@
-//
-//  GameViewController.m
-//  test2
-//
-//  Created by Marco Lotto on 14/03/15.
-//  Copyright (c) 2015 Scaena Software. All rights reserved.
-//
+/**********************************
+ * SCAENA FRAMEWORK
+ * Author: Marco AndrÈs Lotto
+ * License: MIT - 2016
+ **********************************/
 
 #import "GameViewController.h"
 #import <CoreMotion/CoreMotion.h>
@@ -230,11 +228,9 @@ void appSwapBuffers(){
          // Si es el primer toque, tambien lo informe como toque del mouse (para UI)
          if(i == 0){
              if(touchType == TouchType::began)
-                windowConnector->OnMouseDown(0, point.x, point.y);
+                 windowConnector->OnMouseDown(0, point.x, point.y);
              else if(touchType == TouchType::ended)
-                windowConnector->OnMouseUp(0, point.x, point.y);
-			else
-				windowConnector->OnLeftMouseDrag(xPos, yPos);
+                 windowConnector->OnMouseUp(0, point.x, point.y);
          }
          i++;
      }

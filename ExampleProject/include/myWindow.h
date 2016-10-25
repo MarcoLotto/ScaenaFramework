@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <WindowConnector.h>
+#include "WindowConnector.h"
 #include "UIController.h"
 
 class myWindow : public WindowConnector

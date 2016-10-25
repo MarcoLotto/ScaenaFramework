@@ -45,3 +45,4 @@ ClothDemo/build/
 *.sdf
 *.opensdf
 errorLog.txt
+.DS_Store

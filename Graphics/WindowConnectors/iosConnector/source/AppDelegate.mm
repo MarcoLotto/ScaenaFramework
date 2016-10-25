@@ -1,10 +1,8 @@
-//
-//  AppDelegate.m
-//  test2
-//
-//  Created by Marco Lotto on 14/03/15.
-//  Copyright (c) 2015 Scaena Software. All rights reserved.
-//
+/**********************************
+ * SCAENA FRAMEWORK
+ * Author: Marco AndrÈs Lotto
+ * License: MIT - 2016
+ **********************************/
 
 #import "AppDelegate.h"
 #include "TimeManager.h"
