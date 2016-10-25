@@ -49,5 +49,6 @@ make -f android-build.makefile ANDROID_SDK_DIR=C:/Users/Marco/Documents/android-
 ```
 This will generate the .apk and will install it on your device if connected.
 
-### IOS
-Comming soon...
+### Building for IOS
+In order to build an IOS application, you need to clone this repository in a Mac OS. Then go to your project folder (for example ***ExampleProject*** or ***ClothDemo***). There you will find a file named IOS_Project.xcodeproj that is an Xcode project file. Open that file with Xcode and compile it. Notice that for running the application in an actual device, you will need to have an Apple developer certificate (witch are paid), but if you don´t have one, you could still run it from an emulator (Xcode provide it for you).  
+
