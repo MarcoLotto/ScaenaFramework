@@ -978,6 +978,9 @@
     <ClInclude Include="include\UnstopableTimeManager.h">
       <Filter>include\Generic</Filter>
     </ClInclude>
+    <ClInclude Include="include\GLSLProgramMockImplementation.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glew\source\glew.c">
@@ -1624,6 +1627,9 @@
     </ClCompile>
     <ClCompile Include="src\UnstopableTimeManager.cpp">
       <Filter>src\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLSLProgramMockImplementation.cpp">
+      <Filter>src\ShaderManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

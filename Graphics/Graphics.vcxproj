@@ -148,6 +148,7 @@
     <ClInclude Include="include\GLSLProgramGLES3Implementation.h" />
     <ClInclude Include="include\GLSLProgramGLImplementation.h" />
     <ClInclude Include="include\GLSLProgramInterface.h" />
+    <ClInclude Include="include\GLSLProgramMockImplementation.h" />
     <ClInclude Include="include\GLSLUniform.h" />
     <ClInclude Include="include\ImageColorChangerShader.h" />
     <ClInclude Include="include\ImageComposer.h" />
@@ -398,6 +399,7 @@
     <ClCompile Include="src\GLSLProgramGLES2Implementation.cpp" />
     <ClCompile Include="src\GLSLProgramGLES3Implementation.cpp" />
     <ClCompile Include="src\GLSLProgramGLImplementation.cpp" />
+    <ClCompile Include="src\GLSLProgramMockImplementation.cpp" />
     <ClCompile Include="src\GLSLUniform.cpp" />
     <ClCompile Include="src\ImageColorChangerShader.cpp" />
     <ClCompile Include="src\ImageComposer.cpp" />

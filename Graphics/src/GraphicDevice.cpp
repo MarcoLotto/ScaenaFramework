@@ -57,6 +57,18 @@ void GraphicDevice::bindApi(int apiId){
     bindedApi = apiId;
 }
 
+void GraphicDevice::bindCustomApi(GraphicDevice* graphicDevice){
+    if(instance != NULL){
+		instance->destroy();
+		delete instance;		
+	}
+	//Inicializo el API pedido
+	instance = graphicDevice;
+
+	// Le seteo al GLSLProgram que implementacion de API voy a usar
+	GLSLProgram::bindApi(MOCK_API);
+}
+
 void GraphicDevice::setDefaultFrameBuffer(unsigned int frameBufferHandler){
     defaultFrameBuffer = frameBufferHandler;
 }

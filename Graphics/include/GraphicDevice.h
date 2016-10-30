@@ -27,6 +27,9 @@ protected:
 public:
 	//Selecciona el api a utilizar
 	static void bindApi(int apiId);
+
+	// Asigna un api custom (por ejemplo para tests)
+	static void bindCustomApi(GraphicDevice* graphicDevice);
     
     // Devuelve el id de api que se bindeo por ultima vez
     static int getBindedApi(){ return bindedApi; }

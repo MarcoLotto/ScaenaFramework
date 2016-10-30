@@ -9,6 +9,7 @@
 #include "GLSLProgramGLImplementation.h"
 #include "GLSLProgramGLES3Implementation.h"
 #include "GLSLProgramGLES2Implementation.h"
+#include "GLSLProgramMockImplementation.h"
 #include "ApiNotBindException.h"
 #include "ApiVariableTypeDoesNotExistException.h"
 
@@ -40,6 +41,9 @@ GLSLProgramInterface* GLSLProgram::createProgramImplementation(){
 			return new GLSLProgramGLES2Implementation(); 
 		break;
 		#endif
+		case MOCK_API:
+			return new GLSLProgramMockImplementation(); 
+		break;
 		default:
 			throw new ApiVariableTypeDoesNotExistException("El API informada al GLSLProgram no es correcta");
 		break;

@@ -102,7 +102,9 @@ void WindowConnector::writeToStdout(const char* message){
 
 //! Cambia entre el back y el front buffer, y finaliza con todas las operaciones pendientes en GPU
 void WindowConnector::SwapBuffers(){
-	glutSwapBuffers();
+	if(app != NULL){
+		glutSwapBuffers();
+	}
 }
 
 //! Devuelve la ruta del directorio base de la aplicacion

@@ -8,6 +8,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graphics", "Graphics.vcxpro
 		{B661ACB3-1C66-4600-A7B4-F7DAF7971994} = {B661ACB3-1C66-4600-A7B4-F7DAF7971994}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{8C9905F5-B2DB-45FC-84BC-2B859D5832DF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B0AA7AC-D20A-47E9-B7D8-82AFD63BDD92} = {9B0AA7AC-D20A-47E9-B7D8-82AFD63BDD92}
+		{B661ACB3-1C66-4600-A7B4-F7DAF7971994} = {B661ACB3-1C66-4600-A7B4-F7DAF7971994}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -22,6 +28,10 @@ Global
 		{9B0AA7AC-D20A-47E9-B7D8-82AFD63BDD92}.Debug|Win32.Build.0 = Debug|Win32
 		{9B0AA7AC-D20A-47E9-B7D8-82AFD63BDD92}.Release|Win32.ActiveCfg = Release|Win32
 		{9B0AA7AC-D20A-47E9-B7D8-82AFD63BDD92}.Release|Win32.Build.0 = Release|Win32
+		{8C9905F5-B2DB-45FC-84BC-2B859D5832DF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C9905F5-B2DB-45FC-84BC-2B859D5832DF}.Debug|Win32.Build.0 = Debug|Win32
+		{8C9905F5-B2DB-45FC-84BC-2B859D5832DF}.Release|Win32.ActiveCfg = Release|Win32
+		{8C9905F5-B2DB-45FC-84BC-2B859D5832DF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
