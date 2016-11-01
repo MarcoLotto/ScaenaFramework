@@ -6,6 +6,7 @@ class TestManager {
 
 private:
 	MockGraphicDevice* mockDevice;
+	void resetData();
 
 public:
 	TestManager();

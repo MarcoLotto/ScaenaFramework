@@ -70,20 +70,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\BlurRenderPipelineTest.cpp" />
+    <ClCompile Include="src\DeferredRenderPipelineTest.cpp" />
+    <ClCompile Include="src\DepthOfFieldRenderPipelineTest.cpp" />
+    <ClCompile Include="src\RenderPipelineBuilder.cpp" />
     <ClCompile Include="src\MockGraphicDevice.cpp" />
-    <ClCompile Include="src\RenderPipelineTest.cpp" />
+    <ClCompile Include="src\ForwardRenderPipelineTest.cpp" />
+    <ClCompile Include="src\BloomRenderPipelineTest.cpp" />
     <ClCompile Include="src\Test.cpp" />
     <ClCompile Include="src\TestConfiguration.cpp" />
     <ClCompile Include="src\TestManager.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\UIRenderPipelineTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AssertionException.h" />
+    <ClInclude Include="include\BlurRenderPipelineTest.h" />
+    <ClInclude Include="include\DeferredRenderPipelineTest.h" />
+    <ClInclude Include="include\DepthOfFieldRenderPipelineTest.h" />
+    <ClInclude Include="include\RenderPipelineBuilder.h" />
     <ClInclude Include="include\MockGraphicDevice.h" />
-    <ClInclude Include="include\RenderPipelineTest.h" />
+    <ClInclude Include="include\ForwardRenderPipelineTest.h" />
+    <ClInclude Include="include\BloomRenderPipelineTest.h" />
     <ClInclude Include="include\Test.h" />
     <ClInclude Include="include\TestConfiguration.h" />
     <ClInclude Include="include\TestManager.h" />
+    <ClInclude Include="include\UIRenderPipelineTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -17,6 +17,9 @@ public:
 	AssertionException(string invalidField, string testName) : 
 		Exception("Assertion failed on " + testName + ": invalid field " + invalidField){
 	}
+	AssertionException(string invalidField, int v1, int v2, string testName) : 
+		Exception("Assertion failed on " + testName + ": " + invalidField + " is " + StringUtils::toString(v1) + " and not equals " + StringUtils::toString(v2)){
+	}
 	AssertionException(string testName) : 
 		Exception("Assertion failed on " + testName){
 	}

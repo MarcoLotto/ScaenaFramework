@@ -17,6 +17,7 @@ protected:
 	void assertSmallerThan(float v1, float v2);
 
 	void assertTrue(string field, bool v);
+	void assertDeviceAccess(MockGraphicDevice* device, string deviceMethodName, int v2);
 
 public:
 	// Debe colocarse aqui todo el codigo que se correra

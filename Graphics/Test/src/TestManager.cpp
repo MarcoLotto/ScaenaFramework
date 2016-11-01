@@ -1,5 +1,6 @@
 #include "TestManager.h"
 #include "AssertionException.h"
+#include "FrameBufferManager.h"
 
 TestManager::TestManager() { 
 	this->mockDevice = new MockGraphicDevice();
@@ -18,9 +19,11 @@ void TestManager::runTests()
 	while(it != testsToRun.end()){
 		Test* test = *it;
 		try {
-			this->mockDevice->resetDeviceInfo();
 			test->when();
 			test->then(this->mockDevice);
+			Logger::getInstance()->logInfo(new Log("PASSED: " + test->getName()));
+
+			this->resetData();
 			passed++;
 		}
 		catch(...){
@@ -30,4 +33,10 @@ void TestManager::runTests()
 		++it;
 	}
 	Logger::getInstance()->logInfo(new Log("TESTING FINISHED - PASSED: " + StringUtils::toString(passed) + " - FAILED: " + StringUtils::toString(failed)));
+}
+
+void TestManager::resetData() {
+	this->mockDevice->resetDeviceInfo();
+	FrameBufferManager::getInstance()->clearAllFrameBuffers();
+	//_sleep(6000);
 }

@@ -10,12 +10,15 @@
 class MockGraphicDevice : public GraphicDevice{
 private:
 	map<string, int> methodsInfo;
+	int returnValue;
 
 	unsigned int getArrayContainerDataTypeSize(unsigned int dataTypeInContainer);
 	void evaluateErrorsAndLog(const char* location);
 	void evaluateErrorsAndLogOnlyInDebugMode(const char* location);
 
 	void addMethodInfo(string methodName);
+
+	int getNextReturnValue();
 
 public:
 	MockGraphicDevice();
@@ -33,6 +36,7 @@ public:
 	// Resetea las estadisticas de acceso a metodos del device
 	void resetDeviceInfo(){
 		this->methodsInfo.clear();
+		this->returnValue = 1;
 	}
 
 	// Limpieza del buffer activo

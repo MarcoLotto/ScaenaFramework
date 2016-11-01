@@ -30,6 +30,11 @@ int MockGraphicDevice::getMethodCalls(string methodName){
 MockGraphicDevice::MockGraphicDevice(){
 	this->addMethodInfo("MockGraphicDevice");
 	this->constantCatalog = new OpenglConstantCatalog();
+	this->returnValue = 1;
+}
+
+int MockGraphicDevice::getNextReturnValue() {
+	return this->returnValue++;
 }
 
 void MockGraphicDevice::setViewport(unsigned int x, unsigned int y, int width, int height){
@@ -69,12 +74,12 @@ void MockGraphicDevice::blendFunction(unsigned int sFactor, unsigned int dFactor
 
 unsigned int MockGraphicDevice::generateFrameBuffer(){
 	this->addMethodInfo("generateFrameBuffer");
-	return 1;
+	return this->getNextReturnValue();
 }
 
 unsigned int MockGraphicDevice::generateDepthBuffer(int width, int height){
 	this->addMethodInfo("generateDepthBuffer");
-	return 2;
+	return this->getNextReturnValue();
 }
 
 void MockGraphicDevice::attachDepthBufferToFrameBufferAsRenderBuffer(unsigned int depthBuffer, unsigned int frameBuffer){
@@ -103,18 +108,20 @@ void MockGraphicDevice::bindFrameBuffer(unsigned int frameBufferHandler){
 
 unsigned int MockGraphicDevice::getCurrentBindedFrameBuffer(){
 	this->addMethodInfo("getCurrentBindedFrameBuffer");
-	return 1;
+	return this->getNextReturnValue();
 }
 
 
 unsigned char* MockGraphicDevice::getApiVersion(){
 	this->addMethodInfo("getApiVersion");
-	return 0;
+	unsigned char* version = new unsigned char[1];
+	version[0] = '4';
+	return version;
 }
 
 unsigned int MockGraphicDevice::generateTexture(vec2 size, unsigned int internalFormat, unsigned int format, void* pixelData){
 	this->addMethodInfo("generateTexture");
-	return 1;
+	return this->getNextReturnValue();
 }
 
 void MockGraphicDevice::setActiveTexture(unsigned int textureUnit){
@@ -178,15 +185,15 @@ void MockGraphicDevice::drawBuffer(unsigned int colorAttachmentNumber){
 
 unsigned int MockGraphicDevice::generateVaoBuffer(){
 	this->addMethodInfo("generateVaoBuffer");
-	return 1;
+	return this->getNextReturnValue();
 }
 unsigned int MockGraphicDevice::generateVboBuffer(){
 	this->addMethodInfo("generateVboBuffer");
-	return 2;
+	return this->getNextReturnValue();
 }
 unsigned int MockGraphicDevice::generateTransformFeedback(){
 	this->addMethodInfo("generateTransformFeedback");
-	return 3;
+	return this->getNextReturnValue();
 }
 
 void MockGraphicDevice::deleteTransformFeedback(unsigned int feedbackHandle){
@@ -201,7 +208,7 @@ void MockGraphicDevice::deleteVaoBuffer(unsigned int vaoHandle){
 
 unsigned int MockGraphicDevice::attachVboToTransformFeedback(unsigned int feedbackHandle, unsigned int vboHandle, unsigned int attachIndex){	
 	this->addMethodInfo("attachVboToTransformFeedback");
-	return 1;
+	return this->getNextReturnValue();
 }
 
 void MockGraphicDevice::bindVaoBuffer(unsigned int vaoHandle){	
@@ -227,7 +234,7 @@ void MockGraphicDevice::modifyGeometryArray(GraphicArrayContainer* container, un
 
 unsigned int MockGraphicDevice::getArrayContainerDataTypeSize(unsigned int dataTypeInContainer){
 	this->addMethodInfo("getArrayContainerDataTypeSize");
-	return 1;
+	return this->getNextReturnValue();
 }
 
 void MockGraphicDevice::evaluateErrorsAndLog(const char* location){
@@ -241,7 +248,7 @@ void MockGraphicDevice::evaluateErrorsAndLogOnlyInDebugMode(const char* location
 // Para soporte de queries
 unsigned int MockGraphicDevice::generateQuery(){
 	this->addMethodInfo("generateQuery");
-	return 1;
+	return this->getNextReturnValue();
 }
 void MockGraphicDevice::beginQuery(unsigned int queryHandler, unsigned int queryType){
 	this->addMethodInfo("beginQuery");

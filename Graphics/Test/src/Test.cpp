@@ -11,6 +11,12 @@ void Test::assertEquals(int v1, int v2){
 		throw new AssertionException(v1, v2, this->getName());
 	}
 }
+void Test::assertDeviceAccess(MockGraphicDevice* device, string deviceMethodName, int v2){
+	int callCount = device->getMethodCalls(deviceMethodName);
+	if(callCount != v2){
+		throw new AssertionException(deviceMethodName, callCount, v2, this->getName());
+	}
+}
 void Test::assertEquals(float v1, float v2){
 	if(v1 != v2){
 		throw new AssertionException(v1, v2, this->getName());
