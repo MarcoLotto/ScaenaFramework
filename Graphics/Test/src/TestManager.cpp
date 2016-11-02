@@ -32,7 +32,7 @@ void TestManager::runTests()
 		}
 		++it;
 	}
-	Logger::getInstance()->logInfo(new Log("TESTING FINISHED - PASSED: " + StringUtils::toString(passed) + " - FAILED: " + StringUtils::toString(failed)));
+	Logger::getInstance()->logInfo(new Log("\n\nTESTING FINISHED - PASSED: " + StringUtils::toString(passed) + " - FAILED: " + StringUtils::toString(failed)));
 }
 
 void TestManager::resetData() {

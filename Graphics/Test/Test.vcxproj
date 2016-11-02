@@ -81,6 +81,9 @@
     <ClCompile Include="src\TestConfiguration.cpp" />
     <ClCompile Include="src\TestManager.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\OneTextureTest.cpp" />
+    <ClCompile Include="src\TwoDifferentTexturesTest.cpp" />
+    <ClCompile Include="src\TwoEqualTextureTest.cpp" />
     <ClCompile Include="src\UIRenderPipelineTest.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +98,9 @@
     <ClInclude Include="include\Test.h" />
     <ClInclude Include="include\TestConfiguration.h" />
     <ClInclude Include="include\TestManager.h" />
+    <ClInclude Include="include\OneTextureTest.h" />
+    <ClInclude Include="include\TwoDifferentTexturesTest.h" />
+    <ClInclude Include="include\TwoEqualTexturesTest.h" />
     <ClInclude Include="include\UIRenderPipelineTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

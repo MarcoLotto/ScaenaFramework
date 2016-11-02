@@ -57,6 +57,15 @@
     <ClCompile Include="src\DepthOfFieldRenderPipelineTest.cpp">
       <Filter>src\tests</Filter>
     </ClCompile>
+    <ClCompile Include="src\OneTextureTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoDifferentTexturesTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoEqualTextureTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Test.h">
@@ -93,6 +102,15 @@
       <Filter>include\tests</Filter>
     </ClInclude>
     <ClInclude Include="include\DepthOfFieldRenderPipelineTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OneTextureTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoDifferentTexturesTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoEqualTexturesTest.h">
       <Filter>include\tests</Filter>
     </ClInclude>
   </ItemGroup>
