@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		760AA17E1AFAD4F200B0187E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760AA17D1AFAD4F200B0187E /* CoreMotion.framework */; };
+		76113D981DCB4DC00029E9C8 /* GLSLProgramMockImplementation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76113D971DCB4DC00029E9C8 /* GLSLProgramMockImplementation.cpp */; };
 		761161101DBEDB9F00D8F6A4 /* BackgroundForm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761161061DBEDB9F00D8F6A4 /* BackgroundForm.cpp */; };
 		761161111DBEDB9F00D8F6A4 /* CustomizableTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761161071DBEDB9F00D8F6A4 /* CustomizableTexture.cpp */; };
 		761161121DBEDB9F00D8F6A4 /* FormsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761161081DBEDB9F00D8F6A4 /* FormsManager.cpp */; };
@@ -368,6 +369,8 @@
 
 /* Begin PBXFileReference section */
 		760AA17D1AFAD4F200B0187E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		76113D971DCB4DC00029E9C8 /* GLSLProgramMockImplementation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLSLProgramMockImplementation.cpp; sourceTree = "<group>"; };
+		76113D991DCB4DD20029E9C8 /* GLSLProgramMockImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSLProgramMockImplementation.h; sourceTree = "<group>"; };
 		761160F91DBEDB9F00D8F6A4 /* BackgroundForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundForm.h; sourceTree = "<group>"; };
 		761160FA1DBEDB9F00D8F6A4 /* CustomizableTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizableTexture.h; sourceTree = "<group>"; };
 		761160FB1DBEDB9F00D8F6A4 /* FormsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormsManager.h; sourceTree = "<group>"; };
@@ -1246,6 +1249,7 @@
 		764AF7021B9BEF4700585FDF /* src */ = {
 			isa = PBXGroup;
 			children = (
+				76113D971DCB4DC00029E9C8 /* GLSLProgramMockImplementation.cpp */,
 				764AF7031B9BEF4700585FDF /* ApiTexture.cpp */,
 				764AF7041B9BEF4700585FDF /* BasicForceMeshDeformationTFShader.cpp */,
 				764AF7051B9BEF4700585FDF /* BloomShader.cpp */,
@@ -1434,6 +1438,7 @@
 		764AF8741B9BEF4D00585FDF /* include */ = {
 			isa = PBXGroup;
 			children = (
+				76113D991DCB4DD20029E9C8 /* GLSLProgramMockImplementation.h */,
 				764AF8751B9BEF4D00585FDF /* AnimationLoadException.h */,
 				764AF8761B9BEF4D00585FDF /* ApiNotBindException.h */,
 				764AF8771B9BEF4D00585FDF /* ApiTexture.h */,
@@ -2367,6 +2372,7 @@
 				764AF7E61B9BEF4700585FDF /* ImageColorChangerShader.cpp in Sources */,
 				761161111DBEDB9F00D8F6A4 /* CustomizableTexture.cpp in Sources */,
 				764AF7F51B9BEF4700585FDF /* Logger.cpp in Sources */,
+				76113D981DCB4DC00029E9C8 /* GLSLProgramMockImplementation.cpp in Sources */,
 				764AF7DB1B9BEF4700585FDF /* FrameBuffer.cpp in Sources */,
 				764AF8201B9BEF4700585FDF /* RandomTextureGeneratorShader.cpp in Sources */,
 				764AF8301B9BEF4700585FDF /* ShadowShader.cpp in Sources */,

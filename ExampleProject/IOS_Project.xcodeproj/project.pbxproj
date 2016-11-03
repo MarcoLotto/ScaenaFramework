@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		760AA17E1AFAD4F200B0187E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760AA17D1AFAD4F200B0187E /* CoreMotion.framework */; };
+		76113D9B1DCB4E090029E9C8 /* GLSLProgramMockImplementation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76113D9A1DCB4E090029E9C8 /* GLSLProgramMockImplementation.cpp */; };
 		761165C51DBEF5F400D8F6A4 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 761165C41DBEF5F400D8F6A4 /* Shaders */; };
 		761165D21DBEF63E00D8F6A4 /* ExamplePipelineBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761165CF1DBEF63E00D8F6A4 /* ExamplePipelineBuilder.cpp */; };
 		761165D31DBEF63E00D8F6A4 /* myWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761165D01DBEF63E00D8F6A4 /* myWindow.cpp */; };
@@ -360,6 +361,8 @@
 
 /* Begin PBXFileReference section */
 		760AA17D1AFAD4F200B0187E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		76113D9A1DCB4E090029E9C8 /* GLSLProgramMockImplementation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLSLProgramMockImplementation.cpp; sourceTree = "<group>"; };
+		76113D9C1DCB4E1D0029E9C8 /* GLSLProgramMockImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSLProgramMockImplementation.h; sourceTree = "<group>"; };
 		761165C41DBEF5F400D8F6A4 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shaders; path = Platforms/IOS/Shaders; sourceTree = "<group>"; };
 		761165CB1DBEF63E00D8F6A4 /* ExamplePipelineBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamplePipelineBuilder.h; sourceTree = "<group>"; };
 		761165CC1DBEF63E00D8F6A4 /* myWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myWindow.h; sourceTree = "<group>"; };
@@ -1205,6 +1208,7 @@
 		764AF7021B9BEF4700585FDF /* src */ = {
 			isa = PBXGroup;
 			children = (
+				76113D9A1DCB4E090029E9C8 /* GLSLProgramMockImplementation.cpp */,
 				764AF7031B9BEF4700585FDF /* ApiTexture.cpp */,
 				764AF7041B9BEF4700585FDF /* BasicForceMeshDeformationTFShader.cpp */,
 				764AF7051B9BEF4700585FDF /* BloomShader.cpp */,
@@ -1394,6 +1398,7 @@
 			isa = PBXGroup;
 			children = (
 				764AF8751B9BEF4D00585FDF /* AnimationLoadException.h */,
+				76113D9C1DCB4E1D0029E9C8 /* GLSLProgramMockImplementation.h */,
 				764AF8761B9BEF4D00585FDF /* ApiNotBindException.h */,
 				764AF8771B9BEF4D00585FDF /* ApiTexture.h */,
 				764AF8781B9BEF4D00585FDF /* ApiVariableTypeDoesNotExistException.h */,
@@ -2531,6 +2536,7 @@
 				764AF85D1B9BEF4700585FDF /* UIList.cpp in Sources */,
 				764AF7F21B9BEF4700585FDF /* LineR2.cpp in Sources */,
 				76CCF9881A7AF3A800066A41 /* pngrutil.c in Sources */,
+				76113D9B1DCB4E090029E9C8 /* GLSLProgramMockImplementation.cpp in Sources */,
 				764AF7CB1B9BEF4700585FDF /* Cubo.cpp in Sources */,
 				764AF7D71B9BEF4700585FDF /* DrawPacket.cpp in Sources */,
 				764AF8641B9BEF4700585FDF /* UIStaticImage.cpp in Sources */,
