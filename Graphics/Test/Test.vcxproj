@@ -79,6 +79,8 @@
     <ClCompile Include="src\MockGraphicDevice.cpp" />
     <ClCompile Include="src\ForwardRenderPipelineTest.cpp" />
     <ClCompile Include="src\BloomRenderPipelineTest.cpp" />
+    <ClCompile Include="src\SceneLightsLoadTest.cpp" />
+    <ClCompile Include="src\SceneLoadTest.cpp" />
     <ClCompile Include="src\Test.cpp" />
     <ClCompile Include="src\TestConfiguration.cpp" />
     <ClCompile Include="src\TestManager.cpp" />
@@ -101,6 +103,8 @@
     <ClInclude Include="include\MockGraphicDevice.h" />
     <ClInclude Include="include\ForwardRenderPipelineTest.h" />
     <ClInclude Include="include\BloomRenderPipelineTest.h" />
+    <ClInclude Include="include\SceneLightsLoadTest.h" />
+    <ClInclude Include="include\SceneLoadTest.h" />
     <ClInclude Include="include\Test.h" />
     <ClInclude Include="include\TestConfiguration.h" />
     <ClInclude Include="include\TestManager.h" />

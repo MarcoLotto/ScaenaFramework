@@ -13,6 +13,8 @@
 #include "TwoEqualMeshesLoadTest.h"
 #include "ObjectLoadTest.h"
 #include "TwoEqualObjectsLoadTest.h"
+#include "SceneLoadTest.h"
+#include "SceneLightsLoadTest.h"
 
 void TestConfiguration::configureTests(){
 	this->tests.push_back(new ForwardRenderPipelineTest());
@@ -28,4 +30,6 @@ void TestConfiguration::configureTests(){
 	this->tests.push_back(new TwoEqualMeshesLoadTest());
 	this->tests.push_back(new ObjectLoadTest());
 	this->tests.push_back(new TwoEqualObjectsLoadTest());
+	this->tests.push_back(new SceneLoadTest());
+	this->tests.push_back(new SceneLightsLoadTest());
 }
