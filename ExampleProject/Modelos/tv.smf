@@ -1,0 +1,196 @@
+
+<Model>
+	<Mesh Name="Box001">
+		<Transformations>
+			<Translation>
+				<X>0.520665</X>
+
+				<Y>-5.22841e-009</Y>
+
+				<Z>0.119612</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+
+		<VertexBuffer Size="1812" Type="float">@B[²×)£“ñMM±ž[¢Æ$¯Â¢Æ$²×)¢Æ$³¤ö¡ôMM±ž[¡ô¯Â¡ô²×)¡ô³¤öŸZxMM±ž[ŸZx¯ÂŸZx²×)ŸZx³¤ö¢Æ$MM±ž[¢Æ$¯Â¢Æ$²×)¢Æ$²×)£“ñ‡çx¯Â£“ñ‡çx±ž[£“ñ‡çx³¤ö¢Æ$‡çx³¤ö¡ô‡çx¯Â¡ôˆ´E±ž[¡ôˆ´E³¤öŸZx‡çx³¤öŸZx‡çx°ÒŸZx‡çx±ž[ŸZxˆ´E³¤ö¡ô‡çx³¤ö¢Æ$‡çx±ž[£“ñ‡çx¯Â£“ñ‡çx²×)£“ñ‡çx¯Â 'E†…[°ÒŸZx†…[¯Â 'E†…[°ÒŸZx†…[°Ò «¦…ì-¯Uï 'E…ì-°Ò «¦…ì-¯Uï 'E…ì-³¤ö¢Æ$MM²×)¢Æ$¯Â¢Æ$¯Â£“ñMM±ž[£“ñMM±ž[¢Æ$±ž[£“ñMM¯Â£“ñMM³¤ö¢Æ$MM²×)£“ñMM³¤öŸZxMM²×)ŸZx²×)¡ô±ž[ŸZx¯ÂŸZx¯Â¡ô¯ÂŸZx±ž[ŸZx±ž[¡ô²×)ŸZx³¤öŸZxMM³¤ö¡ôMM³¤ö¡ôMM²×)¡ô²×)ŸZx±ž[¡ô¯Â¡ô¯ÂŸZx¯Â¡ô±ž[¡ô±ž[ŸZx²×)¡ô³¤ö¡ôMM³¤öŸZxMM²×)£“ñMM²×)¢Æ$±ž[£“ñMM¯Â£“ñMM¯Â¢Æ$¯Â£“ñMM±ž[£“ñMM±ž[¢Æ$²×)£“ñMM³¤ö¢Æ$MM²×)¢Æ$ˆ´E³¤ö¢Æ$‡çx¯Â¢Æ$ˆ´E±ž[¢Æ$ˆ´E±ž[£“ñ‡çx±ž[¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â£“ñ‡çx²×)¢Æ$ˆ´E²×)£“ñ‡çx²×)¡ôˆ´E²×)ŸZxˆ´E³¤öŸZx‡çx¯Â 'E‡çx°ÒŸZx‡çx±ž[ŸZxˆ´E±ž[¡ôˆ´E±ž[ŸZxˆ´E°ÒŸZx‡çx¯Â 'E‡çx¯Â¡ôˆ´E²×)ŸZxˆ´E²×)¡ôˆ´E³¤ö¡ô‡çx²×)ŸZxˆ´E²×)¡ôˆ´E³¤ö¡ô‡çx¯Â 'E‡çx¯Â¡ôˆ´E±ž[¡ôˆ´E±ž[ŸZxˆ´E±ž[¡ôˆ´E¯Â¡ôˆ´E¯Â 'E‡çx°ÒŸZx‡çx²×)¡ôˆ´E²×)ŸZxˆ´E³¤öŸZx‡çx²×)¢Æ$ˆ´E²×)£“ñ‡çx±ž[¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â£“ñ‡çx¯Â¢Æ$ˆ´E±ž[¢Æ$ˆ´E±ž[£“ñ‡çx²×)¢Æ$ˆ´E³¤ö¢Æ$‡çx¯Uï 'E…5.°Ò «¦…5.°ÒŸZx†…[°Ò «¦…5.¯Uï 'E…5.¯Â 'E†…[¯Uï 'E…5-°Ò «¦…5-°ÒŸZx†…[°Ò «¦…5-¯Uï 'E…5-¯Â 'E†…[¯Uï 'E…ì-°Ò 'E…iÌ°Ò «¦…ì-°Ò 'E…iÌ¯Uï 'E…ì-°Ò 'E…iÌ°Ò «¦…ì-°Ò 'E…iÌ²×)£“ñMM³¤ö¢Æ$MM²×)¢Æ$±ž[¢Æ$¯Â¢Æ$¯Â£“ñMM±ž[£“ñMM¯Â¢Æ$±ž[¢Æ$±ž[£“ñMM¯Â£“ñMM²×)¢Æ$³¤ö¢Æ$MM²×)£“ñMM³¤ö¡ôMM³¤öŸZxMM²×)ŸZx²×)¡ô±ž[¡ô±ž[ŸZx¯ÂŸZx¯Â¡ô¯Â¡ô¯ÂŸZx±ž[ŸZx±ž[¡ô²×)¡ô²×)ŸZx³¤öŸZxMM³¤ö¡ôMM³¤öŸZxMM³¤ö¡ôMM²×)¡ô²×)ŸZx±ž[ŸZx±ž[¡ô¯Â¡ô¯ÂŸZx¯ÂŸZx¯Â¡ô±ž[¡ô±ž[ŸZx²×)ŸZx²×)¡ô³¤ö¡ôMM³¤öŸZxMM³¤ö¢Æ$MM²×)£“ñMM²×)¢Æ$±ž[¢Æ$±ž[£“ñMM¯Â£“ñMM¯Â¢Æ$¯Â¢Æ$¯Â£“ñMM±ž[£“ñMM±ž[¢Æ$²×)¢Æ$²×)£“ñMM³¤ö¢Æ$MM²×)£“ñ‡çx²×)¢Æ$ˆ´E³¤ö¢Æ$‡çx¯Â£“ñ‡çx¯Â¢Æ$ˆ´E±ž[¢Æ$ˆ´E±ž[£“ñ‡çx±ž[£“ñ‡çx±ž[¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â£“ñ‡çx³¤ö¢Æ$‡çx²×)¢Æ$ˆ´E²×)£“ñ‡çx³¤ö¡ô‡çx²×)¡ôˆ´E²×)ŸZxˆ´E³¤öŸZx‡çx¯Â¡ôˆ´E¯Â 'E‡çx°ÒŸZx‡çx±ž[ŸZxˆ´E±ž[¡ôˆ´E±ž[¡ôˆ´E±ž[ŸZxˆ´E°ÒŸZx‡çx¯Â 'E‡çx¯Â¡ôˆ´E³¤öŸZx‡çx²×)ŸZxˆ´E²×)¡ôˆ´E³¤ö¡ô‡çx³¤öŸZx‡çx²×)ŸZxˆ´E²×)¡ôˆ´E³¤ö¡ô‡çx°ÒŸZx‡çx¯Â 'E‡çx¯Â¡ôˆ´E±ž[¡ôˆ´E±ž[ŸZxˆ´E±ž[ŸZxˆ´E±ž[¡ôˆ´E¯Â¡ôˆ´E¯Â 'E‡çx°ÒŸZx‡çx³¤ö¡ô‡çx²×)¡ôˆ´E²×)ŸZxˆ´E³¤öŸZx‡çx³¤ö¢Æ$‡çx²×)¢Æ$ˆ´E²×)£“ñ‡çx±ž[£“ñ‡çx±ž[¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â£“ñ‡çx¯Â£“ñ‡çx¯Â¢Æ$ˆ´E±ž[¢Æ$ˆ´E±ž[£“ñ‡çx²×)£“ñ‡çx²×)¢Æ$ˆ´E³¤ö¢Æ$‡çx¯Â 'E†…[¯Uï 'E…5.°Ò «¦…5.°ÒŸZx†…[°ÒŸZx†…[°Ò «¦…5.¯Uï 'E…5.¯Â 'E†…[¯Â 'E†…[¯Uï 'E…5-°Ò «¦…5-°ÒŸZx†…[°ÒŸZx†…[°Ò «¦…5-¯Uï 'E…5-¯Â 'E†…[°Ò «¦…ì-¯Uï 'E…ì-¯Uï 'E…ì-°Ò «¦…ì-°Ò «¦…ì-¯Uï 'E…ì-¯Uï 'E…ì-°Ò «¦…ì-²×)¢Æ$³¤ö¢Æ$MM³¤ö¡ôMM²×)¡ô²×)¡ô²×)ŸZx±ž[ŸZx±ž[¡ô±ž[¡ô¯Â¡ô¯Â¢Æ$±ž[¢Æ$±ž[¢Æ$±ž[£“ñMM²×)£“ñMM²×)¢Æ$¯Â¡ô¯ÂŸZx¯ÂŸZx¯Â¡ô¯Â¡ô±ž[¡ô±ž[¢Æ$¯Â¢Æ$¯Â¢Æ$¯Â£“ñMM¯Â£“ñMM¯Â¢Æ$±ž[¡ô±ž[ŸZx²×)ŸZx²×)¡ô²×)¡ô³¤ö¡ôMM³¤ö¢Æ$MM²×)¢Æ$²×)¢Æ$²×)£“ñMM±ž[£“ñMM±ž[¢Æ$²×)ŸZx³¤öŸZxMM³¤öŸZxMM²×)ŸZx²×)ŸZx²×)¡ô±ž[¡ô±ž[ŸZx±ž[ŸZx¯ÂŸZx¯ÂŸZx±ž[ŸZx¯ÂŸZx¯Â¡ô¯Â¡ô¯ÂŸZx¯ÂŸZx±ž[ŸZx±ž[ŸZx¯ÂŸZx±ž[ŸZx±ž[¡ô²×)¡ô²×)ŸZx²×)ŸZx³¤öŸZxMM³¤öŸZxMM²×)ŸZx²×)¡ô³¤ö¡ôMM³¤ö¢Æ$MM²×)¢Æ$²×)¢Æ$²×)£“ñMM±ž[£“ñMM±ž[¢Æ$±ž[¢Æ$¯Â¢Æ$¯Â¡ô±ž[¡ô¯Â¢Æ$¯Â£“ñMM¯Â£“ñMM¯Â¢Æ$¯Â¢Æ$±ž[¢Æ$±ž[¡ô¯Â¡ô±ž[¢Æ$±ž[£“ñMM²×)£“ñMM²×)¢Æ$²×)¢Æ$³¤ö¢Æ$MM³¤ö¡ôMM²×)¡ô²×)¢Æ$ˆ´E²×)£“ñ‡çx±ž[£“ñ‡çx±ž[¢Æ$ˆ´E±ž[¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â¡ôˆ´E±ž[¡ôˆ´E±ž[¡ôˆ´E±ž[ŸZxˆ´E²×)ŸZxˆ´E²×)¡ôˆ´E²×)¡ôˆ´E³¤ö¡ô‡çx³¤ö¢Æ$‡çx²×)¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â£“ñ‡çx¯Â£“ñ‡çx¯Â¢Æ$ˆ´E¯Â¢Æ$ˆ´E±ž[¢Æ$ˆ´E±ž[¡ôˆ´E¯Â¡ôˆ´E¯Â 'E‡çx¯Â¡ôˆ´E¯Â¡ôˆ´E¯Â 'E‡çx±ž[¢Æ$ˆ´E±ž[£“ñ‡çx²×)£“ñ‡çx²×)¢Æ$ˆ´E²×)¢Æ$ˆ´E³¤ö¢Æ$‡çx³¤ö¡ô‡çx²×)¡ôˆ´E²×)¡ôˆ´E²×)ŸZxˆ´E±ž[ŸZxˆ´E±ž[¡ôˆ´E°ÒŸZx‡çx±ž[ŸZxˆ´E±ž[ŸZxˆ´E°ÒŸZx‡çx±ž[ŸZxˆ´E±ž[¡ôˆ´E²×)¡ôˆ´E²×)ŸZxˆ´E²×)ŸZxˆ´E³¤öŸZx‡çx³¤öŸZx‡çx²×)ŸZxˆ´E°ÒŸZx‡çx±ž[ŸZxˆ´E±ž[ŸZxˆ´E°ÒŸZx‡çx¯Â 'E‡çx¯Â¡ôˆ´E¯Â¡ôˆ´E¯Â 'E‡çx²×)ŸZxˆ´E³¤öŸZx‡çx³¤öŸZx‡çx²×)ŸZxˆ´E²×)ŸZxˆ´E²×)¡ôˆ´E±ž[¡ôˆ´E±ž[ŸZxˆ´E±ž[¡ôˆ´E¯Â¡ôˆ´E¯Â¢Æ$ˆ´E±ž[¢Æ$ˆ´E±ž[¢Æ$ˆ´E±ž[£“ñ‡çx²×)£“ñ‡çx²×)¢Æ$ˆ´E²×)¢Æ$ˆ´E³¤ö¢Æ$‡çx³¤ö¡ô‡çx²×)¡ôˆ´E¯Â¡ôˆ´E±ž[¡ôˆ´E±ž[¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â¢Æ$ˆ´E¯Â£“ñ‡çx¯Â£“ñ‡çx¯Â¢Æ$ˆ´E²×)¡ôˆ´E³¤ö¡ô‡çx³¤ö¢Æ$‡çx²×)¢Æ$ˆ´E²×)¢Æ$ˆ´E²×)£“ñ‡çx±ž[£“ñ‡çx±ž[¢Æ$ˆ´E±ž[£“ñMM¯Â£“ñMM¯Â£“ñ‡çx±ž[£“ñ‡çx²×)£“ñ‡çx³¤ö¢Æ$‡çx³¤ö¢Æ$MM²×)£“ñMM¯Â£“ñMM±ž[£“ñMM±ž[£“ñ‡çx¯Â£“ñ‡çx²×)£“ñMM³¤ö¢Æ$MM³¤ö¢Æ$‡çx²×)£“ñ‡çx³¤ö¡ôMM³¤öŸZxMM³¤öŸZx‡çx³¤ö¡ô‡çx³¤öŸZxMM³¤ö¡ôMM³¤ö¡ô‡çx³¤öŸZx‡çx³¤ö¢Æ$MM²×)£“ñMM²×)£“ñ‡çx³¤ö¢Æ$‡çx±ž[£“ñMM¯Â£“ñMM¯Â£“ñ‡çx±ž[£“ñ‡çx¯Â£“ñMM±ž[£“ñMM±ž[£“ñ‡çx¯Â£“ñ‡çx²×)£“ñMM³¤ö¢Æ$MM³¤ö¢Æ$‡çx²×)£“ñ‡çx³¤ö¡ôMM³¤öŸZxMM³¤öŸZx‡çx³¤ö¡ô‡çx³¤öŸZxMM³¤ö¡ôMM³¤ö¡ô‡çx³¤öŸZx‡çx¯Uï 'E…5.¯Â 'E†…[¯Â 'E†…[¯Uï 'E…5.°Ò «¦…5.°ÒŸZx†…[°ÒŸZx†…[°Ò «¦…5-¯Uï 'E…5-¯Â 'E†…[¯Â 'E†…[¯Uï 'E…5-°Ò «¦…5-°ÒŸZx†…[°ÒŸZx†…[°Ò «¦…5.°ÒŸZx‡çx¯Â 'E‡çx¯Â 'E†…[°ÒŸZx†…[¯Â 'E‡çx°ÒŸZx‡çx°ÒŸZx†…[¯Â 'E†…[°ÒŸZx‡çx¯Â 'E‡çx¯Â 'E†…[°ÒŸZx†…[¯Â 'E‡çx°ÒŸZx‡çx°ÒŸZx†…[¯Â 'E†…[¯Uï 'E…ì-°Ò 'E…iÌ°Ò 'E…iÌ¯Uï 'E…ì-°Ò «¦…ì-°Ò 'E…iÌ°Ò 'E…iÌ°Ò «¦…ì-¯Uï 'E…ì-°Ò 'E…iÌ°Ò 'E…iÌ¯Uï 'E…ì-°Ò «¦…ì-°Ò 'E…iÌ°Ò 'E…iÌ°Ò «¦…ì-°Ò «¦…5.¯Uï 'E…5.¯Uï 'E…ì-°Ò «¦…ì-¯Uï 'E…5.°Ò «¦…5.°Ò «¦…ì-¯Uï 'E…ì-°Ò «¦…5-¯Uï 'E…5-¯Uï 'E…ì-°Ò «¦…ì-¯Uï 'E…5-°Ò «¦…5-°Ò «¦…ì-¯Uï 'E…ì-]@B</VertexBuffer>
+
+		<NormalBuffer Size="1812" Type="float">@B[‚‚‚‚€€‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚€€‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚€€‚‚‚‚‚‚‚‚‚€€€€‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚€€‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚€€‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚NNN‚NNN‚NNN‚NNNNNNNNNNNN6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…NNNNNNNNN6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…NNNNNNNNN6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…NNNNNNNNNNNNNNNNNN6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…NNNNNNNNN6…6…6…6…6…6…6…6…ÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[n6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…ÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[nÞTÞT[n6…6…6…6…6…6…6…6…NNNNNNNNN6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6†6…6†6…6†6…6†6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6†6…6†6…6†6…6†6…‚‚‚‚6…6…6…6…6…6…6…6…6†6…6†6…6†6…6†6…6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…€€€€‚‚‚‚‚€€6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚€€‚€€€€‚‚‚‚‚‚‚‚‚€€‚‚‚‚€€‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚€€‚‚‚‚‚‚‚‚€€‚6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†]@B</NormalBuffer>
+
+		<TangentBuffer Size="1812" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…Î]OmÎ]OmÎ]Om‚‚‚nùÄÄ‚‚‚xy­}­}ì æbRì æbRì æbR‚‚‚äÑWˆäÑ‚‚‚‚‚‚‚‚%ë%%ë%%ë%5eŠ5e‚‚‚4qœg4q‚‚‚‚‚‚‚‚5OÛ5O5OÛ5O5OÛ5O+Ö*+Pý`Ó<Pý`Ó<Pý`Ó<nùÄÄnùÄÄnùÄÄ‚xy­}­}xy­}­}xy­}­}‚ì æbRì æbRì æbRÎ]OmÎ]OmÎ]Om
+11
+11
+11‚ jj jj jj‚Pý`Ó;Pý`Ó;Pý`Ó;äÑWˆäÑäÑWˆäÑäÑWˆäÑ‚:91¥…œ:91¥…œ:91¥…œdô£ñÊo°¥v×¾dô£ñÊdô£ñÊdô£ñÊ?½,‰³o°¥v×¾4qœh4q4qœh4q4qœh4q‚4qœg4q4qœg4q4qœg4q‚:91¥…œ:91¥…œ:91¥…œo°¥v×¾dô£ñÊo°¥v×¾o°¥v×¾o°¥v×¾j÷Ó\Ádô£ñÊäÑWˆäÑäÑWˆäÑäÑWˆäÑ‚Pý`Ó<Pý`Ó<Pý`Ó< jj jj jj‚
+11
+11
+11‚Î]OmÎ]OmÎ]Om6…6†6…6†6…6†4’7i„WüEPBÔ~üEPBÔ~üEPBÔ~6…6†6…6†6…6†6…6†4’7i„WüEPBÔ~üEPBÔ~üEPBÔ~6…6†6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…6†6…‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…ééR†ééR†ééR†‚‚‚‚ééR†ééR†ééR†ééR†6…6…6…6…6…6…6…6…ééR†6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚5å5å–Ã5å5å–Ã5å5å–Ã5å5å–Ã‚‚‚‚5å5å–Ã5å5å–Ã5å5å–Ã5å5å–Ã‚]@B</TangentBuffer>
+
+		<BinormalBuffer Size="1812" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…B{ž%ìB{ž%ìB{ž%ì6…6…6…6…6…6…à(l(l6…6…6…6…6…6…À0Ø0Ø4ý7„‡4ý7„‡4ý7„‡6…6…6…6…6…6…ØõØ‚‚‚‚‚‚‚‚ÌßiBÌßÌßiBÌßÌßiBÌß‡G€S‡G6…6…6…6…6…6…”;ú”;‚‚‚‚‚‚‚‚‰=€4‰=‰=€4‰=‰=€4‰=½r¿½™Õ( @u™Õ( @u™Õ( @uà(k(là(k(là(k(l6…6…À0Ø0ØÀ0Ø0ØÀ0Ø0Ø6…6…4ý7„‡4ý7„‡4ý7„‡B{ž%ìB{ž%ìB{ž%ìXpâ¼â¼Xpâ¼â¼Xpâ¼â¼6…6†Kð›ð›Kð›ð›Kð›ð›6…6†™Õ( @u™Õ( @u™Õ( @uØôØØôØØôØ6…6…¢!Õ!¢!Õ!¢!Õ!Ç4l+Ç4lÎåXÇ4l+Ç4Ç4l+Ç4Ç4l+Ç4Õ&1ðlÎåX”;ú”;”;ú”;”;ú”;6…6…”;ú”;”;ú”;”;ú”;6…6…¢!Ö!¢!Ö!¢!Ö!lÎåXÇ4l+Ç4lÎåXlÎåXlÎåX°´`ÐôpÇ3l+Ç4ØôØØôØØôØ6…6…™Õ( @u™Õ( @u™Õ( @uKð›ð›Kð›ð›Kð›ð›6…6…Xpâ¼â¼Xpâ¼â¼Xpâ¼â¼6…6…B{ž%ìB{ž%ìB{ž%ìéR†ééR†ééR†éìRæ¬Q})ñ—x@é)ñ—x@é)ñ—x@ééR†ééR†ééR†ééR†éìRæ¬Q})ñ—x@é)ñ—x@é)ñ—x@ééR†ééR†ééR†ééR†ééR†ééR†ééR†ééR†ééR†ééR†ééR†ééR†ééR†é6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6†6…6†6…6†6…6†‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6†6…6†6…6†6…6†‚‚‚‚6…6…6…6…6…6…6…6…6…6†6…6†6…6†6…6†6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…NNNNNNNNN6…6…6…6…6…6…6…6…NNNNNNNNNNNNàà€€àà€€àà€€àà€€NNN6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6†6…6†6…6†6…‰‰€ž‰‰€ž‰‰€ž‰‰€ž6†6…6†6…6†6…6†6…‰‰€ž‰‰€ž‰‰€ž‰‰€ž6†6…]@B</BinormalBuffer>
+
+		<IndexBuffer Size="894" Type="uint">@B[ªµ†ª†‚«¸‡«‡ƒ®»ˆ®ˆ„´ÁŠ´Š¶·Ä‹·‹¹ºÇŒºŒ¼ÀÌŽÀŽÂÃÏÃÅÆÒÆÈÕØåÕåß×Ûé×é–ÚÝëÚë—àäóàóíæêùæù›îòýîýûñõ ñ þôøô­ÙÙ‘¬°Ü¬Ü’¯²Þ¯Þ“±¾ì±ì”½Êú½ú˜ÉÔÉœÓÑÓ ÐÎÿÐÿŸÍËüÍüž¿ïï‰³á‰á™…©Ö…Ö•âè
+â
+¡ç÷ç¢öðö£šãš¤	¦¦§§¨¨¥¥ !" "#$%&'()')*+,-+-./01/1234535678979:;<=;=>?@A?ABCDECEFGHIJKLJLMNOPNPQRSTUVWXYZXZ[\]^\^_`abcdecefghigijgjklmnlnolopqrsqstuvwuwxyz{y{|y|}~€~€‚~‚‚‚‚ƒ‚„‚…‚ƒ‚…‚†‚‡‚ˆ‚‰‚Š‚‹‚Œ‚Š‚Œ‚‚Ž‚‚‚Ž‚‚‘‚’‚“‚”‚•‚–‚—‚•‚—‚˜‚™‚š‚›‚™‚›‚œ‚‚ž‚Ÿ‚‚Ÿ‚ ‚¡‚¢‚£‚¡‚£‚¤‚¥‚¦‚§‚¨‚©‚ª‚«‚¬‚­‚®‚¯‚­‚¯‚°‚±‚²‚³‚±‚³‚´‚µ‚¶‚·‚µ‚·‚¸‚¹‚º‚»‚¹‚»‚¼‚½‚¾‚¿‚½‚¿‚À‚Á‚Â‚Ã‚Á‚Ã‚Ä‚Å‚Æ‚Ç‚Å‚Ç‚È‚É‚Ê‚Ë‚É‚Ë‚Ì‚Í‚Î‚Ï‚Í‚Ï‚Ð‚Ñ‚Ò‚Ó‚Ñ‚Ó‚Ô‚Õ‚Ö‚×‚Õ‚×‚Ø‚Ù‚Ú‚Û‚Ù‚Û‚Ü‚Ý‚Þ‚ß‚Ý‚ß‚à‚á‚â‚ã‚á‚ã‚ä‚å‚æ‚ç‚å‚ç‚è‚é‚ê‚ë‚é‚ë‚ì‚í‚î‚ï‚í‚ï‚ð‚ñ‚ò‚ó‚ñ‚ó‚ô‚õ‚ö‚÷‚õ‚÷‚ø‚ù‚ú‚û‚ù‚û‚ü‚ý‚þ‚ÿ‚ý‚ÿ‚ ‚‚‚‚‚‚‚‚‚‚‚‚‚	‚
+‚‚	‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚ ‚!‚"‚#‚!‚#‚$‚%‚&‚'‚%‚'‚(‚)‚*‚+‚)‚+‚,‚-‚.‚/‚-‚/‚0‚1‚2‚3‚1‚3‚4‚5‚6‚7‚5‚7‚8‚9‚:‚;‚9‚;‚<‚=‚>‚?‚=‚?‚@‚A‚B‚C‚A‚C‚D‚E‚F‚G‚E‚G‚H‚I‚J‚K‚I‚K‚L‚M‚N‚O‚M‚O‚P‚Q‚R‚S‚Q‚S‚T‚U‚V‚W‚U‚W‚X‚Y‚Z‚[‚Y‚[‚\‚]‚^‚_‚]‚_‚`‚a‚b‚c‚a‚c‚d‚e‚f‚g‚e‚g‚h‚i‚j‚k‚i‚k‚l‚m‚n‚o‚m‚o‚p‚q‚r‚s‚q‚s‚t‚u‚v‚w‚u‚w‚x‚y‚z‚{‚y‚{‚|‚}‚~‚‚}‚‚€ƒƒ‚ƒƒƒƒƒƒ„ƒ…ƒ†ƒ‡ƒ…ƒ‡ƒˆƒ‰ƒŠƒ‹ƒ‰ƒ‹ƒŒƒƒŽƒƒƒƒƒ‘ƒ’ƒ“ƒ‘ƒ“ƒ”ƒ•ƒ–ƒ—ƒ•ƒ—ƒ˜ƒ™ƒšƒ›ƒ™ƒ›ƒœƒƒžƒŸƒƒŸƒ ƒ¡ƒ¢ƒ£ƒ¡ƒ£ƒ¤ƒ¥ƒ¦ƒ§ƒ¥ƒ§ƒ¨ƒ©ƒªƒ«ƒ©ƒ«ƒ¬ƒ­ƒ®ƒ¯ƒ­ƒ¯ƒ°ƒ±ƒ²ƒ³ƒ±ƒ³ƒ´ƒµƒ¶ƒ·ƒµƒ·ƒ¸ƒ¹ƒºƒ»ƒ¹ƒ»ƒ¼ƒ½ƒ¾ƒ¿ƒ½ƒ¿ƒÀƒÁƒÂƒÃƒÁƒÃƒÄƒÅƒÆƒÇƒÅƒÇƒÈƒÉƒÊƒËƒÉƒËƒÌƒÍƒÎƒÏƒÍƒÏƒÐƒÑƒÒƒÓƒÑƒÓƒÔƒÕƒÖƒ×ƒÕƒ×ƒØƒÙƒÚƒÛƒÙƒÛƒÜ]@B</IndexBuffer>
+
+		<TextureCoordsBuffer Size="1208" Type="float">@B[™²ðC\´×´™²´G_ðC\º¢×º¢™²º¢×êðC\*×*™²*´ðC\dM×dM™²dM™²d×dC\d´dG_d×º¢C\º¢×êd×êdÖÖ*C\*G_d´dC\d×d™²d×ÖÖ++×ê*r++ÖÖ*ÖÖë›fÖÖ++fë›++dMðhO´*r´×ð¾¥ð¾¥´C\ð*rð´ðhOð*ðhO×êhOº¢C\×ê*r×ê*rº¢××ê¾¥×ê¾¥º¢™²×ê×êðº¢ðº¢ðhOG_hO*C\G_*rG_*r*×G_¾¥G_¾¥*™²G_G_ð*ðhOðhOdMC\ð*rð*rdM×ð¾¥ð¾¥dM™²ðdMð™²´dMd×´¾¥´¾¥dC\´*r´*rdhO´hOd™²º¢™²×ê*d×ÖÖÖÖ×ê¾¥×ê¾¥º¢C\×ê++×ê*rÖÖ*rº¢hO×êhOº¢º¢d™²*™²G_º¢d×++×G_¾¥G_¾¥*C\G_*rG_*r++++*hOG_hO**d™²dMhOd¾¥dM×dM*rd*rdMC\dM¾¥dhOdMdMdë›ÖÖÖÖë›ÖÖ×ê++ë›fÖÖ*rÖÖf++++f++*ÖÖfë›++×++ë›ÖÖÖÖÖÖ++ë›++ÖÖf++++++ÖÖfÖÖ++™²ð‰Nµ´‰NšC\´*r´"Q„B*ˆu×´¾¥´¿×ˆuß°„™²´ˆK±j‹¹‡îG_ð*ð"hœÙ:ŽÌC\º¢C\×ê*r×ê*rº¢×º¢××ê¾¥×ê¾¥º¢™²º¢™²×ê…©àe†˜»¢×êðº¢ðÇãŽÌß™œÙC\*C\G_*rG_*r*×*×G_¾¥G_¾¥*™²*™²G_†˜F_…©!œ´ð‡H«¨„Iˆ:C\dMB*yŒ"Q‚„*rdM×dMß°‚„¿×yŒ¾¥dM™²dM‹¹zˆKP—™²d‰Nrg‰NLM×dÝ²]¦ÈKm ¾¥dC\d9¶m $O]¦*rd´d„IyÇ‡HVYG_d:s5"he(*d×º¢×ÖÖÖÖ×ê¾¥×ê¾¥º¢C\º¢C\×ê++×ê*rÖÖ*rº¢×êdß™e(Çãs5º¢d×êdß™e(Çãs5º¢dÖÖ*×++×G_¾¥G_¾¥*C\*C\G_*rG_*r++++*G_d:s5"he(*d´d„IyÇ‡HVYC\d9¶m $O]¦*rd×dÝ²]¦ÈKm ¾¥d™²d‰Nrg‰NLM×ÖÖë›ÖÖÖÖë›ÖÖ×ê++×ê++ë›fÖÖ*rÖÖ*r++f++++f++*ÖÖ*ÖÖfë›++×++ÖÖë›ë›ÖÖfÖÖ++ë›++ff++ë›++ÖÖfdMÅÒdMðG_ðG_ÅÒhOº¢hO×êC\×êC\º¢C\º¢*rº¢*r´C\´¾¥ÇÏ¾¥ð™²ð™²ÇÏ*rº¢*r×ê××ê×º¢×º¢¾¥º¢¾¥´×´*sÓØ*rð×ð×ÓØ¾¥º¢¾¥×ê™²×ê™²º¢º¢ÅÒº¢ð´ð´ÅÒhOÇÏhOðC\ðC\ÇÏ*Æ*ð×êð×êÆhO*hOG_C\G_C\*C\**r**r×êC\×ê*r**rG_×G_×*×*¾¥*¾¥×ê××ê¾¥*¾¥G_™²G_™²**Æ*ð×êð×êÆº¢ÅÒº¢ð´ð´ÅÒhOÇÏhOðC\ðC\ÇÏC\dM*rdM*rG_C\G_*sÓØ*rð×ð×ÓØ×dM¾¥dM¾¥G_×G_¾¥ÇÏ¾¥ð™²ð™²ÇÏdMÅÒdMðG_ðG_ÅÒ™²:2™²d¾¥d¾¥:2¾¥´×´×º¢¾¥º¢¾¥º¢¾¥×ê™²×ê™²º¢G_</G_ddMddM</×.)×d*rd*s.)*r´C\´C\º¢*rº¢×ÖÖ×º¢*rº¢*rÖÖC\:2C\dhOdhO:2´</´dº¢dº¢</hOº¢hO×êC\×êC\º¢ÖÖ*¾¥*¾¥×êÖÖ×ê¾¥*¾¥G_™²G_™²*×ê;â×êd*d*;â++×êC\×êC\*++**r++*rG_×G_×++×ê;â×êd*d*;âhO*hOG_C\G_C\*¾¥G_×G_×dM¾¥dMC\:2C\dhOdhO:2´</´dº¢dº¢</*rG_C\G_C\dM*rdM×.)×d*rd*s.)G_</G_ddMddM</™²:2™²d¾¥d¾¥:2¾¥ð×ð×d¾¥d‚ŽÆddMddMð‚ŽÆð*rðC\ðC\d*rdŽÆð´ð´dŽÆdº¢ð×êð×êdº¢d*ðG_ðG_d*dùð™²ð™²dùd¾¥ð×ð×d¾¥d*rðC\ðC\d*rdŽÆð´ð´dŽÆdº¢ð×êð×êdº¢d*ðG_ðG_d*dë›ÖÖ×ÖÖ*rÖÖfÖÖ++ë›++×ê++*++ff++*r++×++ë›++ÖÖfÖÖ*ÖÖ×êÖÖë›ÖÖ×ê×ÖÖ×ÖÖÖÖ×ê*rÖÖ++×ê++×ê*rÖÖ++**r++*r++++*×++ÖÖ*ÖÖ*×++fÖÖ++ÖÖÖÖÖÖë›ÖÖ++f++++++ÖÖ++ë›ë›++ÖÖ++++++f++ÖÖë›ÖÖÖÖÖÖ++ÖÖfÖÖë›ë›ÖÖë›ÖÖÖÖë›fÖÖ++ë›++ë›fÖÖ++ff++f++++fë›++ÖÖfÖÖfë›++]@B</TextureCoordsBuffer>
+
+		<Textures>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<Difuse>./Textures/Difusas/blancoMate.png</Difuse>
+		</Textures>
+	</Mesh>
+
+	<Mesh Name="Plane001">
+		<Transformations>
+			<Translation>
+				<X>0.518739</X>
+
+				<Y>-0.132424</Y>
+
+				<Z>0.107041</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0263228</X>
+
+				<Y>0.0274184</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+
+		<VertexBuffer Size="18" Type="float">@B[¯¡aŸöß¯¡aŸöß¯¡aŸöß¯¡aŸöß¯¡aŸöß¯¡aŸöß]@B</VertexBuffer>
+
+		<NormalBuffer Size="18" Type="float">@B[€€‚‚€€€€€€]@B</NormalBuffer>
+
+		<TangentBuffer Size="18" Type="float">@B[‚‚‚‚‚‚]@B</TangentBuffer>
+
+		<BinormalBuffer Size="18" Type="float">@B[‚‚‚‚‚‚]@B</BinormalBuffer>
+
+		<IndexBuffer Size="6" Type="uint">@B[ƒ„‚…†]@B</IndexBuffer>
+
+		<TextureCoordsBuffer Size="12" Type="float">@B[‚‚‚‚‚‚]@B</TextureCoordsBuffer>
+
+		<Textures>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<Difuse>./Textures/Difusas/negroMate.png</Difuse>
+		</Textures>
+	</Mesh>
+
+	<Mesh Name="Box002">
+		<Transformations>
+			<Translation>
+				<X>0.555292</X>
+
+				<Y>-0.0953496</Y>
+
+				<Z>-1.01078</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0348589</X>
+
+				<Y>0.0348589</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+
+		<VertexBuffer Size="648" Type="float">@B[•”?‡Bw•”?‡Bw•”?‡Bw•”?‡Bw•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw‚2_“Vö†-ƒq©“Vö†-ƒq©“Vö†-ƒq©“Vö†-ƒq©ƒ˜§¢K‚M2‚b:‚Œ\‚M2‚Í‰‚H‚M2ô:ƒ°=‚M2ýÝƒ°=‚M2‚Õ,‚H‚M2‚kÝ‚Œ\‚M2ƒ J¢K‚M2‚kÝIÇ‚M2‚Õ,‚{‚M2ýÝ‚m§‚M2ô:‚m§‚M2‚Í‰‚{‚M2‚b:IÇ‚M2ƒ˜§¢KbÃ‚b:‚Œ\bÃ‚Í‰‚HbÃô:ƒ°=bÃýÝƒ°=bÃ‚Õ,‚HbÃ‚kÝ‚Œ\bÃƒ J¢KbÃ‚kÝIÇbÃ‚Õ,‚{bÃýÝ‚m§bÃô:‚m§bÃ‚Í‰‚{bÃ‚b:IÇbÃ•”?‡Bw•”?‡Bw“Vö†-ƒq©“Vö†-ƒq©•”?‡Bw•”?‡Bw•”?‡Bw‚2_•”?‡Bw•”?‡Bw•”?‡Bw•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw•”?‡Bw•”?‡Bw•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw•”?‡Bw•”?‡Bw•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw“Vö†-ƒq©•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw‚2_“Vö†-ƒq©“Vö†-ƒq©“Vö†-ƒq©•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw‚2_“Vö†-ƒq©“Vö†-ƒq©“Vö†-ƒq©•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw‚2_“Vö†-ƒq©“Vö†-ƒq©“Vö†-ƒq©•”?‡Bw‚2_•”?‡Bw‚2_•”?‡Bw‚2_“Vö†-ƒq©“Vö†-ƒq©‚b:‚Œ\bÃƒ˜§¢K‚M2‚b:‚Œ\‚M2‚Í‰‚HbÃ‚b:‚Œ\bÃ‚b:‚Œ\‚M2‚Í‰‚H‚M2ô:ƒ°=bÃ‚Í‰‚HbÃ‚Í‰‚H‚M2ô:ƒ°=‚M2ýÝƒ°=bÃô:ƒ°=bÃô:ƒ°=‚M2ýÝƒ°=‚M2‚Õ,‚HbÃýÝƒ°=bÃýÝƒ°=‚M2‚Õ,‚H‚M2‚kÝ‚Œ\bÃ‚Õ,‚HbÃ‚Õ,‚H‚M2‚kÝ‚Œ\‚M2ƒ J¢KbÃ‚kÝ‚Œ\bÃ‚kÝ‚Œ\‚M2ƒ J¢K‚M2‚kÝIÇbÃƒ J¢KbÃƒ J¢K‚M2‚kÝIÇ‚M2‚Õ,‚{bÃ‚kÝIÇbÃ‚kÝIÇ‚M2‚Õ,‚{‚M2ýÝ‚m§bÃ‚Õ,‚{bÃ‚Õ,‚{‚M2ýÝ‚m§‚M2ô:‚m§bÃýÝ‚m§bÃýÝ‚m§‚M2ô:‚m§‚M2‚Í‰‚{bÃô:‚m§bÃô:‚m§‚M2‚Í‰‚{‚M2‚b:IÇbÃ‚Í‰‚{bÃ‚Í‰‚{‚M2‚b:IÇ‚M2ƒ˜§¢K‚M2ƒ˜§¢KbÃƒ˜§¢KbÃ‚b:IÇbÃ‚b:IÇ‚M2‚Í‰‚{‚M2ô:‚m§‚M2ýÝ‚m§‚M2ýÝ‚m§‚M2‚Õ,‚{‚M2‚kÝIÇ‚M2‚kÝIÇ‚M2ƒ J¢K‚M2‚kÝ‚Œ\‚M2ýÝ‚m§‚M2‚kÝIÇ‚M2‚kÝ‚Œ\‚M2‚kÝ‚Œ\‚M2‚Õ,‚H‚M2ýÝƒ°=‚M2ýÝƒ°=‚M2ô:ƒ°=‚M2‚Í‰‚H‚M2‚kÝ‚Œ\‚M2ýÝƒ°=‚M2‚Í‰‚H‚M2‚Í‰‚H‚M2‚b:‚Œ\‚M2ƒ˜§¢K‚M2‚kÝ‚Œ\‚M2‚Í‰‚H‚M2ƒ˜§¢K‚M2ýÝ‚m§‚M2‚kÝ‚Œ\‚M2ƒ˜§¢K‚M2‚Í‰‚{‚M2ýÝ‚m§‚M2ƒ˜§¢K‚M2‚b:IÇ‚M2‚Í‰‚{‚M2ƒ˜§¢K‚M2‚b:‚Œ\bÃ‚Í‰‚HbÃô:ƒ°=bÃô:ƒ°=bÃýÝƒ°=bÃ‚Õ,‚HbÃ‚Õ,‚HbÃ‚kÝ‚Œ\bÃƒ J¢KbÃô:ƒ°=bÃ‚Õ,‚HbÃƒ J¢KbÃƒ J¢KbÃ‚kÝIÇbÃ‚Õ,‚{bÃ‚Õ,‚{bÃýÝ‚m§bÃô:‚m§bÃƒ J¢KbÃ‚Õ,‚{bÃô:‚m§bÃô:‚m§bÃ‚Í‰‚{bÃ‚b:IÇbÃƒ J¢KbÃô:‚m§bÃ‚b:IÇbÃô:ƒ°=bÃƒ J¢KbÃ‚b:IÇbÃ‚b:‚Œ\bÃô:ƒ°=bÃ‚b:IÇbÃƒ˜§¢KbÃ‚b:‚Œ\bÃ‚b:IÇbÃ]@B</VertexBuffer>
+
+		<NormalBuffer Size="648" Type="float">@B[‚‚‚‚‚‚‚€€‚‚‚‚‚g&ð” I§¹xz¹xz I§g&ð”‚g&ð“ I§¹xz¹xz I§g&ð“‚g&ð” I§¹xz¹xz I§g&ð”‚g&ð“ I§¹xz¹xz I§g&ð“‚‚‚‚‚‚‚‚€€‚€€‚€€‚‚‚‚‚€€‚€€€€‚€€6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…g&ð”‚g&ð” I§g&ð”g&ð” I§¹xz I§ I§¹xz¹xz¹xz¹xz¹xz I§¹xz¹xz I§g&ð” I§ I§g&ð”‚g&ð”g&ð”‚g&ð“‚‚g&ð“ I§g&ð“g&ð“ I§¹xz I§ I§¹xz¹xz¹xz¹xz¹xz I§¹xz¹xz I§g&ð“ I§ I§g&ð“‚‚‚g&ð“g&ð“‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚€€‚‚€€€€‚‚‚‚‚€€‚‚‚‚‚€€‚‚‚€€‚‚‚‚€€‚‚]@B</NormalBuffer>
+
+		<TangentBuffer Size="648" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚ð”g&ð”g&ð”g&‚‚ð”g&I§ I§ I§ ð”g&ð”g&I§ z¹xz¹xz¹xI§ I§ z¹xz¹xz¹xz¹xz¹xz¹xz¹xI§ I§ I§ z¹xz¹xI§ ð”g&ð”g&ð”g&I§ I§ ð”g&‚‚‚ð”g&ð”g&‚ð“g&ð“g&ð“g&‚‚ð“g&I§ I§ I§ ð“g&ð“g&I§ z¹xz¹xz¹xI§ I§ z¹xz¹xz¹xz¹xz¹xz¹xz¹xI§ I§ I§ z¹xz¹xI§ ð“g&ð“g&ð“g&I§ I§ ð“g&‚‚‚ð“g&ð“g&‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚]@B</TangentBuffer>
+
+		<BinormalBuffer Size="648" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…6…‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚]@B</BinormalBuffer>
+
+		<IndexBuffer Size="216" Type="uint">@B[ƒ„©‚ª‰ŠŒ«‹¬­®†¯…°±²ˆ³´µ¶·‡¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØŽœÙ›ÚÛÜÝÞßžàáâã‘Ÿäåæç’ èéêë“¡ìíîï”¢ðñòó•£ôõö÷–¤øùúû—¥üýþÿ˜¦ ™§š¨	
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWX]@B</IndexBuffer>
+
+		<TextureCoordsBuffer Size="432" Type="float">@B[‚‚‚‚,‚,‚,‚,ˆn˜y“˜ˆniôy“iôASÊew\‚Š¥œî®7À€ÓÊå÷\
+¥î.7A‚SÊ‚e‚w\‚‚Š¥‚œî‚®7‚À€‚ÓÊ‚å‚÷\‚
+¥‚î‚.7‚‚‚y“iôˆn˜‚‚,‚‚,,‚‚,,‚‚,‚,,ˆng},‚,‚,y“g}ˆng}˜xÖ,‚,‚,iôxÖ˜xÖˆng},‚,‚,y“g}ˆng}˜xÖ,‚,‚,iôxÖ˜xÖSÊ‚ASÊe‚SÊ‚SÊew\‚e‚ew\‚Š¥‚w\‚w\Š¥œî‚Š¥‚Š¥œî®7‚œî‚œî®7À€‚®7‚®7À€ÓÊ‚À€‚À€ÓÊå‚ÓÊ‚ÓÊå÷\‚å‚å÷\
+¥‚÷\‚÷\
+¥î‚
+¥‚
+¥î.7‚î‚î.7AA‚A‚.7‚.7e”PO}Kü}Kä}Käe”±²8
+.8
+. €É÷.}Kä8
+.É÷.É÷.œm±²„¶ä„¶ä„¶üœmPOÉ÷.„¶äœmPOœmPOÉ÷tÓ €‚É÷.œmPO €‚}KäÉ÷. €‚e”PO}Kä €‚8
+tÓe”PO €‚É÷tÓœmPO„¶ü„¶ü„¶äœm±²œm±²É÷. €„¶üœm±² € €8
+.e”±²e”±²}Kä}Kü €e”±²}Kü}Küe”PO8
+tÓ €}Kü8
+tÓ„¶ü €8
+tÓÉ÷tÓ„¶ü8
+tÓ €‚É÷tÓ8
+tÓ]@B</TextureCoordsBuffer>
+
+		<Textures>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<Difuse>./Textures/Difusas/metalBrillante1.png</Difuse>
+		</Textures>
+	</Mesh>
+</Model>

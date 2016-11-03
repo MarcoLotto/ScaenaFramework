@@ -1,0 +1,52 @@
+#version 300 es
+
+in highp vec3 VertexPosition; 
+in highp vec3 VertexNormal; 
+in highp vec2 VertexTexCoord; 
+in highp vec3 VertexTangent;
+in highp vec3 VertexBinormal;
+in highp vec4 VertexJointIndexes; 
+in highp vec4 VertexJointWeights; 
+
+out mediump vec3 posicion;
+out mediump vec3 normal;
+out mediump vec2 TexCoord;
+out mediump mat3 toObjectLocal;
+out mediump mat3 normMatrix;
+
+uniform mat4 VMmatrix;
+uniform mat4 PVMmatrix;
+uniform mat3 normalMatrix;
+
+uniform mat4 jointsTransformUniform[50];
+
+vec4 getSkinnedVertexPosition(){
+	// Calculo la nueva posicion como un promedio ponderado de aquellos joints que tienen peso sobre el vertice	 
+	vec4 vertexOriginalPosition = vec4(VertexPosition, 1.0f);	
+	vec4 p1 = jointsTransformUniform[int(VertexJointIndexes.x)] * vertexOriginalPosition;
+	vec4 p2 = jointsTransformUniform[int(VertexJointIndexes.y)] * vertexOriginalPosition;
+	vec4 p3 = jointsTransformUniform[int(VertexJointIndexes.z)] * vertexOriginalPosition;
+	vec4 p4 = jointsTransformUniform[int(VertexJointIndexes.w)] * vertexOriginalPosition;	
+	vec4 skinnedVertexPosition = p1 * VertexJointWeights.x + p2 * VertexJointWeights.y + p3 * VertexJointWeights.z + p4 * VertexJointWeights.w;	
+	skinnedVertexPosition /= float(VertexJointWeights.x != 0.0f) + float(VertexJointWeights.y != 0.0f) + float(VertexJointWeights.z != 0.0f) + float(VertexJointWeights.w != 0.0f);
+	return skinnedVertexPosition;
+}
+
+void main()
+{	
+	// Primero calculo la nueva posicion del vertice para coincidir con el skeleton actual
+	vec4 skinnedVertexPosition = getSkinnedVertexPosition();
+
+	normMatrix = normalMatrix;
+	posicion = vec3(VMmatrix * skinnedVertexPosition);	
+	normal = normalize(normalMatrix * VertexNormal);
+	vec3 tangent = normalize(normalMatrix * VertexTangent);
+	vec3 binormal = normalize(normalMatrix * VertexBinormal);
+	toObjectLocal = mat3(tangent.x, binormal.x, normal.x,
+						 tangent.y, binormal.y, normal.y,
+						 tangent.z, binormal.z, normal.z ) ;	
+	
+	TexCoord = VertexTexCoord;	
+
+	gl_Position = PVMmatrix * skinnedVertexPosition;
+}

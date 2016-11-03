@@ -1,0 +1,107 @@
+
+<Scene name="scene1">
+
+	<Object path="./Definitions/Objects/object1.xml">
+		<Transformations>
+			<Translation>
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+			</Translation>
+			<Rotation>
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+			</Rotation>
+			<Scale>
+				<X>0.04</X>
+				<Y>0.04</Y>
+				<Z>0.04</Z>
+			</Scale>
+		</Transformations>
+	</Object>
+	
+	<Light type="PointDiffuse" castShadow="false">
+		<Position>
+			<X>9</X>
+			<Y>8</Y>
+			<Z>0</Z>
+		</Position>
+		
+		<Intensity>
+			<X>0.65</X>
+			<Y>0.65</Y>
+			<Z>0.65</Z>
+		</Intensity>
+	</Light>
+	
+	<Light type="PointDiffuse">
+		<Position>
+			<X>-9</X>
+			<Y>-7</Y>
+			<Z>-0.7</Z>
+		</Position>
+		
+		<Intensity>
+			<X>0.65</X>
+			<Y>0.65</Y>
+			<Z>0.65</Z>
+		</Intensity>
+	</Light>
+	
+	<Light type="Spot" castShadow="true">
+		<Position>
+			<X>-2</X>
+			<Y>0</Y>
+			<Z>8</Z>
+		</Position>	
+		
+		<Direction>
+			<X>0</X>
+			<Y>0</Y>
+			<Z>-1</Z>
+		</Direction>
+		
+		<Intensity>
+			<X>0.085</X>
+			<Y>0.085</Y>
+			<Z>0.085</Z>
+		</Intensity>
+		
+		<Factor>8</Factor>
+		
+		<Shadow prebanked="true">
+			<ShadowMap>
+				<Size>
+					<X>1024</X>
+					<Y>1024</Y>
+				</Size>
+			</ShadowMap>
+		</Shadow>
+		
+	</Light>
+	
+	<Light type="Spot">
+		<Position>
+			<X>18</X>
+			<Y>0.5</Y>
+			<Z>3</Z>
+		</Position>
+		
+		<Direction>
+			<X>0</X>
+			<Y>0</Y>
+			<Z>-1</Z>
+		</Direction>
+		
+		<Intensity>
+			<X>0.065</X>
+			<Y>0.065</Y>
+			<Z>0.065</Z>
+		</Intensity>
+		
+		<Factor>8.2</Factor>
+		
+	</Light>
+	
+</Scene>

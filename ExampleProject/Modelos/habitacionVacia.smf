@@ -1,0 +1,213 @@
+
+<Model>
+	<Mesh Name="Plane002">
+		<Transformations>
+			<Translation>
+				<X>-0.071864</X>
+
+				<Y>3.98399</Y>
+
+				<Z>2.04531</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+
+		<VertexBuffer Size="720" Type="float">@B[JTéÑ—p‚õì+ÄÇùÑ—qÄÇùÑ—qJTé›3Ð‚õì)ÄÇù›3ÑÄÇù›3ÑJTé›3Ò‚õì)ÄÇù›3ÑÄÇù›3ÑJTéÑ—r‚õì)ÄÇùÑ—qÄÇùÑ—qÊP›3ÑÊPÑ—qÊP›3ÑÊPÑ—qKÿÉ›3ÑKÿÉÑ—qKÿÉ›3ÑKÿÉÑ—qJ"ô›3Ñ‚‡9J"ôÑ—q‚‡9J"ô›3Ñ‚‡9J"ôÑ—q‚‡9¯¾›3Ñ‚ˆ­¯¾Ñ—q‚ˆ­¯¾›3Ñ‚ˆ­¯¾Ñ—q‚ˆ­K©Y›3ÐDgiK©YÑ—pDgjK©Y›3ÑDgiK©YÑ—qDgiKÔÑ—qÖœüKÔ›3ÑÖœüKÔ›3ÑÖœüKÔÑ—qÖœüK¿µÈ¼oA9ƒK¿µÃßkA9„K¿µÑ—qA9ƒK¿µÑ—p8‡pKÉcÑ—qáa×KÉcÈ¼pÙafKÉcÃßjÙafKÉcÑ—qÙagŒ]›3Ñ‚õôñŒ]Ñ—q‚õôñŒ]›3Ñ‚õôñŒ]Ñ—q‚õôñÊP›3ÑÄÇùÑ—qÄÇùÑ—qÄÇù›3ÑÄÇù›3ÑÄÇùÑ—qÄÇùÑ—qKÿÉ›3ÑÄÇù›3ÑÄÇùÑ—qÄÇù›3ÑÊP›3ÑÊP›3ÑÄÇù›3ÑÄÇù›3ÑÄÇù›3ÑÄÇù›3ÑÄÇù›3ÑÄÇù›3ÑÄÇù›3ÑKÿÉ›3ÑKÿÉ›3ÑÄÇù›3ÑÄÇù›3ÑÄÇù›3ÑÊPÑ—qÊP›3ÑÄÇù›3ÑÄÇù›3ÑÄÇù›3ÑÄÇùÑ—qÄÇùÑ—qÄÇù›3ÑÄÇù›3ÑKÿÉ›3ÑKÿÉÑ—qÄÇùÑ—qÄÇù›3ÑÊPÑ—qÊPÑ—qÊP›3ÑJ"ô›3Ñ‚‡9J"ô›3Ñ‚‡9ÊP›3ÑÊP›3ÑÊP›3ÑJ"ô›3Ñ‚‡9J"ô›3Ñ‚‡9ÊP›3ÑÊP›3ÑÊPÑ—qJ"ôÑ—q‚‡9KÿÉ›3ÑKÿÉ›3ÑKÿÉÑ—qKÔÑ—qÖœüKÔ›3ÑÖœüKÿÉ›3ÑKÿÉ›3ÑKÿÉ›3ÑKÔ›3ÑÖœüKÔ›3ÑÖœüKÿÉÑ—qKÿÉÑ—qKÿÉ›3ÑKÔ›3ÑÖœüJ"ôÑ—q‚‡9J"ôÑ—q‚‡9J"ô›3Ñ‚‡9¯¾›3Ñ‚ˆ­¯¾›3Ñ‚ˆ­J"ô›3Ñ‚‡9J"ô›3Ñ‚‡9J"ô›3Ñ‚‡9¯¾›3Ñ‚ˆ­¯¾›3Ñ‚ˆ­J"ô›3Ñ‚‡9J"ô›3Ñ‚‡9J"ôÑ—q‚‡9¯¾Ñ—q‚ˆ­¯¾Ñ—q‚ˆ­¯¾Ñ—q‚ˆ­¯¾›3Ñ‚ˆ­Œ]›3Ñ‚õôñŒ]›3Ñ‚õôñ¯¾›3Ñ‚ˆ­¯¾›3Ñ‚ˆ­¯¾›3Ñ‚ˆ­Œ]›3Ñ‚õôñŒ]›3Ñ‚õôñ¯¾›3Ñ‚ˆ­¯¾›3Ñ‚ˆ­¯¾Ñ—q‚ˆ­Œ]Ñ—q‚õôñK©Y›3ÐDgiJTéÑ—p‚õì+JTé›3Ð‚õì)K©Y›3ÑDgiK©Y›3ÐDgiJTé›3Ð‚õì)JTé›3Ò‚õì)K©YÑ—qDgiK©Y›3ÑDgiJTé›3Ò‚õì)KÔ›3ÑÖœüKÔÑ—qÖœüKÔÑ—qÖœüKÉcÈ¼pÙafKÉcÈ¼pÙafKÔ›3ÑÖœüKÔ›3ÑÖœüKÔ›3ÑÖœüKÉcÈ¼pÙafKÉcÃßjÙafKÔÑ—qÖœüKÔÑ—qÖœüKÔ›3ÑÖœüKÉcÃßjÙafK©YÑ—pDgjK©Y›3ÐDgiK¿µÈ¼oA9ƒK©YÑ—pDgjK©Y›3ÐDgiK©Y›3ÑDgiK¿µÃßkA9„K¿µÈ¼oA9ƒK©Y›3ÐDgiK©Y›3ÑDgiK©YÑ—qDgiK¿µÑ—qA9ƒK¿µÃßkA9„K©Y›3ÑDgiK¿µÑ—p8‡pK¿µÈ¼oA9ƒKÉcÈ¼pÙafKÉcÈ¼pÙafKÉcÑ—qáa×K¿µÑ—p8‡pK¿µÃßkA9„K¿µÑ—qA9ƒKÉcÑ—qÙagKÉcÑ—qÙagKÉcÃßjÙafK¿µÃßkA9„JTéÑ—p‚õì+Œ]Ñ—q‚õôñŒ]›3Ñ‚õôñŒ]›3Ñ‚õôñJTé›3Ð‚õì)JTéÑ—p‚õì+JTé›3Ð‚õì)Œ]›3Ñ‚õôñŒ]›3Ñ‚õôñŒ]›3Ñ‚õôñJTé›3Ò‚õì)JTé›3Ð‚õì)JTé›3Ò‚õì)Œ]›3Ñ‚õôñŒ]Ñ—q‚õôñŒ]Ñ—q‚õôñJTéÑ—r‚õì)JTé›3Ò‚õì)¯¾Ñ—q‚ˆ­J"ôÑ—q‚‡9ÊPÑ—q¯¾Ñ—q‚ˆ­ÊPÑ—qÄÇùÑ—qÄÇùÑ—qKÿÉÑ—qKÔÑ—qÖœüÄÇùÑ—qÄÇùÑ—qKÔÑ—qÖœü¯¾Ñ—q‚ˆ­ÄÇùÑ—qKÔÑ—qÖœü¯¾Ñ—q‚ˆ­KÔÑ—qÖœüKÉcÑ—qÙagKÉcÑ—qÙagK¿µÑ—qA9ƒK©YÑ—qDgi¯¾Ñ—q‚ˆ­KÉcÑ—qÙagK©YÑ—qDgiŒ]Ñ—q‚õôñ¯¾Ñ—q‚ˆ­K©YÑ—qDgiJTéÑ—r‚õì)Œ]Ñ—q‚õôñK©YÑ—qDgi]@B</VertexBuffer>
+
+		<NormalBuffer Size="720" Type="float">@B[€€ü‚‚€€ü‚‚€€ü€€‚€€ü‚€€‚‚‚‚‚‚‚€€}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+Ø€€Ø€€Ø€€Ø€€€€ü€€ü€€ü€€ü€€€€€€€€€j‡6€j‡6€j‡6€}‚Q‚)€€Ri€|ƒU€|ƒU€|ƒU€€Ñ€€Ñ€€Ñ€€Ñ‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚€€‚‚‚‚‚‚€€‚‚€€€€‚€€‚€€‚‚€€€€‚}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+€€€€€€€€€€€€€€€€€€€€€€€€€€€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€Ñ€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€|ƒU€|ƒU€€Ri€€Ri€|ƒU€|ƒU€|ƒU€|ƒU€|ƒU€|ƒU€|ƒU€|ƒU€|ƒU€|ƒU€j‡6€j‡6€}‚Q‚)€}‚Q‚)€j‡6€j‡6€j‡6€j‡6€j‡6€j‡6€j‡6€j‡6€j‡6€j‡6€€›€€›€€›€€ €€ €€ €€›€€›‚›€€›€€›‚› €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€ €€‚€€‚‚‚‚‚‚‚€€‚‚‚‚‚€€‚‚‚‚‚‚‚‚‚‚‚‚‚‚]@B</NormalBuffer>
+
+		<TangentBuffer Size="720" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ¬
+}Æ€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€Ø€€ØÑ€€Ñ€€Ñ€€¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢¹5i6¢Ñ€€Ñ€€Ñ€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€ü€€¾€—–¾€—–¾€—–i€€i€€i€€ÅZ™ºÅZ™ºÅZ™º¾€—–¾€—–¾€—–ƒU€|ƒU€|ƒU€|ÅZ™ºÅZ™ºÅZ™ºû€Ú“Áû€Ú“Áû€Ú“Á‚)€‚)€‚)€
+€®•ú
+€®•ú
+€®•úû€Ú“Áû€Ú“Áû€Ú“Á‡6€j‡6€j‡6€j
+€®•ú
+€®•ú
+€®•ú›€€›€€›€€ €€ €€ €€›€€›€€›€€›€€›€€›€€65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—65z—]@B</TangentBuffer>
+
+		<BinormalBuffer Size="720" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i¹6¢5i‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚ƒS–€“ƒS–€“ƒS–€“R€€R€€R€€ƒR™ºVƒR™ºVƒR™ºVƒS–€“ƒS–€“ƒS–€“‚‚‚ƒR™ºVƒR™ºVƒR™ºV‡1“Â€Ã‡1“Â€Ã‡1“Â€Ã‚Q€„‚Q€„‚Q€„‡0•ü€˜‡0•ü€˜‡0•ü€˜‡1“Â€Ã‡1“Â€Ã‡1“Â€Ã‚‚‚‡0•ü€˜‡0•ü€˜‡0•ü€˜€€€€€€€€€€€€‚‚‚‚‚‚5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—5z6—]@B</BinormalBuffer>
+
+		<IndexBuffer Size="240" Type="uint">@B[‚…±Ž²³ƒ†´µ¶·’‘¸¹º»ˆ¼½¾¿À‰ÁÂÃÄÅ“ÆÇÈÉ‹ÊËÌÍÎŒÏÐÑÒÓ”ÔÕÖ•–×ØÙÚ—ÛÜÝÞß˜àáâãä¡¢åæçèé£êëìíî¤ïðñò™šóôõö›÷øùúûœüýþÿ ­®¯	°
+„ž‡ŸŠ ª©« !"¬#$%&'(¥)¨*+,¦-./01§23456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnop]@B</IndexBuffer>
+
+		<TextureCoordsBuffer Size="480" Type="float">@B[‚ÖÖ++‚ÖÖÖÖÖÖ++ÖÖ‚++ÖÖ++++++‚‚ÖÖ‚++‚bÖÖbb++b‚dŸÖÖdŸdŸ++dŸ‚ ÖÖ  ++ ‚ÖÖ++‚rÖÖrr++r‚k×k×ÖÖk×++k×‚ntÖÖnt++nt‚ntm¦m¦ÖÖm¦++m¦‚ÖÖ++‚bÖÖÖÖÖÖ++ÖÖÖÖÖÖÖÖ++dŸÖÖ++ÖÖ++ÖÖÖÖb++bÖÖÖÖÖÖÖÖÖÖ++ÖÖ++++ÖÖ++ÖÖÖÖ++ÖÖdŸÖÖdŸ++++++++ÖÖÖÖ++b‚b++ÖÖ++ÖÖ++++++++‚ÖÖ‚ÖÖ++++++dŸ++dŸ‚++‚++++bbbÖÖ ÖÖ ÖÖbÖÖbÖÖb++ ++ ++b++b++b‚ ‚dŸÖÖdŸÖÖdŸk×k×ÖÖdŸ++dŸ++dŸÖÖk×ÖÖk×++dŸ‚dŸ‚dŸ++k×++   ÖÖÖÖÖÖ ÖÖ ÖÖ ++++++ ++ ++ ‚‚ÖÖÖÖÖÖÖÖÖÖ++++++++++‚‚rÖÖ‚‚ÖÖr++rÖÖ‚ÖÖ‚++r‚r++‚++k×ÖÖk×k×m¦ÖÖm¦ÖÖk×++k×++k×ÖÖm¦ÖÖm¦++k×‚k×‚k×++m¦++rrÖÖntÖÖrrÖÖr++nt++ntÖÖrÖÖr++r‚nt‚nt++r++ntntÖÖm¦ÖÖm¦ÖÖm¦ntnt++nt‚m¦‚m¦‚m¦++nt++ÖÖÖÖÖÖÖÖÖÖ++++++ÖÖ++++‚‚‚++‚ ‚b‚‚b‚ÖÖ‚++‚dŸ‚k×‚ÖÖ‚++‚k×‚‚ÖÖ‚k×‚‚k×‚m¦‚m¦‚nt‚r‚‚m¦‚r‚‚‚r‚‚‚r‚]@B</TextureCoordsBuffer>
+
+		<Textures>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<Difuse>./Textures/Difusas/blancoMate.png</Difuse>
+		</Textures>
+	</Mesh>
+
+	<Mesh Name="Plane003">
+		<Transformations>
+			<Translation>
+				<X>-0.118989</X>
+
+				<Y>-0.728032</Y>
+
+				<Z>0.0287277</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+
+		<VertexBuffer Size="18" Type="float">@B[Q¶<LQ¶<LQ¶<LQ¶<LQ¶<LQ¶<L]@B</VertexBuffer>
+
+		<NormalBuffer Size="18" Type="float">@B[‚‚‚‚‚‚]@B</NormalBuffer>
+
+		<TangentBuffer Size="18" Type="float">@B[‚‚‚‚‚‚]@B</TangentBuffer>
+
+		<BinormalBuffer Size="18" Type="float">@B[‚‚‚‚‚‚]@B</BinormalBuffer>
+
+		<IndexBuffer Size="6" Type="uint">@B[ƒ„‚…†]@B</IndexBuffer>
+
+		<TextureCoordsBuffer Size="12" Type="float">@B[…á…áa…á…áaaaaa…á…á]@B</TextureCoordsBuffer>
+
+		<Textures>
+			<UVTranslation>
+				<X>-1.25</X>
+
+				<Y>-1.25</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>3.5</X>
+
+				<Y>3.5</Y>
+			</UVScale>
+
+			<Difuse>./Textures/Difusas/parquet1.jpg</Difuse>
+		</Textures>
+	</Mesh>
+
+	<Mesh Name="Box001">
+		<Transformations>
+			<Translation>
+				<X>4.24409</X>
+
+				<Y>-4.67197</Y>
+
+				<Z>0.0417181</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0365759</Z>
+			</Scale>
+		</Transformations>
+
+		<VertexBuffer Size="72" Type="float">@B[ ktƒy— ktƒy— ktƒy— ktƒy— ktƒy—îýÃ ktƒy—îýÃ ktƒy—îýÃ ktƒy—îýÃ ktƒy— ktƒy— ktƒy—îýÃ ktƒy—îýÃ ktƒy— ktƒy— ktƒy—îýÃ ktƒy—îýÃ ktƒy— ktƒy— ktƒy—îýÃ ktƒy—îýÃ ktƒy— ktƒy— ktƒy—îýÃ ktƒy—îýÃ]@B</VertexBuffer>
+
+		<NormalBuffer Size="72" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚]@B</NormalBuffer>
+
+		<TangentBuffer Size="72" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚]@B</TangentBuffer>
+
+		<BinormalBuffer Size="72" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚]@B</BinormalBuffer>
+
+		<IndexBuffer Size="36" Type="uint">@B[ƒ„„‚…†ˆ…ˆ‡‰Š‹‰‹ŒŽ‘’“‘“”•–—•—˜]@B</IndexBuffer>
+
+		<TextureCoordsBuffer Size="48" Type="float">@B[‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚]@B</TextureCoordsBuffer>
+
+		<Textures>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<Difuse>./Textures/Difusas/puertaBlanca.jpg</Difuse>
+		</Textures>
+	</Mesh>
+</Model>

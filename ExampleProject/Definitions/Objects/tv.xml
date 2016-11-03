@@ -1,0 +1,188 @@
+
+<Object id="tv" class="Object" meshPath="Modelos/tv.smf">
+	<Mesh name="Box001">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.2</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blancoMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>0.520665</X>
+
+				<Y>-5.22841e-009</Y>
+
+				<Z>0.119612</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="Plane001">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.4</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/negroMate.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>0.518739</X>
+
+				<Y>-0.132424</Y>
+
+				<Z>0.107041</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0263228</X>
+
+				<Y>0.0274184</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+
+	<Mesh name="Box002">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.8</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/metalBrillante1.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>0.555292</X>
+
+				<Y>-0.0953496</Y>
+
+				<Z>-1.02</Z>
+			</Translation>
+
+			<Rotation>
+				<X>0</X>
+
+				<Y>0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0348589</X>
+
+				<Y>0.0348589</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+	</Mesh>
+</Object>

@@ -1,0 +1,31 @@
+
+<Scene name="TeamShirtShow">
+
+	<Light type="Spot">
+		<Position>
+			<X>0.9</X>
+
+			<Y>-2.3</Y>
+
+			<Z>2.4</Z>
+		</Position>
+
+		<Direction>
+			<X>-0.1</X>
+
+			<Y>0.2</Y>
+
+			<Z>-0.1</Z>
+		</Direction>
+
+		<Intensity>
+			<X>1</X>
+
+			<Y>1</Y>
+
+			<Z>1</Z>
+		</Intensity>
+
+		<Factor>1.4</Factor>
+	</Light>
+</Scene>

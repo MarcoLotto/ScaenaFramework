@@ -27,3 +27,26 @@
 *.exe
 *.out
 *.app
+
+# Folders
+Graphics/Debug/
+Graphics/Release/
+Graphics/WindowConnectors/Debug/
+Graphics/WindowConnectors/Release/
+ExampleProject/Debug/
+ExampleProject/Release/
+ExampleProject/build/
+ClothDemo/Debug/
+ClothDemo/Release/
+ClothDemo/build/
+22OnField/
+Graphics/Test/Debug/
+Graphics/Test/Release/
+
+# Project files
+*.sdf
+*.opensdf
+errorLog.txt
+TestErrorLogs.txt
+TestInfoLogs.txt
+.DS_Store

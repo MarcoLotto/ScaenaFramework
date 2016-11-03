@@ -1,0 +1,1640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="glew">
+      <UniqueIdentifier>{f51cdd79-dee3-42aa-a7b0-83ec6f7c2842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\source">
+      <UniqueIdentifier>{023ec792-e991-496c-a43f-1894647537c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{42ed4743-2b8a-44e5-aa10-f1c0db3c0279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\TextureManager">
+      <UniqueIdentifier>{abf2fbe8-02ec-4160-bfeb-cb60f7fd61a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Camara">
+      <UniqueIdentifier>{872f404c-bb52-4c10-9d73-c8f0c3437686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Primitivas">
+      <UniqueIdentifier>{c03f8f12-86c8-4d0e-8cb1-fde2d7df9a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Render">
+      <UniqueIdentifier>{3c899a5b-531d-48d7-92d9-448bc69012e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager">
+      <UniqueIdentifier>{03133376-ffe5-41d0-a420-26dfd776c7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ShaderManager">
+      <UniqueIdentifier>{01047f60-9ea1-468d-90a3-4d21aecbdd0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Generic">
+      <UniqueIdentifier>{e3d498c8-f401-4d07-be46-f42dbbe26ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TemporalConfiguration">
+      <UniqueIdentifier>{8659d755-48a7-492a-995a-c3eb8cd79281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Lighting and Shadows">
+      <UniqueIdentifier>{5c6de6b2-e418-4e14-b1b3-14e95275ba04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\User Interface">
+      <UniqueIdentifier>{cc2ef210-84ac-43dc-b049-a4f505d7f1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\User Interface\Components">
+      <UniqueIdentifier>{e749ff8b-6ced-45d4-9d58-f7ac761db12f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Exceptions">
+      <UniqueIdentifier>{c45e6c3d-0475-4878-9de8-31d64cfaea25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GraphicDevice">
+      <UniqueIdentifier>{a76ba84f-8c5e-4b00-888f-5570243fd73b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b94382ef-88ab-46bc-a6c8-2a862148842c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShaderManager">
+      <UniqueIdentifier>{9e833cae-5242-4b93-bebf-fafaa1a6b451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager">
+      <UniqueIdentifier>{d2dcc116-f4d4-404d-ad68-9f4225a01f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Render">
+      <UniqueIdentifier>{3e23c89e-e053-45cd-98a3-673273eac1d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Camara">
+      <UniqueIdentifier>{f72bd388-e2de-4126-b53b-d547e8f35151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\TextureManager">
+      <UniqueIdentifier>{d8eb9833-536a-40db-9e20-c4fdb212c347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Generic">
+      <UniqueIdentifier>{93f1ad08-1a8f-4f9c-b1b0-b07e6d3a0ce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Lighting and Shadows">
+      <UniqueIdentifier>{99e1690d-6d41-40ee-bf9b-a20bce3d86eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\User Interface">
+      <UniqueIdentifier>{0a653171-6aac-4819-a0c9-954d19df535d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\User Interface\Components">
+      <UniqueIdentifier>{6967dbe4-2c40-41fd-890b-9a12d1558bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GraphicDevice">
+      <UniqueIdentifier>{d9b86cdf-33b1-4c43-9438-355ed59a3aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Frame Buffer">
+      <UniqueIdentifier>{95e26af1-9c30-4b97-a38c-714033e3dc4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Frame Buffer">
+      <UniqueIdentifier>{0a576674-2a61-4ca4-a6a0-0cf18f612ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Render Pipeline">
+      <UniqueIdentifier>{497bf35b-0c3d-4dc1-b82d-075cbce937c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Render Pipeline">
+      <UniqueIdentifier>{d15b2513-72c2-47ad-8fa5-634164df3cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager\Mesh">
+      <UniqueIdentifier>{d520feb0-4950-4afc-abe3-1bb8d0cf2b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager\Object">
+      <UniqueIdentifier>{024bdf4f-eaa5-4b26-8cc5-4b02266fb933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager\Scene">
+      <UniqueIdentifier>{9d3934cd-319d-4366-9bfc-492e500acf75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager\Mesh">
+      <UniqueIdentifier>{2d3b44ee-4fb5-4b06-a2c4-5196a1f33258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager\Object">
+      <UniqueIdentifier>{8098e381-9076-43d6-ab38-ce0d5f74e009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager\Scene">
+      <UniqueIdentifier>{04a46b00-902a-480d-8936-b3887170aacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Logger">
+      <UniqueIdentifier>{97104a25-0682-4071-a0d4-e7a0fef0d6e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Logger">
+      <UniqueIdentifier>{49f3c913-42b6-4695-8dbb-0c0bc8c2707d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager\Mesh\DataBuffer">
+      <UniqueIdentifier>{1b8f9440-47fc-439f-a556-aab17985fb04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager\Mesh\DataBuffer">
+      <UniqueIdentifier>{9a28c2f6-b943-450a-8629-f6bd40ee9b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ShaderManager\TransformFeedback">
+      <UniqueIdentifier>{59c21128-eb7b-474c-b57c-d2061515eae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ShaderManager\PostEffects">
+      <UniqueIdentifier>{42a8f3ba-e156-43ee-a2e7-80bbeaeb5522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShaderManager\TransformFeedback">
+      <UniqueIdentifier>{bdebaa3e-2a9b-40cc-b6de-52c668476f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShaderManager\PostEffects">
+      <UniqueIdentifier>{cca46d69-7ffb-49a4-be01-55d5677b6bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ShaderManager\MeshShaders">
+      <UniqueIdentifier>{e22ba2df-1365-4990-83b5-5101a35f5672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager\Bounding">
+      <UniqueIdentifier>{c1db3c7b-83c3-4580-b64f-1160197ea3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager\Bounding">
+      <UniqueIdentifier>{32bcf409-4582-4ab7-9a7d-6bf925f1fa49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShaderManager\MeshShaders">
+      <UniqueIdentifier>{536c75c6-5bd7-40db-8727-110db04f4204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ShaderManager\MeshShaders\DifuseShader">
+      <UniqueIdentifier>{2f4e78f3-82a2-49f9-ac2c-376ab3352bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShaderManager\MeshShaders\DifuseShader">
+      <UniqueIdentifier>{a9c19ca6-4e89-4fa8-b49f-1db2e25d0243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShaderManager\MeshShaders\NormalMap">
+      <UniqueIdentifier>{88eba9cf-ca93-417b-b11e-835aa38385ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ShaderManager\MeshShaders\NormalMapShader">
+      <UniqueIdentifier>{60d60e02-ce86-4d44-bc59-d05337b0812e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ShaderManager\MeshShaders\ParallaxShader">
+      <UniqueIdentifier>{70470390-3de7-49ee-abef-71c9ec3e6255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ShaderManager\MeshShaders\ParallaxShader">
+      <UniqueIdentifier>{464f255f-b0c1-4b80-9ef9-335218dae576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libpng">
+      <UniqueIdentifier>{3fd1f727-28a2-46f0-9bb8-62aaf25896cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{d7ff2d2f-da3c-4d96-8ea1-d2c78099de87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\XML">
+      <UniqueIdentifier>{4e021b7e-351e-4eee-9415-11efb7324c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\XML">
+      <UniqueIdentifier>{64f3dcbf-081e-4ded-80a1-34c8e5f24b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Primitivas">
+      <UniqueIdentifier>{b7bdf660-9669-4364-89f8-b4df9678283a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager\Mesh\Skeleton">
+      <UniqueIdentifier>{cf1c634f-d660-4ad0-8b49-40de12e47a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager\Mesh\Skeleton">
+      <UniqueIdentifier>{dc2ab34f-6f38-4f7c-b4ab-494e356ae724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ObjectManager\Mesh\Animation">
+      <UniqueIdentifier>{a4d095c8-868d-4cd1-8e79-1c9ffb78a01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectManager\Mesh\Animation">
+      <UniqueIdentifier>{269eb59f-f05b-4234-ba89-4de17fa08dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\include">
+      <UniqueIdentifier>{7b22be2f-5f11-4419-a56a-a6c8d6517200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\include\GL">
+      <UniqueIdentifier>{6c65902b-adf1-4ace-8809-ed2d627228d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\include\GLES">
+      <UniqueIdentifier>{6f27b921-99a5-49f6-a2f7-dc34da720791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\include\GLES\GLES2">
+      <UniqueIdentifier>{d5b32564-d7aa-48d5-a72e-49e0f44ffc1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\include\GLES\GLES3">
+      <UniqueIdentifier>{e8b3f2d2-7002-4d1b-8f4f-f6a11609ff16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\include\GLES\KHR">
+      <UniqueIdentifier>{57abc4b0-8199-49fd-99c1-d841a16e98f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Generic\Interpolation">
+      <UniqueIdentifier>{1a9933c7-bdc9-4763-844b-2a1b3d2f6d67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Generic\Interpolation">
+      <UniqueIdentifier>{f4fb7dc2-98fb-4a44-a0f5-2c8928305059}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Camara.h">
+      <Filter>include\Camara</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cilindro.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Esfera.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Marcador.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cubo.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Toroide.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLSLProgram.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ShaderManager.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemoryManager.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LightingManager.h">
+      <Filter>include\Lighting and Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CamaraTerceraPersona.h">
+      <Filter>include\Camara</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CamaraPrimeraPersona.h">
+      <Filter>include\Camara</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GenericUtils.h">
+      <Filter>include\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneLoader.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectLoader.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XmlParser.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XmlTree.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XmlTreeNode.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XmlNodeAttribute.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIController.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIElement.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIState.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIPartialTextureState.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIDynamicTextureState.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TimeManager.h">
+      <Filter>include\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIShader.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIStateHolder.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIEventHandler.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIForm.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIFactory.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UILabel.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIButton.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UITextBox.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIScrollBar.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIList.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VideoConfiguration.h">
+      <Filter>TemporalConfiguration</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ApiNotBindException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Exception.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EventHandlerNotAttachedException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UINumericInput.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LightDoesNotExistException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UICheckBox.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LineShader.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LineManager.h">
+      <Filter>include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureManager.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Texture.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureLoadException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileTexture.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ApiTexture.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpenglDevice.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphicDevice.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphicInitializationException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphicArrayContainer.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphicDeviceConstantCatalog.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpenglConstantCatalog.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InvalidUniformNameException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FrameBuffer.h">
+      <Filter>include\Frame Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FrameBufferWriteLockViolationException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FrameBufferManager.h">
+      <Filter>include\Frame Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FrameBufferRequest.h">
+      <Filter>include\Frame Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureRequest.h">
+      <Filter>include\Frame Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DepthTexture.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemoryTexture.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureFilterRequest.h">
+      <Filter>include\Frame Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureFilter.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderPipeline.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OutputResource.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GeometryStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BackBufferWriterStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderStageNotAssignedInPipeline.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DeferredGeometryStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PhongLightingStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ToScreenFrameBuffer.h">
+      <Filter>include\Frame Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UserInterfaceStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlurStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BloomStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlurStageTemplate.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VarianceShadowMapStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ShadowManager.h">
+      <Filter>include\Lighting and Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InputDoesNotExistInRenderPipeline.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderPipelineWithGeometryAndBackWrite.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ShadowBlurStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneWriter.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ChargeableResource.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ChargeableTextureMap.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DiffuseMap.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DisplacementMap.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshBuffers.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshMaterial.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NormalMap.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshFactory.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Mesh.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object.h">
+      <Filter>include\ObjectManager\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectFactory.h">
+      <Filter>include\ObjectManager\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectManager.h">
+      <Filter>include\ObjectManager\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene.h">
+      <Filter>include\ObjectManager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UVTransformations.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RectangleMeshFactory.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphicIndexArrayContainer.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ApiVariableTypeDoesNotExistException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Transformation.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Logger.h">
+      <Filter>include\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Log.h">
+      <Filter>include\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LoggerNotInitializedException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SSAORenderStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RandomTextureGeneratorShader.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PhongLightingShader.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PhongLightingWithSSAOShader.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MergeTwoImagesShader.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InvalidSubroutineNameException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TransformableMesh.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataBuffer.h">
+      <Filter>include\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VertexBufferObject.h">
+      <Filter>include\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VertexArrayObject.h">
+      <Filter>include\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TransformFeedbackObject.h">
+      <Filter>include\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IndexBufferObject.h">
+      <Filter>include\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TransformFeedbackShader.h">
+      <Filter>include\ShaderManager\TransformFeedback</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BloomShader.h">
+      <Filter>include\ShaderManager\PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BloomShader_330.h">
+      <Filter>include\ShaderManager\PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlurShader.h">
+      <Filter>include\ShaderManager\PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlurShader_330.h">
+      <Filter>include\ShaderManager\PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SSAOShader.h">
+      <Filter>include\ShaderManager\PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshTransformFeedbackShader.h">
+      <Filter>include\ShaderManager\TransformFeedback</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BasicForceMeshDeformationTFShader.h">
+      <Filter>include\ShaderManager\TransformFeedback</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InvalidVBOBufferPassedToTransformFeedbackException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshDrawerShader.h">
+      <Filter>include\ShaderManager\MeshShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ShadowShader.h">
+      <Filter>include\ShaderManager\MeshShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshKeyframeAnimationTF.h">
+      <Filter>include\ShaderManager\TransformFeedback</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GpuTimeProfiler.h">
+      <Filter>include\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SystemPerformanceAnalyzer.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DepthOfFieldShader.h">
+      <Filter>include\ShaderManager\PostEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DepthOfFieldStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FeatureNotAvaibleException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIStaticImage.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectionalMovingObject.h">
+      <Filter>include\ObjectManager\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneLight.h">
+      <Filter>include\Lighting and Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ShadowData.h">
+      <Filter>include\Lighting and Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectLight.h">
+      <Filter>include\Lighting and Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PropertyCannotBeAcessedException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectTransformation.h">
+      <Filter>include\ObjectManager\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LightBuilder.h">
+      <Filter>include\Lighting and Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneCache.h">
+      <Filter>include\ObjectManager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BoundingBox.h">
+      <Filter>include\ObjectManager\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ViewFrustum.h">
+      <Filter>include\Camara</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DrawableBoundingBox.h">
+      <Filter>include\ObjectManager\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Plane.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ForwardGeometryStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DifuseShader.h">
+      <Filter>include\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DifuseDeferredShader.h">
+      <Filter>include\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DifuseForwardShader.h">
+      <Filter>include\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DifuseShaderImplementation.h">
+      <Filter>include\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NormalMapShader.h">
+      <Filter>include\ShaderManager\MeshShaders\NormalMapShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NormalMapShaderImplementation.h">
+      <Filter>include\ShaderManager\MeshShaders\NormalMapShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NormalMapDeferredShader.h">
+      <Filter>include\ShaderManager\MeshShaders\NormalMapShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NormalMapForwardShader.h">
+      <Filter>include\ShaderManager\MeshShaders\NormalMapShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ParallaxShader.h">
+      <Filter>include\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ParallaxShaderImplementation.h">
+      <Filter>include\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ParallaxDeferredShader.h">
+      <Filter>include\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ParallaxForwardShader.h">
+      <Filter>include\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PngTextureLoader.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\png.h">
+      <Filter>libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngconf.h">
+      <Filter>libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngdebug.h">
+      <Filter>libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pnginfo.h">
+      <Filter>libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngpriv.h">
+      <Filter>libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngstruct.h">
+      <Filter>libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pnglibconf.h">
+      <Filter>libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\crc32.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\deflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\gzguts.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffixed.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\trees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureDataTransfer.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureLoader.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScaenaModelLoader.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XmlUtils.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StringUtils.h">
+      <Filter>include\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshLoadException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileProcessingException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpenglES3ConstantCatalog.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpenglES3Device.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpenglES2ConstantCatalog.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpenglES2Device.h">
+      <Filter>include\GraphicDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLSLProgramGLImplementation.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLSLProgramGLES3Implementation.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLSLProgramInterface.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLSLProgramGLES2Implementation.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLSLUniform.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LightUniform.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LightUniformsContainer.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LineR3.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LineR2.h">
+      <Filter>include\Primitivas</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DrawPacket.h">
+      <Filter>include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImagePrinterStage.h">
+      <Filter>include\Render Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshSkeleton.h">
+      <Filter>include\ObjectManager\Mesh\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshSkeletonJoint.h">
+      <Filter>include\ObjectManager\Mesh\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedMesh.h">
+      <Filter>include\ObjectManager\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshDrawerShaderImplProxy.h">
+      <Filter>include\ShaderManager\MeshShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedDifuseShader.h">
+      <Filter>include\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedNormalMapShader.h">
+      <Filter>include\ShaderManager\MeshShaders\NormalMapShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedParallaxShader.h">
+      <Filter>include\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedDifuseDeferredShader.h">
+      <Filter>include\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedDifuseForwardShader.h">
+      <Filter>include\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedNormalMapDeferredShader.h">
+      <Filter>include\ShaderManager\MeshShaders\NormalMapShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedNormalMapForwardShader.h">
+      <Filter>include\ShaderManager\MeshShaders\NormalMapShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedParallaxDeferredShader.h">
+      <Filter>include\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedParallaxForwardShader.h">
+      <Filter>include\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedDrawerHelper.h">
+      <Filter>include\ShaderManager\MeshShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataConformationException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScaenaAnimationLoader.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScaenaModelLoaderHelper.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedAnimation.h">
+      <Filter>include\ObjectManager\Mesh\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedAnimationKeyFrame.h">
+      <Filter>include\ObjectManager\Mesh\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkinnedAnimationRepository.h">
+      <Filter>include\ObjectManager\Mesh\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AnimationLoadException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshSkeletonInterpolator.h">
+      <Filter>include\ObjectManager\Mesh\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScaenaAnimationFileWriter.h">
+      <Filter>include\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\unistd.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GL\wglew.h">
+      <Filter>glew\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GL\glew.h">
+      <Filter>glew\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GL\glxew.h">
+      <Filter>glew\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GLES\GLES2\gl2.h">
+      <Filter>glew\include\GLES\GLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GLES\GLES2\gl2ext.h">
+      <Filter>glew\include\GLES\GLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GLES\GLES2\gl2platform.h">
+      <Filter>glew\include\GLES\GLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GLES\GLES3\gl2ext.h">
+      <Filter>glew\include\GLES\GLES3</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GLES\GLES3\gl3.h">
+      <Filter>glew\include\GLES\GLES3</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GLES\GLES3\gl3platform.h">
+      <Filter>glew\include\GLES\GLES3</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GLES\KHR\khrplatform.h">
+      <Filter>glew\include\GLES\KHR</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ui3dDrawable.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImageComposer.h">
+      <Filter>include\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImageColorChangerShader.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemoryTextureManager.h">
+      <Filter>include\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NullPointerException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIDynamicImage.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InterpolationFunction.h">
+      <Filter>include\Generic\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TimeParameterInterpolator.h">
+      <Filter>include\Generic\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinearConstantInterpolationFunction.h">
+      <Filter>include\Generic\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QuadraticConstantInterpolationFunction.h">
+      <Filter>include\Generic\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JsonUtils.h">
+      <Filter>include\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InterruptionPoint.h">
+      <Filter>include\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InitializationException.h">
+      <Filter>include\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIGraphicList.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIGraphicListItem.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIVirtualKeyboard.h">
+      <Filter>include\User Interface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Callbackable.h">
+      <Filter>include\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UnstopableTimeManager.h">
+      <Filter>include\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLSLProgramMockImplementation.h">
+      <Filter>include\ShaderManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glew\source\glew.c">
+      <Filter>glew\source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Esfera.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cubo.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cilindro.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Toroide.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camara.cpp">
+      <Filter>src\Camara</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Marcador.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderManager.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryManager.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LightingManager.cpp">
+      <Filter>src\Lighting and Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CamaraTerceraPersona.cpp">
+      <Filter>src\Camara</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CamaraPrimeraPersona.cpp">
+      <Filter>src\Camara</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GenericUtils.cpp">
+      <Filter>src\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneLoader.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectLoader.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XmlParser.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XmlTreeNode.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XmlTree.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XmlNodeAttribute.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIController.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIElement.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIState.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIPartialTextureState.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIDynamicTextureState.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimeManager.cpp">
+      <Filter>src\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIShader.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIStateHolder.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIFactory.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIButton.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UILabel.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UITextBox.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIScrollBar.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIList.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VideoConfiguration.cpp">
+      <Filter>TemporalConfiguration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UINumericInput.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UICheckBox.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LineShader.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LineManager.cpp">
+      <Filter>src\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureManager.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileTexture.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ApiTexture.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GraphicDevice.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenglDevice.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenglConstantCatalog.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameBuffer.cpp">
+      <Filter>src\Frame Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameBufferManager.cpp">
+      <Filter>src\Frame Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameBufferRequest.cpp">
+      <Filter>src\Frame Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DepthTexture.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureRequest.cpp">
+      <Filter>src\Frame Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderPipeline.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhongLightingStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DeferredGeometryStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToScreenFrameBuffer.cpp">
+      <Filter>src\Frame Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserInterfaceStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BlurStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BloomStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BlurStageTemplate.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VarianceShadowMapStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShadowManager.cpp">
+      <Filter>src\Lighting and Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderPipelineWithGeometryAndBackWrite.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShadowBlurStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureFilterRequest.cpp">
+      <Filter>src\Frame Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneWriter.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ChargeableTextureMap.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DiffuseMap.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DisplacementMap.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshBuffers.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshFactory.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshMaterial.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalMap.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Object.cpp">
+      <Filter>src\ObjectManager\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectFactory.cpp">
+      <Filter>src\ObjectManager\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectManager.cpp">
+      <Filter>src\ObjectManager\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RectangleMeshFactory.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UVTransformations.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>src\ObjectManager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transformation.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Logger.cpp">
+      <Filter>src\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SSAORenderStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RandomTextureGeneratorShader.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhongLightingShader.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhongLightingWithSSAOShader.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MergeTwoImagesShader.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformableMesh.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLSLProgram.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexBufferObject.cpp">
+      <Filter>src\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexArrayObject.cpp">
+      <Filter>src\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformFeedbackObject.cpp">
+      <Filter>src\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IndexBufferObject.cpp">
+      <Filter>src\ObjectManager\Mesh\DataBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformFeedbackShader.cpp">
+      <Filter>src\ShaderManager\TransformFeedback</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BlurShader.cpp">
+      <Filter>src\ShaderManager\PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BlurShader_330.cpp">
+      <Filter>src\ShaderManager\PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BloomShader_330.cpp">
+      <Filter>src\ShaderManager\PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BloomShader.cpp">
+      <Filter>src\ShaderManager\PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SSAOShader.cpp">
+      <Filter>src\ShaderManager\PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BasicForceMeshDeformationTFShader.cpp">
+      <Filter>src\ShaderManager\TransformFeedback</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshKeyframeAnimationTF.cpp">
+      <Filter>src\ShaderManager\TransformFeedback</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GpuTimeProfiler.cpp">
+      <Filter>src\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SystemPerformanceAnalyzer.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DepthOfFieldShader.cpp">
+      <Filter>src\ShaderManager\PostEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DepthOfFieldStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIStaticImage.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DirectionalMovingObject.cpp">
+      <Filter>src\ObjectManager\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectTransformation.cpp">
+      <Filter>src\ObjectManager\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LightBuilder.cpp">
+      <Filter>src\Lighting and Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneLight.cpp">
+      <Filter>src\Lighting and Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneCache.cpp">
+      <Filter>src\ObjectManager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BoundingBox.cpp">
+      <Filter>src\ObjectManager\Bounding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ViewFrustum.cpp">
+      <Filter>src\Camara</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plane.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ForwardGeometryStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshDrawerShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShadowShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DifuseShaderImplementation.cpp">
+      <Filter>src\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DifuseDeferredShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DifuseForwardShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DifuseShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalMapShaderImplementation.cpp">
+      <Filter>src\ShaderManager\MeshShaders\NormalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalMapDeferredShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\NormalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalMapForwardShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\NormalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalMapShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\NormalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParallaxShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParallaxShaderImplementation.cpp">
+      <Filter>src\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParallaxForwardShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParallaxDeferredShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectLight.cpp">
+      <Filter>src\Lighting and Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PngTextureLoader.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\png.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngerror.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngget.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngmem.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngpread.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngread.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrio.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrtran.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrutil.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngset.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngtest.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngtrans.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwio.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwrite.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwtran.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwutil.c">
+      <Filter>libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzclose.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzlib.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzread.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzwrite.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infback.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureLoader.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XmlUtils.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StringUtils.cpp">
+      <Filter>src\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScaenaModelLoader.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenglES3ConstantCatalog.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenglES3Device.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenglES2ConstantCatalog.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenglES2Device.cpp">
+      <Filter>src\GraphicDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLSLProgramGLImplementation.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLSLProgramGLES3Implementation.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLSLProgramGLES2Implementation.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryTexture.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLSLUniform.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LightUniform.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LightUniformsContainer.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LineR3.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LineR2.cpp">
+      <Filter>src\Primitivas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DrawPacket.cpp">
+      <Filter>src\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImagePrinterStage.cpp">
+      <Filter>src\Render Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedMesh.cpp">
+      <Filter>src\ObjectManager\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshSkeletonJoint.cpp">
+      <Filter>src\ObjectManager\Mesh\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshSkeleton.cpp">
+      <Filter>src\ObjectManager\Mesh\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshDrawerShaderImplProxy.cpp">
+      <Filter>src\ShaderManager\MeshShaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedDifuseShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedNormalMapShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\NormalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedParallaxShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedDrawerHelper.cpp">
+      <Filter>src\ShaderManager\MeshShaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedDifuseDeferredShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedDifuseForwardShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\DifuseShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedNormalMapDeferredShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\NormalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedNormalMapForwardShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\NormalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedParallaxDeferredShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedParallaxForwardShader.cpp">
+      <Filter>src\ShaderManager\MeshShaders\ParallaxShader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScaenaAnimationLoader.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScaenaModelLoaderHelper.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedAnimationRepository.cpp">
+      <Filter>src\ObjectManager\Mesh\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedAnimation.cpp">
+      <Filter>src\ObjectManager\Mesh\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkinnedAnimationKeyFrame.cpp">
+      <Filter>src\ObjectManager\Mesh\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshSkeletonInterpolator.cpp">
+      <Filter>src\ObjectManager\Mesh\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScaenaAnimationFileWriter.cpp">
+      <Filter>src\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ui3dDrawable.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageComposer.cpp">
+      <Filter>src\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageColorChangerShader.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryTextureManager.cpp">
+      <Filter>src\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIDynamicImage.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimeParameterInterpolator.cpp">
+      <Filter>src\Generic\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LinearConstantInterpolationFunction.cpp">
+      <Filter>src\Generic\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QuadraticConstantInterpolationFunction.cpp">
+      <Filter>src\Generic\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JsonUtils.cpp">
+      <Filter>src\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InterruptionPoint.cpp">
+      <Filter>src\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIGraphicList.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIForm.cpp">
+      <Filter>src\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIGraphicListItem.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIVirtualKeyboard.cpp">
+      <Filter>src\User Interface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UnstopableTimeManager.cpp">
+      <Filter>src\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLSLProgramMockImplementation.cpp">
+      <Filter>src\ShaderManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zlib\README">
+      <Filter>zlib</Filter>
+    </None>
+  </ItemGroup>
+</Project>

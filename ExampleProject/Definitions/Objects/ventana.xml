@@ -1,0 +1,436 @@
+
+<Object id="ventana" class="Object" meshPath="Modelos/ventana.smf">
+	<Mesh name="Marco">
+		<Material>
+			<Ambient>0.5</Ambient>
+
+			<Diffuse>0.6</Diffuse>
+
+			<Specular>0.4</Specular>
+
+			<Bright>0</Bright>
+		</Material>
+
+		<Texture>
+			<UVTranslation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVTranslation>
+
+			<UVScale>
+				<X>1</X>
+
+				<Y>1</Y>
+			</UVScale>
+
+			<UVRotation>
+				<X>0</X>
+
+				<Y>0</Y>
+			</UVRotation>
+
+			<DiffuseMap>
+				<Map>./Textures/Difusas/blanco.png</Map>
+			</DiffuseMap>
+		</Texture>
+
+		<Transformations>
+			<Translation>
+				<X>0.194437</X>
+
+				<Y>-0.241461</Y>
+
+				<Z>1.13441</Z>
+			</Translation>
+
+			<Rotation>
+				<X>90</X>
+
+				<Y>-0</Y>
+
+				<Z>0</Z>
+			</Rotation>
+
+			<Scale>
+				<X>0.0254</X>
+
+				<Y>0.0254</Y>
+
+				<Z>0.0254</Z>
+			</Scale>
+		</Transformations>
+
+		<Mesh name="Riel">
+			<Material>
+				<Ambient>0.5</Ambient>
+
+				<Diffuse>0.6</Diffuse>
+
+				<Specular>0.9</Specular>
+
+				<Bright>0</Bright>
+			</Material>
+
+			<Texture>
+				<UVTranslation>
+					<X>-1</X>
+
+					<Y>-1</Y>
+				</UVTranslation>
+
+				<UVScale>
+					<X>3</X>
+
+					<Y>3</Y>
+				</UVScale>
+
+				<UVRotation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVRotation>
+
+				<DiffuseMap>
+					<Map>./Textures/Difusas/oro.png</Map>
+				</DiffuseMap>
+			</Texture>
+
+			<Transformations>
+				<Translation>
+					<X>-7.655</X>
+
+					<Y>-0.373959</Y>
+
+					<Z>3.10401</Z>
+				</Translation>
+
+				<Rotation>
+					<X>0</X>
+
+					<Y>90</Y>
+
+					<Z>0</Z>
+				</Rotation>
+
+				<Scale>
+					<X>1</X>
+
+					<Y>1</Y>
+
+					<Z>1</Z>
+				</Scale>
+			</Transformations>
+
+			<Mesh name="Cortina2">
+				<Material>
+					<Ambient>0.6</Ambient>
+
+					<Diffuse>0.7</Diffuse>
+
+					<Specular>0</Specular>
+
+					<Bright>0</Bright>
+				</Material>
+
+				<Texture>
+					<UVTranslation>
+						<X>-2</X>
+
+						<Y>-2</Y>
+					</UVTranslation>
+
+					<UVScale>
+						<X>1</X>
+
+						<Y>1</Y>
+					</UVScale>
+
+					<UVRotation>
+						<X>0</X>
+
+						<Y>0</Y>
+					</UVRotation>
+
+					<DiffuseMap>
+						<Map>./Textures/Difusas/sedaP1.png</Map>
+					</DiffuseMap>
+				</Texture>
+
+				<Transformations>
+					<Translation>
+						<X>0.0454874</X>
+
+						<Y>-110.338</Y>
+
+						<Z>11.7388</Z>
+					</Translation>
+
+					<Rotation>
+						<X>1.19528e-005</X>
+
+						<Y>-90</Y>
+
+						<Z>0</Z>
+					</Rotation>
+
+					<Scale>
+						<X>0.488285</X>
+
+						<Y>0.894189</Y>
+
+						<Z>0.537324</Z>
+					</Scale>
+				</Transformations>
+			</Mesh>
+
+			<Mesh name="Cortina1">
+				<Material>
+					<Ambient>0.6</Ambient>
+
+					<Diffuse>0.7</Diffuse>
+
+					<Specular>0</Specular>
+
+					<Bright>0</Bright>
+				</Material>
+
+				<Texture>
+					<UVTranslation>
+						<X>-2</X>
+
+						<Y>-2</Y>
+					</UVTranslation>
+
+					<UVScale>
+						<X>1</X>
+
+						<Y>1</Y>
+					</UVScale>
+
+					<UVRotation>
+						<X>0</X>
+
+						<Y>0</Y>
+					</UVRotation>
+
+					<DiffuseMap>
+						<Map>./Textures/Difusas/sedaP1.png</Map>
+					</DiffuseMap>
+				</Texture>
+
+				<Transformations>
+					<Translation>
+						<X>0.0454779</X>
+
+						<Y>-110.338</Y>
+
+						<Z>85.7341</Z>
+					</Translation>
+
+					<Rotation>
+						<X>-180</X>
+
+						<Y>-90</Y>
+
+						<Z>0</Z>
+					</Rotation>
+
+					<Scale>
+						<X>-0.488285</X>
+
+						<Y>-0.894189</Y>
+
+						<Z>-0.537324</Z>
+					</Scale>
+				</Transformations>
+			</Mesh>
+		</Mesh>
+
+		<Mesh name="Piso">
+			<Material>
+				<Ambient>0.3</Ambient>
+
+				<Diffuse>0.6</Diffuse>
+
+				<Specular>0.6</Specular>
+
+				<Bright>0</Bright>
+			</Material>
+
+			<Texture>
+				<UVTranslation>
+					<X>-4.7</X>
+
+					<Y>-1.4</Y>
+				</UVTranslation>
+
+				<UVScale>
+					<X>1</X>
+
+					<Y>1.5</Y>
+				</UVScale>
+
+				<UVRotation>
+					<X>0</X>
+
+					<Y>0</Y>
+				</UVRotation>
+
+				<DiffuseMap>
+					<Map>./Textures/Difusas/badosa1.png</Map>
+				</DiffuseMap>
+			</Texture>
+
+			<Transformations>
+				<Translation>
+					<X>41.1854</X>
+
+					<Y>-233.263</Y>
+
+					<Z>-45.1748</Z>
+				</Translation>
+
+				<Rotation>
+					<X>-89.9999</X>
+
+					<Y>1.70755e-006</Y>
+
+					<Z>1.70755e-006</Z>
+				</Rotation>
+
+				<Scale>
+					<X>1</X>
+
+					<Y>1</Y>
+
+					<Z>1</Z>
+				</Scale>
+			</Transformations>
+
+			<Mesh name="Varanda">
+				<Material>
+					<Ambient>0.7</Ambient>
+
+					<Diffuse>0.6</Diffuse>
+
+					<Specular>0.9</Specular>
+
+					<Bright>0</Bright>
+				</Material>
+
+				<Texture>
+					<UVTranslation>
+						<X>0</X>
+
+						<Y>0.00999999</Y>
+					</UVTranslation>
+
+					<UVScale>
+						<X>1</X>
+
+						<Y>1</Y>
+					</UVScale>
+
+					<UVRotation>
+						<X>0</X>
+
+						<Y>0</Y>
+					</UVRotation>
+
+					<DiffuseMap>
+						<Map>./Textures/Difusas/metalBrillante1.png</Map>
+					</DiffuseMap>
+				</Texture>
+
+				<Transformations>
+					<Translation>
+						<X>-3.42248</X>
+
+						<Y>81.174</Y>
+
+						<Z>36.8948</Z>
+					</Translation>
+
+					<Rotation>
+						<X>180</X>
+
+						<Y>270</Y>
+
+						<Z>90</Z>
+					</Rotation>
+
+					<Scale>
+						<X>0.284837</X>
+
+						<Y>1</Y>
+
+						<Z>0.999997</Z>
+					</Scale>
+				</Transformations>
+			</Mesh>
+
+			<Mesh name="Fondo">
+				<Material>
+					<Ambient>1</Ambient>
+
+					<Diffuse>1</Diffuse>
+
+					<Specular>0</Specular>
+
+					<Bright>0</Bright>
+				</Material>
+
+				<Texture>
+					<UVTranslation>
+						<X>0</X>
+
+						<Y>0</Y>
+					</UVTranslation>
+
+					<UVScale>
+						<X>1</X>
+
+						<Y>1</Y>
+					</UVScale>
+
+					<UVRotation>
+						<X>0</X>
+
+						<Y>0</Y>
+					</UVRotation>
+
+					<DiffuseMap>
+						<Map>./Textures/Difusas/fondo3Iluminado.png</Map>
+					</DiffuseMap>
+				</Texture>
+
+				<Transformations>
+					<Translation>
+						<X>0.24171</X>
+
+						<Y>450</Y>
+
+						<Z>200</Z>
+					</Translation>
+
+					<Rotation>
+						<X>90</X>
+
+						<Y>-4.5605e-007</Y>
+
+						<Z>4.56051e-007</Z>
+					</Rotation>
+
+					<Scale>
+						<X>3.3</X>
+
+						<Y>3.3</Y>
+
+						<Z>1.48382</Z>
+					</Scale>
+				</Transformations>
+			</Mesh>
+		</Mesh>
+	</Mesh>
+</Object>

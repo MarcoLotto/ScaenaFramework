@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{71240f70-0ba4-4d80-bdb1-9c3cdf528d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{d519976e-ad97-4ce5-927a-1543f7c456e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tests">
+      <UniqueIdentifier>{194df8da-2448-41a6-a5dd-88161380a774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests">
+      <UniqueIdentifier>{3bf52a63-8c16-415d-abf0-59f110d967e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\support">
+      <UniqueIdentifier>{85b6b0b9-cb34-4dc9-bc06-79f4905a7307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\support">
+      <UniqueIdentifier>{043ccf12-0274-4653-90a8-0e714fb9a669}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Test.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TestManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TestConfiguration.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MockGraphicDevice.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderPipelineBuilder.cpp">
+      <Filter>src\support</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ForwardRenderPipelineTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BloomRenderPipelineTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BlurRenderPipelineTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIRenderPipelineTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DeferredRenderPipelineTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DepthOfFieldRenderPipelineTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OneTextureTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoDifferentTexturesTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoEqualTextureTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoEqualMeshesLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoEqualObjectsLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneLightsLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Test.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TestManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TestConfiguration.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AssertionException.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MockGraphicDevice.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderPipelineBuilder.h">
+      <Filter>include\support</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ForwardRenderPipelineTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BloomRenderPipelineTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlurRenderPipelineTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UIRenderPipelineTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DeferredRenderPipelineTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DepthOfFieldRenderPipelineTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OneTextureTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoDifferentTexturesTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoEqualTexturesTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoEqualMeshesLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoEqualObjectsLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneLightsLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\myWindow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TeamBuilderForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CustomizableTexture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MenuStatusBarForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TeamBuilderDataForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FormsManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VirtualKeyboardForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextInfoPopupForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PipelineBuilder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BackgroundForm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\myWindow.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TeamBuilderForm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TeamBuilderDataTransfer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CustomizableTexture.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgramParameters.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MenuStatusBarForm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TeamBuilderDataForm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FormsManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VirtualKeyboardForm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextInfoPopupForm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PipelineBuilder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BackgroundForm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

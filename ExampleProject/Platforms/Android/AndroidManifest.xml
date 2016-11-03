@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BEGIN_INCLUDE(manifest) -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.scaena"
+        android:versionCode="1"
+        android:versionName="1.0">
+
+    <!-- This is the platform API where NativeActivity was introduced. -->
+    <uses-feature android:glEsVersion="0x00020000"></uses-feature>
+    <uses-sdk android:minSdkVersion="14" />
+
+    <!-- Si el apk tiene codigo java, setear hasCode en true -->
+    <application android:label="TestProyect" android:hasCode="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        <!-- Our activity is the built-in NativeActivity framework class.
+             This will take care of integrating with our NDK code. -->
+        <activity android:name=".CustomNativeActivity"
+                android:label="TestProyect"
+                android:configChanges="orientation|keyboardHidden"
+                android:screenOrientation="landscape">
+            <!-- Tell NativeActivity the name of or .so -->
+            <meta-data android:name="android.app.lib_name"
+                    android:value="Scaena" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest> 
+<!-- END_INCLUDE(manifest) -->
