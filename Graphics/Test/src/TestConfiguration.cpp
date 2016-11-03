@@ -9,6 +9,10 @@
 #include "OneTextureTest.h"
 #include "TwoDifferentTexturesTest.h"
 #include "TwoEqualTexturesTest.h"
+#include "MeshLoadTest.h"
+#include "TwoEqualMeshesLoadTest.h"
+#include "ObjectLoadTest.h"
+#include "TwoEqualObjectsLoadTest.h"
 
 void TestConfiguration::configureTests(){
 	this->tests.push_back(new ForwardRenderPipelineTest());
@@ -20,4 +24,8 @@ void TestConfiguration::configureTests(){
 	this->tests.push_back(new TwoDifferentTexturesTest());
 	this->tests.push_back(new TwoEqualTexturesTest());
 	this->tests.push_back(new OneTextureTest());
+	this->tests.push_back(new MeshLoadTest());
+	this->tests.push_back(new TwoEqualMeshesLoadTest());
+	this->tests.push_back(new ObjectLoadTest());
+	this->tests.push_back(new TwoEqualObjectsLoadTest());
 }

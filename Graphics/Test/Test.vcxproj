@@ -73,6 +73,8 @@
     <ClCompile Include="src\BlurRenderPipelineTest.cpp" />
     <ClCompile Include="src\DeferredRenderPipelineTest.cpp" />
     <ClCompile Include="src\DepthOfFieldRenderPipelineTest.cpp" />
+    <ClCompile Include="src\MeshLoadTest.cpp" />
+    <ClCompile Include="src\ObjectLoadTest.cpp" />
     <ClCompile Include="src\RenderPipelineBuilder.cpp" />
     <ClCompile Include="src\MockGraphicDevice.cpp" />
     <ClCompile Include="src\ForwardRenderPipelineTest.cpp" />
@@ -83,6 +85,8 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\OneTextureTest.cpp" />
     <ClCompile Include="src\TwoDifferentTexturesTest.cpp" />
+    <ClCompile Include="src\TwoEqualMeshesLoadTest.cpp" />
+    <ClCompile Include="src\TwoEqualObjectsLoadTest.cpp" />
     <ClCompile Include="src\TwoEqualTextureTest.cpp" />
     <ClCompile Include="src\UIRenderPipelineTest.cpp" />
   </ItemGroup>
@@ -91,6 +95,8 @@
     <ClInclude Include="include\BlurRenderPipelineTest.h" />
     <ClInclude Include="include\DeferredRenderPipelineTest.h" />
     <ClInclude Include="include\DepthOfFieldRenderPipelineTest.h" />
+    <ClInclude Include="include\MeshLoadTest.h" />
+    <ClInclude Include="include\ObjectLoadTest.h" />
     <ClInclude Include="include\RenderPipelineBuilder.h" />
     <ClInclude Include="include\MockGraphicDevice.h" />
     <ClInclude Include="include\ForwardRenderPipelineTest.h" />
@@ -100,6 +106,8 @@
     <ClInclude Include="include\TestManager.h" />
     <ClInclude Include="include\OneTextureTest.h" />
     <ClInclude Include="include\TwoDifferentTexturesTest.h" />
+    <ClInclude Include="include\TwoEqualMeshesLoadTest.h" />
+    <ClInclude Include="include\TwoEqualObjectsLoadTest.h" />
     <ClInclude Include="include\TwoEqualTexturesTest.h" />
     <ClInclude Include="include\UIRenderPipelineTest.h" />
   </ItemGroup>

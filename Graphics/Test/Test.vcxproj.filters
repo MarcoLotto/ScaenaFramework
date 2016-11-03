@@ -66,6 +66,18 @@
     <ClCompile Include="src\TwoEqualTextureTest.cpp">
       <Filter>src\tests</Filter>
     </ClCompile>
+    <ClCompile Include="src\MeshLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoEqualMeshesLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TwoEqualObjectsLoadTest.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Test.h">
@@ -111,6 +123,18 @@
       <Filter>include\tests</Filter>
     </ClInclude>
     <ClInclude Include="include\TwoEqualTexturesTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MeshLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoEqualMeshesLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectLoadTest.h">
+      <Filter>include\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TwoEqualObjectsLoadTest.h">
       <Filter>include\tests</Filter>
     </ClInclude>
   </ItemGroup>
