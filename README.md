@@ -1,8 +1,6 @@
 # ScaenaFramework
 A framework for developing cross-platform applications oriented to graphics rendering
 
-Alpha state - Not ready for production yet
-
 ## Documentation
 ***Please see the project wiki for all the framework documentation:***
 
