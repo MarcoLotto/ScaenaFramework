@@ -1,6 +1,6 @@
 # Builds all the projects in the solution...
 .PHONY: all_projects
-all_projects: WindowConnector Graphics TestProject 
+all_projects: WindowConnector Graphics ExampleProject ClothDemo
 
 # Builds project 'WindowConnector'...
 .PHONY: WindowConnector
@@ -17,20 +17,20 @@ Graphics:
 ModelTransformer: 
 	make --directory="ModelTransformer/" --file=ModelTransformer.makefile
 
-# Builds project 'TestProject'...
-.PHONY: TestProject
-TestProject: Graphics 
-	make --directory="TestProject/" --file=TestProject.makefile
+# Builds project 'ExampleProject'...
+.PHONY: ExampleProject
+ExampleProject: Graphics 
+	make --directory="ExampleProject/" --file=ExampleProject.makefile
 
-# Builds project 'SceneEditor'...
-.PHONY: SceneEditor
-SceneEditor: Graphics 
-	make --directory="SceneEditor/" --file=SceneEditor.makefile
+# Builds project 'ClothDemo'...
+.PHONY: ClothDemo
+ClothDemo: Graphics 
+	make --directory="ClothDemo/" --file=ClothDemo.makefile
 
 # Cleans all projects...
 .PHONY: clean
 clean:
 	make --directory="Graphics/" --file=Graphics.makefile clean
-	make --directory="TestProject/" --file=TestProject.makefile clean
-	make --directory="SceneEditor/" --file=SceneEditor.makefile clean
+	make --directory="ExampleProject/" --file=ExampleProject.makefile clean
+	make --directory="ClothDemo/" --file=ClothDemo.makefile clean
 

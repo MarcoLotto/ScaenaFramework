@@ -3,8 +3,8 @@ CPP_COMPILER = g++
 C_COMPILER = gcc
 
 # Include paths...
-Debug_Include_Path=-I"..//Graphics/glew/include" -I"..//Graphics/WindowConnectors/freeglut/include" -I"..//Graphics/WindowConnectors/CommonInclude" -I"..//Graphics/WindowConnectors/glutConnector/include" -I"..//Graphics/include" -I"../glm-0.9.3.2" -I"include"
-Release_Include_Path=-I"..//Graphics/glew/include" -I"..//Graphics/WindowConnectors/freeglut/include" -I"..//Graphics/WindowConnectors/CommonInclude" -I"..//Graphics/WindowConnectors/glutConnector/include" -I"..//Graphics/include" -I"../glm-0.9.3.2" -I"include"
+Debug_Include_Path=-I"..//Graphics/glew/include" -I"..//Graphics/WindowConnectors/freeglut/include" -I"..//Graphics/WindowConnectors/CommonInclude" -I"..//Graphics/WindowConnectors/glutConnector/include" -I"..//Graphics/include" -I"../glm-0.9.3.2" -I"../ExternalLibs" -I"include"
+Release_Include_Path=-I"..//Graphics/glew/include" -I"..//Graphics/WindowConnectors/freeglut/include" -I"..//Graphics/WindowConnectors/CommonInclude" -I"..//Graphics/WindowConnectors/glutConnector/include" -I"..//Graphics/include" -I"../glm-0.9.3.2" -I"../ExternalLibs" -I"include"
 
 # Library paths...
 Debug_Library_Path=-L"..//Graphics/Debug" -L"..//Graphics/WindowConnectors/Debug"
@@ -15,8 +15,8 @@ Debug_Libraries=-Wl,--start-group -lGraphics -lWindowConnector -lGLEW -lGLU -lGL
 Release_Libraries=-Wl,--start-group -lGraphics -lWindowConnector -lGLEW -lGLU -lGL -lX11 -lpthread -lm -lrt -ldl -Wl,--end-group
 
 # Preprocessor definitions...
-Debug_Preprocessor_Definitions=-D GCC_BUILD -D _DEBUG -D _CONSOLE 
-Release_Preprocessor_Definitions=-D GCC_BUILD -D NDEBUG -D _CONSOLE 
+Debug_Preprocessor_Definitions=-D GCC_BUILD -D _DEBUG -D _CONSOLE
+Release_Preprocessor_Definitions=-D GCC_BUILD -D NDEBUG -D _CONSOLE
 
 # Implictly linked object files...
 Debug_Implicitly_Linked_Objects=
@@ -24,7 +24,7 @@ Release_Implicitly_Linked_Objects=
 
 # Compiler flags...
 Debug_Compiler_Flags=-O0 -g -std=c++0x
-Release_Compiler_Flags=-O2 -std=c++0x 
+Release_Compiler_Flags=-O2 -std=c++0x
 
 # El nombre del ejecutable de salida
 PROJECT_NAME := ExampleProject
@@ -35,7 +35,7 @@ FILES_SRC_DIR := src/
 FILES_MAIN_DIR := ./
 
 CPP_FILES = $(wildcard $(FILES_SRC_DIR)/*.cpp) $(wildcard $(FILES_MAIN_DIR)/*.cpp)
-C_FILES = 
+C_FILES =
 
 # ******************Defino los directorios de salida de los obj para compilacion (para debug)********************************************
 
@@ -51,23 +51,23 @@ DEBUG_D_FILES = $(DEBUG_D_FILES_CPP) $(DEBUG_D_FILES_C)
 
 # Builds all configurations for this project...
 .PHONY: All
-All: create_folders Debug Release 
+All: create_folders Debug Release
 
 # Builds the Debug configuration...
 .PHONY: Debug
 Debug: $(DEBUG_OBJ_FILES) $(DEBUG_D_FILES)
 	$(CPP_COMPILER) $(DEBUG_OBJ_FILES) $(Debug_Library_Path) $(Debug_Libraries) -Wl,-rpath,./ -o Debug/$(PROJECT_NAME)
-	
+
 # ******************Defino las reglas de compilado para cada dependencia en debug***************************************
 # Carpeta raiz
 $(DEBUG_OBJ_OUTPUT)%.o: $(FILES_MAIN_DIR)%.cpp
-	$(CPP_COMPILER) $(Debug_Preprocessor_Definitions) $(Debug_Compiler_Flags) -c $< $(Debug_Include_Path) -o $@	
+	$(CPP_COMPILER) $(Debug_Preprocessor_Definitions) $(Debug_Compiler_Flags) -c $< $(Debug_Include_Path) -o $@
 $(DEBUG_OBJ_OUTPUT)%.d: $(FILES_MAIN_DIR)%.cpp
 	$(CPP_COMPILER) $(Debug_Preprocessor_Definitions) $(Debug_Compiler_Flags) -MM $< $(Debug_Include_Path) > $@
-	
+
 # Carpeta src
 $(DEBUG_OBJ_OUTPUT)$(FILES_SRC_DIR)%.o: $(FILES_SRC_DIR)%.cpp
-	$(CPP_COMPILER) $(Debug_Preprocessor_Definitions) $(Debug_Compiler_Flags) -c $< $(Debug_Include_Path) -o $@	
+	$(CPP_COMPILER) $(Debug_Preprocessor_Definitions) $(Debug_Compiler_Flags) -c $< $(Debug_Include_Path) -o $@
 $(DEBUG_OBJ_OUTPUT)$(FILES_SRC_DIR)%.d: $(FILES_SRC_DIR)%.cpp
 	$(CPP_COMPILER) $(Debug_Preprocessor_Definitions) $(Debug_Compiler_Flags) -MM $< $(Debug_Include_Path) > $@
 
@@ -87,15 +87,15 @@ RELEASE_OBJ_FILES = $(RELEASE_OBJ_FILES_CPP) $(RELEASE_OBJ_FILES_C)
 .PHONY: Release
 Release: $(RELEASE_OBJ_FILES)
 	$(CPP_COMPILER) $< $(Release_Library_Path) $(Release_Libraries) -Wl,-rpath,./ -o Release/$(PROJECT_NAME)
-	
+
 # ******************Defino las reglas de compilado para cada dependencia en release***************************************
 # Carpeta raiz
 $(RELEASE_OBJ_OUTPUT)%.o: $(FILES_MAIN_DIR)%.cpp
-	$(CPP_COMPILER) $(Release_Preprocessor_Definitions) $(Release_Compiler_Flags) -c $< $(Release_Include_Path) -o $@	
+	$(CPP_COMPILER) $(Release_Preprocessor_Definitions) $(Release_Compiler_Flags) -c $< $(Release_Include_Path) -o $@
 
 # Carpeta src
 $(RELEASE_OBJ_OUTPUT)$(FILES_SRC_DIR)%.o: $(FILES_SRC_DIR)%.cpp
-	$(CPP_COMPILER) $(Release_Preprocessor_Definitions) $(Release_Compiler_Flags) -c $< $(Release_Include_Path) -o $@	
+	$(CPP_COMPILER) $(Release_Preprocessor_Definitions) $(Release_Compiler_Flags) -c $< $(Release_Include_Path) -o $@
 
 # *******************************************************************************************************************
 
@@ -122,6 +122,3 @@ clean:
 	rm -f Release/*.a
 	rm -f Release/*.so
 	rm -f Release/*.exe
-
-
-

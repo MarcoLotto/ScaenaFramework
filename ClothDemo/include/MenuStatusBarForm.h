@@ -1,13 +1,13 @@
 /**********************************
 * SCAENA FRAMEWORK
-* Author: Marco Andrés Lotto
+* Author: Marco Andrï¿½s Lotto
 * License: MIT - 2016
 **********************************/
 
 #pragma once
 #include "UIForm.h"
 #include "UIStaticImage.h"
-#include "UIButton.h"
+#include "UiButton.h"
 #include <vector>
 using namespace std;
 
@@ -18,19 +18,19 @@ protected:
 	void handleEvents();
 
 private:
-	//Incializacion de los estados del elemento 
+	//Incializacion de los estados del elemento
 	void initiateStates();
 	//Inicializacion de los subelementos
 	void initiateElements();
 	//Linkea los elementos con los estados (cuales deben ser dibujados en cada estado)
 	void bindElementsToStates();
-    
+
     void evaluateBackButtonDisplay();
 
 	//Estados
 	UIState* state1;
     UIState* noBackState;
-		
+
 	//Agrego los subelementos
 	UIStaticImage* upperBar;
 	UiButton* button1;

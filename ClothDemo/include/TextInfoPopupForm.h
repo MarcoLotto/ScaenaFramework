@@ -1,13 +1,13 @@
 /**********************************
 * SCAENA FRAMEWORK
-* Author: Marco Andrés Lotto
+* Author: Marco Andrï¿½s Lotto
 * License: MIT - 2016
 **********************************/
 
 #pragma once
 #include "UIForm.h"
 #include "UIStaticImage.h"
-#include "UIButton.h"
+#include "UiButton.h"
 
 #define POPUP_CLOSED_CALLBACK_ID 100
 
@@ -18,7 +18,7 @@ protected:
 	void handleEvents();
 
 private:
-	//Incializacion de los estados del elemento 
+	//Incializacion de los estados del elemento
 	void initiateStates();
 	//Inicializacion de los subelementos
 	void initiateElements();
@@ -28,7 +28,7 @@ private:
 	//Estados
 	UIState* showedState;
 	UIState* hidedState;
-		
+
 	UiLabel* textLine1;
 	UiLabel* textLine2;
 	UiLabel* textLine3;

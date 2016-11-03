@@ -1,7 +1,7 @@
 #pragma once
 #include "UIForm.h"
 #include "UIStaticImage.h"
-#include "UIButton.h"
+#include "UiButton.h"
 
 enum PipelineSelectionIndex { p1=1, p2=2, p3=3, p4=4, p5=5, p6=6 };
 
@@ -12,7 +12,7 @@ protected:
 	void handleEvents();
 
 private:
-	//Incializacion de los estados del elemento 
+	//Incializacion de los estados del elemento
 	void initiateStates();
 	//Inicializacion de los subelementos
 	void initiateElements();
@@ -25,7 +25,7 @@ private:
 	//Estados
 	UIState* showedState;
 	UIState* hidedState;
-		
+
 	//Agrego los subelementos
 	UiButton* button1;
 	UiButton* button2;
