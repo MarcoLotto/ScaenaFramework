@@ -11,7 +11,7 @@ OpenGL 4.2 or superior must be installed on the client machine before executing 
 In Android and IOS the device must be compatible OpenGLES2 or OpenGLES3 (the mayor part of the market devices support this)
 
 ### Building on Ubuntu (or other distros)
-First you need to need the GL libraries:
+First you need to get the GL libraries:
 ```
 sudo apt-get install freeglut3 freeglut3-dev
 sudo apt-get install libglew-dev
